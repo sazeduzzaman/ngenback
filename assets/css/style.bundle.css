@@ -418,6 +418,9 @@ legend + * {
   font: inherit;
   -webkit-appearance: button;
 }
+.custom-tabs-bottom{
+  left: 0px;
+}
 output {
   display: inline-block;
 }
