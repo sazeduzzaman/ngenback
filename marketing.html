@@ -130,7 +130,7 @@
                 data-kt-menu-expand="false"
               >
                 <div class="menu-item mx-4">
-                  <a class="menu-link" href="index.html">
+                  <a class="menu-link active" href="index.html">
                     <span class="menu-icon">
                       <span class="svg-icon svg-icon-2">
                         <svg
@@ -252,14 +252,14 @@
                         </svg>
                       </span>
                     </span>
-                    <span class="menu-title">Dashboard</span>
+                    <span class="menu-title">Overview</span>
                   </a>
                 </div>
                 <div
                   data-kt-menu-trigger="click"
-                  class="menu-item menu-accordion show"
+                  class="menu-item menu-accordion"
                 >
-                  <span class="menu-link mx-3 mt-2 active">
+                  <span class="menu-link mx-3 mt-2">
                     <span class="menu-icon">
                       <span class="svg-icon svg-icon-2">
                         <svg
@@ -607,26 +607,14 @@
                         </svg>
                       </span>
                     </span>
-                    <span class="menu-title">My HR</span>
+                    <span
+                      class="menu-title"
+                      onclick="window.location.href='hr-dashboard.html'"
+                      >My HR</span
+                    >
                     <span class="menu-arrow"></span>
                   </span>
                   <div class="menu-sub menu-sub-accordion menu-active-bg">
-                    <div class="menu-item">
-                      <a class="menu-link mx-3 mt-2" href="hr-dashboard.html">
-                        <span class="menu-bullet">
-                          <span class="bullet bullet-dot"></span>
-                        </span>
-                        <span class="menu-title">Overview</span>
-                      </a>
-                    </div>
-                    <div class="menu-item">
-                      <a class="menu-link mx-3 mt-2" href="hr-dashboard.html">
-                        <span class="menu-bullet">
-                          <span class="bullet bullet-dot"></span>
-                        </span>
-                        <span class="menu-title">Tasks</span>
-                      </a>
-                    </div>
                     <div class="menu-item">
                       <a class="menu-link mx-3 mt-2" href="task.html">
                         <span class="menu-bullet">
@@ -917,10 +905,9 @@
                       KPI
                     </a>
                     <a
-                      href="#"
+                      href="javascript:void(0)"
                       class="btn btn-sm fw-bold btn-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#kt_modal_new_target"
+                      id="kt_drawer_chat_toggle"
                     >
                       Notice
                     </a>

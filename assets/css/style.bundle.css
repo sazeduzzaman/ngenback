@@ -48054,3 +48054,11 @@ body {
   background-color: #fff;
   border: 0;
 }
+.attendance-link.active{
+  background-color: #0b647642 !important;
+  border-radius: 0 !important;
+}
+.attendance-link{
+  border-radius: 0 !important;
+  padding-top: 15px;
+}
