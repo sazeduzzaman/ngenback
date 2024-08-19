@@ -48062,3 +48062,9 @@ body {
   border-radius: 0 !important;
   padding-top: 15px;
 }
+.custom-bg-light{
+  background-color: #0b64763d !important;
+}
+td{
+  vertical-align: middle !important;
+}
