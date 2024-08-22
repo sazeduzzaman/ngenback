@@ -26885,7 +26885,7 @@ a:hover {
 .nav-line-tabs .nav-item.show .nav-link {
   background-color: transparent;
   border: 0;
-  border-bottom: 1px solid var(--site-primary);
+  border-bottom: 4px solid var(--site-primary);
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .nav-line-tabs.nav-line-tabs-2x {
@@ -48082,4 +48082,8 @@ td {
   top: 1px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.box-dahsed {
+  border: 1px solid var(--site-primary);
+  border-radius: .625rem;
 }
