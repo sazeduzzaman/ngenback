@@ -49,6 +49,14 @@
       type="text/css"
     />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <style>
+      .table > :not(:first-child) {
+        border: 1px solid currentColor !important;
+      }
+      .table-bordered > :not(caption) > * > * {
+        border-width: 0 1px;
+      }
+    </style>
   </head>
 
   <body
@@ -607,9 +615,7 @@
                         </svg>
                       </span>
                     </span>
-                    <span
-                      class="menu-title">My HR</span
-                    >
+                    <span class="menu-title">My HR</span>
                     <span class="menu-arrow"></span>
                   </span>
                   <div class="menu-sub menu-sub-accordion menu-active-bg">
@@ -665,28 +671,6 @@
                           <span class="bullet bullet-dot"></span>
                         </span>
                         <span class="menu-title">Incentive & Bonus</span>
-                      </a>
-                    </div>
-                    <div class="menu-item">
-                      <a
-                        class="menu-link mx-3 mt-2"
-                        href="salary-sheet.html"
-                      >
-                        <span class="menu-bullet">
-                          <span class="bullet bullet-dot"></span>
-                        </span>
-                        <span class="menu-title">Salary Sheet</span>
-                      </a>
-                    </div>
-                    <div class="menu-item">
-                      <a
-                        class="menu-link mx-3 mt-2"
-                        href="rfq.html"
-                      >
-                        <span class="menu-bullet">
-                          <span class="bullet bullet-dot"></span>
-                        </span>
-                        <span class="menu-title">RFQ</span>
                       </a>
                     </div>
                   </div>
@@ -799,68 +783,16 @@
             id="kt_aside_footer"
           >
             <a
-              href="tema_manage.html"
-              class="btn btn-outline btn-outline-dashed me-2 mb-2 w-100"
-              data-bs-toggle="tooltip"
-              data-bs-trigger="hover"
-              data-bs-dismiss-="click"
-              title="If You Click Then Your Account Will Be Log Out"
-            >
-              <span class="btn-label">Mange Team </span>
-
-              <span class="svg-icon btn-icon svg-icon-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    opacity="0.3"
-                    d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM12.5 18C12.5 17.4 12.6 17.5 12 17.5H8.5C7.9 17.5 8 17.4 8 18C8 18.6 7.9 18.5 8.5 18.5L12 18C12.6 18 12.5 18.6 12.5 18ZM16.5 13C16.5 12.4 16.6 12.5 16 12.5H8.5C7.9 12.5 8 12.4 8 13C8 13.6 7.9 13.5 8.5 13.5H15.5C16.1 13.5 16.5 13.6 16.5 13ZM12.5 8C12.5 7.4 12.6 7.5 12 7.5H8C7.4 7.5 7.5 7.4 7.5 8C7.5 8.6 7.4 8.5 8 8.5H12C12.6 8.5 12.5 8.6 12.5 8Z"
-                    fill="currentColor"
-                  />
-                  <rect
-                    x="7"
-                    y="17"
-                    width="6"
-                    height="2"
-                    rx="1"
-                    fill="currentColor"
-                  />
-                  <rect
-                    x="7"
-                    y="12"
-                    width="10"
-                    height="2"
-                    rx="1"
-                    fill="currentColor"
-                  />
-                  <rect
-                    x="7"
-                    y="7"
-                    width="6"
-                    height="2"
-                    rx="1"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </a>
-            <a
               href="#"
-              class="btn btn-custom btn-primary w-100 mt-4"
+              class="btn btn-custom btn-primary w-100"
               data-bs-toggle="tooltip"
               data-bs-trigger="hover"
               data-bs-dismiss-="click"
               title="If You Click Then Your Account Will Be Log Out"
             >
-              <span class="btn-label">Logout <i class="fa-solid fa-arrow-right-from-bracket ps-3"></i></span>
+              <span class="btn-label"
+                >Logout <i class="fa-solid fa-arrow-right-from-bracket ps-3"></i
+              ></span>
 
               <span class="svg-icon btn-icon svg-icon-2">
                 <svg
@@ -945,11 +877,11 @@
               </div>
               <!-- welcome  -->
               <div class="pt-5">
-                <h3 class="mb-0 pt-2">HR Dashboard</h3>
+                <h3 class="mb-0">Task & Projects Dashboard</h3>
               </div>
 
               <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-                <a href="/" class="d-lg-none">
+                <a href="../../demo1/dist/index.html" class="d-lg-none">
                   <img
                     alt="Logo"
                     src="assets/media/logos/logo-2.svg"
@@ -1231,7 +1163,7 @@
                                 >
                                   <span class="fs-6 fw-bold">Karina Clark</span>
                                   <span class="fs-7 fw-bold text-muted"
-                                    >Sales Manager</span
+                                    >Marketing Manager</span
                                   >
                                 </div>
                               </a>
@@ -1428,7 +1360,7 @@
                                     >EcoLeaf App Launch</span
                                   >
                                   <span class="fs-7 fw-bold text-muted"
-                                    >Sales</span
+                                    >Marketing</span
                                   >
                                 </div>
                               </a>
@@ -2374,7 +2306,7 @@
                       data-kt-menu-attach="parent"
                       data-kt-menu-placement="bottom-end"
                     >
-                      <img src="assets/media/avatars/300-1.jpg" alt="user" />
+                      <img src=" assets/media/avatars/300-1.jpg" alt="user" />
                     </div>
 
                     <div
@@ -2388,7 +2320,7 @@
                           <div class="symbol symbol-50px me-5">
                             <img
                               alt="Logo"
-                              src="assets/media/avatars/300-1.jpg"
+                              src="	 assets/media/avatars/300-1.jpg"
                             />
                           </div>
 
@@ -2688,6 +2620,7 @@
               </div>
             </div>
           </div>
+
           <div
             class="content d-flex flex-column flex-column-fluid py-0"
             style="background-color: white"
@@ -2696,756 +2629,50 @@
             <div class="post d-flex flex-column-fluid" id="kt_post">
               <div
                 id="kt_content_container"
-                class="app-container container-fluid py-10"
+                class="app-container container-fluid py-10 pt-5"
               >
                 <!-- Main Content Start -->
-                <!-- Leave Details -->
                 <div class="row">
-                  <div class="col-xl-4">
-                    <div class="tns shadow-sm" style="direction: ltr">
-                      <div
-                        data-tns="true"
-                        data-tns-nav-position="bottom"
-                        data-tns-mouse-drag="true"
-                        data-tns-controls="false"
-                        data-tns-speed="2000"
-                      >
-                        <!-- Items -->
-                        <div class="card card-flush h-xl-100 shadow-sm">
-                          <div
-                            class="card-header rounded bgi-no-repeat bgi-size-cover bgi-position-y-top bgi-position-x-center align-items-start h-250px"
-                            style="
-                              background-image: url('https://preview.keenthemes.com/metronic8/demo1/assets/media/svg/shapes/top-green.png');
-                            "
-                            data-bs-theme="light"
-                          >
-                            <h3
-                              class="card-title align-items-start flex-column text-white pt-15"
-                            >
-                              <span class="fw-bold fs-2x mb-3"
-                                >Khandaker Shahed</span
-                              >
-
-                              <div class="fs-4 text-white">
-                                <span class="opacity-75">You have total</span>
-
-                                <span class="position-relative d-inline-block">
-                                  <a
-                                    href="https://preview.keenthemes.com/metronic8/demo1/pages/user-profile/projects.html"
-                                    class="link-white opacity-75-hover fw-bold d-block mb-1"
-                                    >4 Leave due</a
-                                  >
-
-                                  <span
-                                    class="position-absolute opacity-50 bottom-0 start-0 border-2 border-body border-bottom w-100"
-                                  ></span>
-                                </span>
-
-                                <span class="opacity-75">in this year</span>
-                              </div>
-                            </h3>
-                          </div>
-
-                          <div class="card-body mt-n20">
-                            <div class="mt-n20 position-relative">
-                              <div class="row g-3 g-lg-6">
-                                <div class="col-6">
-                                  <div
-                                    class="bg-gray-100 bg-opacity-70 rounded-2 px-6 py-5"
-                                  >
-                                    <div class="symbol symbol-30px me-5 mb-8">
-                                      <span class="symbol-label">
-                                        <i
-                                          class="fa-solid fa-person-walking-luggage fs-1 text-primary"
-                                        ></i>
-                                      </span>
-                                    </div>
-
-                                    <div class="m-0 d-flex align-items-center">
-                                      <span
-                                        class="text-primary fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1"
-                                        >24</span
-                                      >
-
-                                      <span
-                                        class="text-gray-500 fw-semibold fs-6 ps-3"
-                                        >Total Leave</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-6">
-                                  <div
-                                    class="bg-gray-100 bg-opacity-70 rounded-2 px-6 py-5"
-                                  >
-                                    <div class="symbol symbol-30px me-5 mb-8">
-                                      <span class="symbol-label">
-                                        <i
-                                          class="fa-solid fa-bed fs-1 text-primary"
-                                        ></i>
-                                      </span>
-                                    </div>
-
-                                    <div class="m-0 d-flex align-items-center">
-                                      <span
-                                        class="text-primary fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1"
-                                        >24</span
-                                      >
-
-                                      <span
-                                        class="text-gray-500 fw-semibold fs-6 ps-3"
-                                        >Sick Leave</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-6">
-                                  <div
-                                    class="bg-gray-100 bg-opacity-70 rounded-2 px-6 py-5"
-                                  >
-                                    <div class="symbol symbol-30px me-5 mb-8">
-                                      <span class="symbol-label">
-                                        <i
-                                          class="fa-solid fa-person-circle-check fs-1 text-primary"
-                                        ></i>
-                                      </span>
-                                    </div>
-
-                                    <div class="m-0 d-flex align-items-center">
-                                      <span
-                                        class="text-primary fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1"
-                                        >24</span
-                                      >
-
-                                      <span
-                                        class="text-gray-500 fw-semibold fs-6 ps-3"
-                                        >Earned Leave</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-6">
-                                  <div
-                                    class="bg-gray-100 bg-opacity-70 rounded-2 px-6 py-5"
-                                  >
-                                    <div class="symbol symbol-30px me-5 mb-8">
-                                      <span class="symbol-label">
-                                        <i
-                                          class="fa-solid fa-people-robbery fs-1 text-primary"
-                                        ></i>
-                                      </span>
-                                    </div>
-
-                                    <div class="m-0 d-flex align-items-center">
-                                      <span
-                                        class="text-primary fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1"
-                                        >24</span
-                                      >
-
-                                      <span
-                                        class="text-gray-500 fw-semibold fs-6 ps-3"
-                                        >Casual Leave</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Items -->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-8">
-                    <div class="card card-flush h-xl-100 shadow-sm">
-                      <div class="card-header pt-7">
-                        <h3 class="card-title align-items-start flex-column">
-                          <span class="card-label fw-bold text-gray-800"
-                            >Job Circular & Applications</span
-                          >
-                        </h3>
-
-                        <div class="card-toolbar">
-                          <a
-                            href="#"
-                            class="btn btn-sm btn-light"
-                            data-bs-toggle="tooltip"
-                            data-bs-dismiss="click"
-                            data-bs-custom-class="tooltip-inverse"
-                            data-bs-original-title="Delivery App is coming soon"
-                            data-kt-initialized="1"
-                            >View All</a
-                          >
-                        </div>
-                      </div>
-
-                      <div class="card-body pt-4 px-0">
-                        <ul
-                          class="nav nav-pills nav-pills-custom item position-relative mx-9 mb-0"
-                          role="tablist"
-                        >
-                          <li
-                            class="nav-item col-2 mx-0 p-0"
-                            role="presentation"
-                          >
-                            <a
-                              class="nav-link attendance-link d-flex justify-content-center w-100 border-0 h-100 active"
-                              data-bs-toggle="pill"
-                              href="#performance"
-                              aria-selected="false"
-                              role="tab"
-                              tabindex="-1"
-                            >
-                              <span
-                                class="nav-text text-gray-800 fw-bold fs-6 mb-3"
-                              >
-                                Performance
-                              </span>
-                              <span
-                                class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"
-                              ></span>
-                            </a>
-                          </li>
-                          <li
-                            class="nav-item col-2 mx-0 px-0"
-                            role="presentation"
-                          >
-                            <a
-                              class="nav-link attendance-link d-flex justify-content-center w-100 border-0 h-100"
-                              data-bs-toggle="pill"
-                              href="#jobApplications"
-                              aria-selected="true"
-                              role="tab"
-                            >
-                              <span
-                                class="nav-text text-gray-800 fw-bold fs-6 mb-3"
-                              >
-                                Job Application
-                              </span>
-
-                              <span
-                                class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"
-                              ></span>
-                            </a>
-                          </li>
-                          <li
-                            class="nav-item col-2 mx-0 px-0"
-                            role="presentation"
-                          >
-                            <a
-                              class="nav-link attendance-link d-flex justify-content-center w-100 border-0 h-100"
-                              data-bs-toggle="pill"
-                              href="#leaveApplications"
-                              aria-selected="true"
-                              role="tab"
-                            >
-                              <span
-                                class="nav-text text-gray-800 fw-bold fs-6 mb-3"
-                              >
-                                Leave Application
-                              </span>
-
-                              <span
-                                class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"
-                              ></span>
-                            </a>
-                          </li>
-
-                          <span
-                            class="position-absolute z-index-1 bottom-0 w-100 h-4px bg-light rounded"
-                          ></span>
-                        </ul>
-
-                        <div
-                          class="tab-content px-9 hover-scroll-overlay-y pe-7 me-3 mb-2"
-                          style="height: 300px"
-                        >
-                          <div
-                            class="tab-pane fade active show"
-                            id="performance"
-                            role="tabpanel"
-                          >
-                            <div class="card-body p-0 hover-scroll-overlay-y">
-                              <table
-                                class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                              >
-                                <thead>
-                                  <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                    <th width="20%">Name</th>
-                                    <th width="15%">Position</th>
-                                    <th width="10%">Salary</th>
-                                    <th width="20%">KPI</th>
-                                    <th width="5%">Status</th>
-                                    <th width="25%">Task & Project</th>
-                                    <th width="5%">Final Score</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Sazeduzzaman Saju</td>
-                                    <td>Frontend Developer</td>
-                                    <td>14000</td>
-                                    <td>Avarage Lead Time To Complete</td>
-                                    <td>
-                                      <span class="badge bg-info text-white"
-                                        >Parmanent</span
-                                      >
-                                    </td>
-                                    <td>To Complete Under 60 Day</td>
-                                    <td>16%</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Khandaker Shahed</td>
-                                    <td>Full Stack Developer</td>
-                                    <td>14000</td>
-                                    <td>Avarage Lead Time To Complete</td>
-                                    <td>
-                                      <span class="badge bg-info text-white"
-                                        >Parmanent</span
-                                      >
-                                    </td>
-                                    <td>To Complete Under 60 Day</td>
-                                    <td>16%</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Nahid Sarkar</td>
-                                    <td>Frontend Developer</td>
-                                    <td>14000</td>
-                                    <td>Avarage Lead Time To Complete</td>
-                                    <td>
-                                      <span class="badge bg-info text-white"
-                                        >Parmanent</span
-                                      >
-                                    </td>
-                                    <td>To Complete Under 60 Day</td>
-                                    <td>16%</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Akash Mirza</td>
-                                    <td>Frontend Developer</td>
-                                    <td>14000</td>
-                                    <td>Avarage Lead Time To Complete</td>
-                                    <td>
-                                      <span class="badge bg-info text-white"
-                                        >Parmanent</span
-                                      >
-                                    </td>
-                                    <td>To Complete Under 60 Day</td>
-                                    <td>16%</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Akash Mirza</td>
-                                    <td>Frontend Developer</td>
-                                    <td>14000</td>
-                                    <td>Avarage Lead Time To Complete</td>
-                                    <td>
-                                      <span class="badge bg-info text-white"
-                                        >Parmanent</span
-                                      >
-                                    </td>
-                                    <td>To Complete Under 60 Day</td>
-                                    <td>16%</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                          <div
-                            class="tab-pane fade"
-                            id="jobApplications"
-                            role="tabpanel"
-                          >
-                            <table
-                              class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                            >
-                              <thead>
-                                <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                  <th width="30%">Name</th>
-                                  <th width="15%">Position</th>
-                                  <th width="15%">Salary</th>
-                                  <th width="10%">Check In</th>
-                                  <th width="10%">Check Out</th>
-                                  <th width="20%">E-mail</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Sazeduzzaman Saju</td>
-                                  <td>Frontend Developer</td>
-                                  <td>14000 Tk</td>
-                                  <td>09:02</td>
-                                  <td>06:02</td>
-                                  <td>szamansaju@gmail.com</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div
-                            class="tab-pane fade"
-                            id="leaveApplications"
-                            role="tabpanel"
-                          >
-                            <table
-                              class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                            >
-                              <thead>
-                                <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                  <th width="30%">Name</th>
-                                  <th width="15%">Position</th>
-                                  <th width="15%">Salary</th>
-                                  <th width="10%">Check In</th>
-                                  <th width="10%">Check Out</th>
-                                  <th width="20%">Action</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Sazeduzzaman Saju</td>
-                                  <td>Frontend Developer</td>
-                                  <td>14000 Tk</td>
-                                  <td>09:02</td>
-                                  <td>06:02</td>
-                                  <td>szamansaju@gmail.com</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="col-xl-12">
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="fw-bold fs-6 text-gray-800">
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                          </tr>
+                          <tr>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>$170,750</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
-                <!-- Leave Details ENd -->
-                <div class="row mt-10">
-                  <div class="col-xl-3">
-                    <div class="card card-flush h-xl-100 shadow-sm">
-                      <div class="card-body py-9">
-                        <div class="row gx-9 h-100">
-                          <div class="col-sm-12">
-                            <div class="tns" style="direction: ltr">
-                              <div
-                                data-tns="true"
-                                data-tns-nav-position="bottom"
-                                data-tns-mouse-drag="true"
-                                data-tns-controls="false"
-                                data-tns-speed="2000"
-                              >
-                                <!--begin::Item-->
-                                <div class="d-flex flex-column h-100">
-                                  <div class="mb-7">
-                                    <div class="mb-6">
-                                      <span
-                                        class="text-gray-500 fs-7 fw-bold me-2 d-block lh-1 pb-1"
-                                        >User ID: 34356776</span
-                                      >
-
-                                      <a
-                                        href="https://preview.keenthemes.com/metronic8/demo1/apps/projects/users.html"
-                                        class="text-gray-800 text-hover-primary fs-3 fw-bold"
-                                        >Sazeduzzaman
-                                        <span class="text-primary"
-                                          >(Next Evaluation)</span
-                                        ></a
-                                      >
-                                    </div>
-
-                                    <div
-                                      class="d-flex align-items-center flex-wrap d-grid gap-2"
-                                    >
-                                      <div
-                                        class="d-flex align-items-center me-5 me-xl-13"
-                                      >
-                                        <div
-                                          class="symbol symbol-30px symbol-circle me-3"
-                                        >
-                                          <img
-                                            src="https://preview.keenthemes.com/metronic8/demo1/assets/media/avatars/300-3.jpg"
-                                            class=""
-                                            alt=""
-                                          />
-                                        </div>
-
-                                        <div class="m-0">
-                                          <a
-                                            href="https://preview.keenthemes.com/metronic8/demo1/apps/projects/users.html"
-                                            class="fw-bold text-gray-800 text-hover-primary fs-7"
-                                            >Full Stack Developer</a
-                                          >
-                                          <br />
-                                          <a
-                                            href="https://preview.keenthemes.com/metronic8/demo1/apps/projects/users.html"
-                                            class="fw-bold text-gray-400 text-hover-primary fs-7"
-                                            >NGen IT</a
-                                          >
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="d-flex flex-column border border-1 border-gray-300 bg-light-primary text-center pt-5 pb-7 mb-8 card-rounded"
-                                  >
-                                    <span
-                                      class="fw-semibold text-gray-600 fs-7 pb-1"
-                                      >Next Evaluation</span
-                                    >
-                                    <span
-                                      class="fw-bold fs-2hx lh-1 pb-1 main_text_color"
-                                      >14 Aug 2024</span
-                                    >
-                                    <span
-                                      class="fw-semibold text-gray-600 fs-7 pb-1 pt-5"
-                                      >Last Evaluation</span
-                                    >
-                                    <span class="fw-bold text-gray-800 fs-3"
-                                      >14 Aug 2024</span
-                                    >
-                                  </div>
-
-                                  <div
-                                    class="d-flex flex-stack mt-auto bd-highlight"
-                                  >
-                                    <a
-                                      href="evaluation.html"
-                                      class="btn btn-primary btn-sm flex-shrink-0"
-                                      >View Evaluation</a
-                                    >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-9">
-                    <div class="card card-flush h-xl-100 shadow-sm">
-                      <div class="card-header pt-7">
-                        <h3 class="card-title align-items-start flex-column">
-                          <span class="card-label fw-bold text-gray-800"
-                            >Today Attendance & Holiday Information</span
-                          >
-                        </h3>
-
-                        <div class="card-toolbar">
-                          <a
-                            href="#"
-                            class="btn btn-sm btn-light"
-                            data-bs-toggle="tooltip"
-                            data-bs-dismiss="click"
-                            data-bs-custom-class="tooltip-inverse"
-                            data-bs-original-title="Delivery App is coming soon"
-                            data-kt-initialized="1"
-                            >View All</a
-                          >
-                        </div>
-                      </div>
-
-                      <div class="card-body pt-4 px-0">
-                        <ul
-                          class="nav nav-pills nav-pills-custom item position-relative mx-9 mb-0"
-                          role="tablist"
-                        >
-                          <li
-                            class="nav-item col-2 mx-0 p-0"
-                            role="presentation"
-                          >
-                            <a
-                              class="nav-link attendance-link d-flex justify-content-center w-100 border-0 h-100 active"
-                              data-bs-toggle="pill"
-                              href="#currentMonths"
-                              aria-selected="false"
-                              role="tab"
-                              tabindex="-1"
-                            >
-                              <span
-                                class="nav-text text-gray-800 fw-bold fs-6 mb-3"
-                              >
-                                Current Months
-                              </span>
-                              <span
-                                class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"
-                              ></span>
-                            </a>
-                          </li>
-
-                          <li
-                            class="nav-item col-2 mx-0 px-0"
-                            role="presentation"
-                          >
-                            <a
-                              class="nav-link attendance-link d-flex justify-content-center w-100 border-0 h-100"
-                              data-bs-toggle="pill"
-                              href="#lastMonths"
-                              aria-selected="false"
-                              role="tab"
-                              tabindex="-1"
-                            >
-                              <span
-                                class="nav-text text-gray-800 fw-bold fs-6 mb-3"
-                              >
-                                Last Months
-                              </span>
-
-                              <span
-                                class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"
-                              ></span>
-                            </a>
-                          </li>
-                          <li
-                            class="nav-item col-2 mx-0 px-0"
-                            role="presentation"
-                          >
-                            <a
-                              class="nav-link attendance-link d-flex justify-content-center w-100 border-0 h-100"
-                              data-bs-toggle="pill"
-                              href="#jobApplications"
-                              aria-selected="true"
-                              role="tab"
-                            >
-                              <span
-                                class="nav-text text-gray-800 fw-bold fs-6 mb-3"
-                              >
-                                All Holiday
-                              </span>
-
-                              <span
-                                class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"
-                              ></span>
-                            </a>
-                          </li>
-
-                          <span
-                            class="position-absolute z-index-1 bottom-0 w-100 h-4px bg-light rounded"
-                          ></span>
-                        </ul>
-
-                        <div
-                          class="tab-content px-9 hover-scroll-overlay-y pe-7 me-3 mb-2"
-                          style="height: 240px"
-                        >
-                          <div
-                            class="tab-pane fade active show"
-                            id="currentMonths"
-                            role="tabpanel"
-                          >
-                            <table
-                              class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                            >
-                              <thead>
-                                <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                  <th width="30%">Name</th>
-                                  <th width="15%">Position</th>
-                                  <th width="10%">Check In</th>
-                                  <th width="10%">Check Out</th>
-                                  <th width="20%">Attendance Status</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Sazeduzzaman Saju</td>
-                                  <td>Frontend Developer</td>
-                                  <td>09:02</td>
-                                  <td>06:02</td>
-                                  <td>In Time</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div
-                            class="tab-pane fade"
-                            id="lastMonths"
-                            role="tabpanel"
-                          >
-                            <table
-                              class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                            >
-                              <thead>
-                                <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                  <th width="30%">Name</th>
-                                  <th width="15%">Position</th>
-                                  <th width="10%">Check In</th>
-                                  <th width="10%">Check Out</th>
-                                  <th width="20%">Attendance Status</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Sazeduzzaman Saju</td>
-                                  <td>Frontend Developer</td>
-                                  <td>09:02</td>
-                                  <td>06:02</td>
-                                  <td>In Time</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div
-                            class="tab-pane fade"
-                            id="jobApplications"
-                            role="tabpanel"
-                          >
-                            <table
-                              class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                            >
-                              <thead>
-                                <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                  <th width="30%">Name</th>
-                                  <th width="15%">Position</th>
-                                  <th width="10%">Check In</th>
-                                  <th width="10%">Check Out</th>
-                                  <th width="20%">E-mail</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Sazeduzzaman Saju</td>
-                                  <td>Frontend Developer</td>
-                                  <td>09:02</td>
-                                  <td>06:02</td>
-                                  <td>szamansaju@gmail.com</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div
-                            class="tab-pane fade"
-                            id="leaveApplications"
-                            role="tabpanel"
-                          >
-                            <table
-                              class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                            >
-                              <thead>
-                                <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                  <th width="30%">Name</th>
-                                  <th width="15%">Position</th>
-                                  <th width="10%">Check In</th>
-                                  <th width="10%">Check Out</th>
-                                  <th width="20%">Action</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Sazeduzzaman Saju</td>
-                                  <td>Frontend Developer</td>
-                                  <td>09:02</td>
-                                  <td>06:02</td>
-                                  <td>szamansaju@gmail.com</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <!-- Main Content End -->
               </div>
             </div>
           </div>
+
           <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
             <div
               class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between"
@@ -3491,6 +2718,7 @@
         </div>
       </div>
     </div>
+
     <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
       <span class="svg-icon">
         <svg
@@ -3517,6 +2745,7 @@
         </svg>
       </span>
     </div>
+
     <div
       class="modal fade"
       id="kt_modal_users_search"
@@ -3697,7 +2926,9 @@
 
                       <div class="fw-bold">
                         <span class="fs-6 text-gray-800 me-2">Melody Macy</span>
-                        <span class="badge badge-light">Sales Analytic</span>
+                        <span class="badge badge-light"
+                          >Marketing Analytic</span
+                        >
                       </div>
                     </a>
 
@@ -3706,7 +2937,7 @@
                       class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1"
                     >
                       <div class="symbol symbol-35px symbol-circle me-5">
-                        <img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+                        <img alt="Pic" src=" assets/media/avatars/300-1.jpg" />
                       </div>
 
                       <div class="fw-bold">
@@ -3869,7 +3100,10 @@
                         </label>
 
                         <div class="symbol symbol-35px symbol-circle">
-                          <img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+                          <img
+                            alt="Pic"
+                            src=" assets/media/avatars/300-1.jpg"
+                          />
                         </div>
 
                         <div class="ms-5">
@@ -4692,562 +3926,6 @@
       </div>
     </div>
 
-    <!-- Modals  -->
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="attendance"
-      tabindex="-1"
-      aria-labelledby="attendanceLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="attendanceLabel">Sazeduzzaman Saju</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">asdasdasd</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modals  end-->
-    <div
-      id="kt_drawer_chat"
-      class="bg-body drawer drawer-end drawer-off"
-      data-kt-drawer="true"
-      data-kt-drawer-name="chat"
-      data-kt-drawer-activate="true"
-      data-kt-drawer-overlay="true"
-      data-kt-drawer-width="{default:'300px', 'md': '500px'}"
-      data-kt-drawer-direction="end"
-      data-kt-drawer-toggle="#kt_drawer_chat_toggle"
-      data-kt-drawer-close="#kt_drawer_chat_close"
-      style="width: 500px !important"
-    >
-      <!--begin::Messenger-->
-      <div class="card w-100 border-0 rounded-0" id="kt_drawer_chat_messenger">
-        <!--begin::Card header-->
-        <div class="card-header pe-5" id="kt_drawer_chat_messenger_header">
-          <!--begin::Title-->
-          <div class="card-title">
-            <!--begin::User-->
-            <div class="d-flex align-items-center me-3">
-              <div>
-                <p class="pb-0 mb-0">Send message </p>
-              </div>
-              <div class="ps-4">
-                <select
-                class="form-select form-select-sm"
-                data-control="select2"
-                style="width: 400px;"
-                data-placeholder="Select an option"
-              >
-                <option value="1">To all</option>
-                <option value="2">Shahed</option>
-                <option value="2">Saju</option>
-                <option value="2">Akash</option>
-                <option value="2">Nahid</option>
-                <option value="2">Ashiq</option>
-              </select>
-              </div>
-            </div>
-            <!--end::User-->
-          </div>
-          <!--end::Title-->
-
-          <!--begin::Card toolbar-->
-          <div class="card-toolbar">
-            <!--begin::Menu-->
-            <div class="me-0">
-              <button
-                class="btn btn-sm btn-icon btn-active-color-primary"
-                data-kt-menu-trigger="click"
-                data-kt-menu-placement="bottom-end"
-              >
-                <i class=" fs-2"
-                  ><span class="path1"></span><span class="path2"></span
-                  ><span class="path3"></span><span class="path4"></span
-                ></i>
-              </button>
-
-              <!--begin::Menu 3-->
-              <div
-                class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-3"
-                data-kt-menu="true"
-              >
-                <!--begin::Heading-->
-                <div class="menu-item px-3">
-                  <div
-                    class="menu-content text-muted pb-2 px-3 fs-7 text-uppercase"
-                  >
-                    Contacts
-                  </div>
-                </div>
-                <!--end::Heading-->
-
-                <!--begin::Menu item-->
-                <div class="menu-item px-3">
-                  <a
-                    href="#"
-                    class="menu-link px-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#kt_modal_users_search"
-                  >
-                    Add Contact
-                  </a>
-                </div>
-                <!--end::Menu item-->
-
-                <!--begin::Menu item-->
-                <div class="menu-item px-3">
-                  <a
-                    href="#"
-                    class="menu-link flex-stack px-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#kt_modal_invite_friends"
-                  >
-                    Invite Contacts
-
-                    <span
-                      class="ms-2"
-                      data-bs-toggle="tooltip"
-                      aria-label="Specify a contact email to send an invitation"
-                      data-bs-original-title="Specify a contact email to send an invitation"
-                      data-kt-initialized="1"
-                    >
-                      <i class="fa-solid fa-xmark fs-7"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                      ></i>
-                    </span>
-                  </a>
-                </div>
-                <!--end::Menu item-->
-
-                <!--begin::Menu item-->
-                <div
-                  class="menu-item px-3"
-                  data-kt-menu-trigger="hover"
-                  data-kt-menu-placement="right-start"
-                >
-                  <a href="#" class="menu-link px-3">
-                    <span class="menu-title">Groups</span>
-                    <span class="menu-arrow"></span>
-                  </a>
-
-                  <!--begin::Menu sub-->
-                  <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                    <!--begin::Menu item-->
-                    <div class="menu-item px-3">
-                      <a
-                        href="#"
-                        class="menu-link px-3"
-                        data-bs-toggle="tooltip"
-                        data-bs-original-title="Coming soon"
-                        data-kt-initialized="1"
-                      >
-                        Create Group
-                      </a>
-                    </div>
-                    <!--end::Menu item-->
-
-                    <!--begin::Menu item-->
-                    <div class="menu-item px-3">
-                      <a
-                        href="#"
-                        class="menu-link px-3"
-                        data-bs-toggle="tooltip"
-                        data-bs-original-title="Coming soon"
-                        data-kt-initialized="1"
-                      >
-                        Invite Members
-                      </a>
-                    </div>
-                    <!--end::Menu item-->
-
-                    <!--begin::Menu item-->
-                    <div class="menu-item px-3">
-                      <a
-                        href="#"
-                        class="menu-link px-3"
-                        data-bs-toggle="tooltip"
-                        data-bs-original-title="Coming soon"
-                        data-kt-initialized="1"
-                      >
-                        Settings
-                      </a>
-                    </div>
-                    <!--end::Menu item-->
-                  </div>
-                  <!--end::Menu sub-->
-                </div>
-                <!--end::Menu item-->
-
-                <!--begin::Menu item-->
-                <div class="menu-item px-3 my-1">
-                  <a
-                    href="#"
-                    class="menu-link px-3"
-                    data-bs-toggle="tooltip"
-                    data-bs-original-title="Coming soon"
-                    data-kt-initialized="1"
-                  >
-                    Settings
-                  </a>
-                </div>
-                <!--end::Menu item-->
-              </div>
-              <!--end::Menu 3-->
-            </div>
-            <!--end::Menu-->
-
-            <!--begin::Close-->
-            <div
-              class="btn btn-sm btn-icon btn-active-color-primary"
-              id="kt_drawer_chat_close"
-            >
-              <i class="fa-solid fa-xmark fs-2"
-                ><span class="path1"></span><span class="path2"></span
-              ></i>
-            </div>
-            <!--end::Close-->
-          </div>
-          <!--end::Card toolbar-->
-        </div>
-        <!--end::Card header-->
-
-        <!--begin::Card body-->
-        <div class="card-body" id="kt_drawer_chat_messenger_body">
-          <!--begin::Messages-->
-          <div
-            class="scroll-y me-n5 pe-5"
-            data-kt-element="messages"
-            data-kt-scroll="true"
-            data-kt-scroll-activate="true"
-            data-kt-scroll-height="auto"
-            data-kt-scroll-dependencies="#kt_drawer_chat_messenger_header, #kt_drawer_chat_messenger_footer"
-            data-kt-scroll-wrappers="#kt_drawer_chat_messenger_body"
-            data-kt-scroll-offset="0px"
-            style="height: 247px"
-          >
-            <!--begin::Message(in)-->
-            <div class="d-flex justify-content-start mb-10">
-              <!--begin::Wrapper-->
-              <div class="d-flex flex-column align-items-start">
-                <!--begin::User-->
-                <div class="d-flex align-items-center mb-2">
-                  <!--begin::Avatar-->
-                  <div class="symbol symbol-35px symbol-circle">
-                    <img
-                      alt="Pic"
-                      src="https://preview.keenthemes.com/metronic8/demo1/assets/media/avatars/300-25.jpg"
-                    />
-                  </div>
-                  <!--end::Avatar-->
-                  <!--begin::Details-->
-                  <div class="ms-3">
-                    <a
-                      href="#"
-                      class="fs-5 fw-bold text-gray-900 text-hover-primary me-1"
-                      >Brian Cox</a
-                    ><br>  
-                    <span class="text-muted fs-7 mb-1">Info@gmail.com</span>
-                  </div>
-                  <!--end::Details-->
-                </div>
-                <!--end::User-->
-
-                <!--begin::Text-->
-                <div
-                  class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start"
-                  data-kt-element="message-text"
-                >
-                  How likely are you to recommend our company to your friends
-                  and family ?
-                </div>
-                <!--end::Text-->
-              </div>
-              <!--end::Wrapper-->
-            </div>
-            <!--end::Message(in)-->
-
-            <!--begin::Message(in)-->
-            <div class="d-flex justify-content-start mb-10">
-              <!--begin::Wrapper-->
-              <div class="d-flex flex-column align-items-start">
-                <!--begin::User-->
-                <div class="d-flex align-items-center mb-2">
-                  <!--begin::Avatar-->
-                  <div class="symbol symbol-35px symbol-circle">
-                    <img
-                      alt="Pic"
-                      src="https://preview.keenthemes.com/metronic8/demo1/assets/media/avatars/300-25.jpg"
-                    />
-                  </div>
-                  <!--end::Avatar-->
-                  <!--begin::Details-->
-                  <div class="ms-3">
-                    <a
-                      href="#"
-                      class="fs-5 fw-bold text-gray-900 text-hover-primary me-1"
-                      >Brian Cox</a > <br>  
-                    <span class="text-muted fs-7 mb-1">Info@gmail.com</span>
-                  </div>
-                  <!--end::Details-->
-                </div>
-                <!--end::User-->
-
-                <!--begin::Text-->
-                <div
-                  class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start"
-                  data-kt-element="message-text"
-                >
-                  Ok, Understood!
-                </div>
-                <!--end::Text-->
-              </div>
-              <!--end::Wrapper-->
-            </div>
-            <!--end::Message(in)-->
-
-            <!--begin::Message(in)-->
-            <div class="d-flex justify-content-start mb-10">
-              <!--begin::Wrapper-->
-              <div class="d-flex flex-column align-items-start">
-                <!--begin::User-->
-                <div class="d-flex align-items-center mb-2">
-                  <!--begin::Avatar-->
-                  <div class="symbol symbol-35px symbol-circle">
-                    <img
-                      alt="Pic"
-                      src="https://preview.keenthemes.com/metronic8/demo1/assets/media/avatars/300-25.jpg"
-                    />
-                  </div>
-                  <!--end::Avatar-->
-                  <!--begin::Details-->
-                  <div class="ms-3">
-                    <a
-                      href="#"
-                      class="fs-5 fw-bold text-gray-900 text-hover-primary me-1"
-                      >Brian Cox</a
-                    ><br>  
-                    <span class="text-muted fs-7 mb-1">Info@gmail.com</span>
-                  </div>
-                  <!--end::Details-->
-                </div>
-                <!--end::User-->
-
-                <!--begin::Text-->
-                <div
-                  class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start"
-                  data-kt-element="message-text"
-                >
-                  You can unwatch this repository immediately by clicking here:
-                  <a href="https://keenthemes.com">Keenthemes.com</a>
-                </div>
-                <!--end::Text-->
-              </div>
-              <!--end::Wrapper-->
-            </div>
-            <!--end::Message(in)-->
-
-            <!--begin::Message(out)-->
-            <div class="d-flex justify-content-end mb-10">
-              <!--begin::Wrapper-->
-              <div class="d-flex flex-column align-items-end">
-                <!--begin::User-->
-                <div class="d-flex align-items-center mb-2">
-                  <!--begin::Details-->
-                  <div class="me-3">
-                    <span class="text-muted fs-7 mb-1">4 Hours</span>
-                    <a
-                      href="#"
-                      class="fs-5 fw-bold text-gray-900 text-hover-primary ms-1"
-                      >You</a
-                    >
-                  </div>
-                  <!--end::Details-->
-
-                  <!--begin::Avatar-->
-                  <div class="symbol symbol-35px symbol-circle">
-                    <img
-                      alt="Pic"
-                      src="https://preview.keenthemes.com/metronic8/demo1/assets/media/avatars/300-1.jpg"
-                    />
-                  </div>
-                  <!--end::Avatar-->
-                </div>
-                <!--end::User-->
-
-                <!--begin::Text-->
-                <div
-                  class="p-5 rounded bg-light-primary text-gray-900 fw-semibold mw-lg-400px text-end"
-                  data-kt-element="message-text"
-                >
-                  Most purchased Business courses during this sale!
-                </div>
-                <!--end::Text-->
-              </div>
-              <!--end::Wrapper-->
-            </div>
-            <!--end::Message(out)-->
-
-            <!--begin::Message(template for out)-->
-            <div
-              class="d-flex justify-content-end mb-10 d-none"
-              data-kt-element="template-out"
-            >
-              <!--begin::Wrapper-->
-              <div class="d-flex flex-column align-items-end">
-                <!--begin::User-->
-                <div class="d-flex align-items-center mb-2">
-                  <!--begin::Details-->
-                  <div class="me-3">
-                    <span class="text-muted fs-7 mb-1">Just now</span>
-                    <a
-                      href="#"
-                      class="fs-5 fw-bold text-gray-900 text-hover-primary ms-1"
-                      >You</a
-                    >
-                  </div>
-                  <!--end::Details-->
-
-                  <!--begin::Avatar-->
-                  <div class="symbol symbol-35px symbol-circle">
-                    <img
-                      alt="Pic"
-                      src="https://preview.keenthemes.com/metronic8/demo1/assets/media/avatars/300-1.jpg"
-                    />
-                  </div>
-                  <!--end::Avatar-->
-                </div>
-                <!--end::User-->
-
-                <!--begin::Text-->
-                <div
-                  class="p-5 rounded bg-light-primary text-gray-900 fw-semibold mw-lg-400px text-end"
-                  data-kt-element="message-text"
-                ></div>
-                <!--end::Text-->
-              </div>
-              <!--end::Wrapper-->
-            </div>
-            <!--end::Message(template for out)-->
-
-            <!--begin::Message(template for in)-->
-            <div
-              class="d-flex justify-content-start mb-10 d-none"
-              data-kt-element="template-in"
-            >
-              <!--begin::Wrapper-->
-              <div class="d-flex flex-column align-items-start">
-                <!--begin::User-->
-                <div class="d-flex align-items-center mb-2">
-                  <!--begin::Avatar-->
-                  <div class="symbol symbol-35px symbol-circle">
-                    <img
-                      alt="Pic"
-                      src="https://preview.keenthemes.com/metronic8/demo1/assets/media/avatars/300-25.jpg"
-                    />
-                  </div>
-                  <!--end::Avatar-->
-                  <!--begin::Details-->
-                  <div class="ms-3">
-                    <a
-                      href="#"
-                      class="fs-5 fw-bold text-gray-900 text-hover-primary me-1"
-                      >Brian Cox</a
-                    >
-                    <span class="text-muted fs-7 mb-1">Just now</span>
-                  </div>
-                  <!--end::Details-->
-                </div>
-                <!--end::User-->
-
-                <!--begin::Text-->
-                <div
-                  class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start"
-                  data-kt-element="message-text"
-                >
-                  Right before vacation season we have the next Big Deal for
-                  you.
-                </div>
-                <!--end::Text-->
-              </div>
-              <!--end::Wrapper-->
-            </div>
-            <!--end::Message(template for in)-->
-          </div>
-          <!--end::Messages-->
-        </div>
-        <!--end::Card body-->
-
-        <!--begin::Card footer-->
-        <div class="card-footer pt-4" id="kt_drawer_chat_messenger_footer">
-          <!--begin::Input-->
-          <textarea
-            class="form-control form-control-flush mb-3"
-            rows="1"
-            data-kt-element="input"
-            placeholder="Type a message"
-          >
-          </textarea>
-          <!--end::Input-->
-
-          <!--begin:Toolbar-->
-          <div class="d-flex flex-stack">
-            <!--begin::Actions-->
-            <div class="d-flex align-items-center me-2">
-              <button
-                class="btn btn-sm btn-icon btn-active-light-primary me-1"
-                type="button"
-                data-bs-toggle="tooltip"
-                aria-label="Coming soon"
-                data-bs-original-title="Coming soon"
-                data-kt-initialized="1"
-              >
-                <i class="fa-solid fa-xmarks-3"></i>
-              </button>
-              <button
-                class="btn btn-sm btn-icon btn-active-light-primary me-1"
-                type="button"
-                data-bs-toggle="tooltip"
-                aria-label="Coming soon"
-                data-bs-original-title="Coming soon"
-                data-kt-initialized="1"
-              >
-                <i class="fa-solid fa-xmark-3"
-                  ><span class="path1"></span><span class="path2"></span
-                ></i>
-              </button>
-            </div>
-            <!--end::Actions-->
-
-            <!--begin::Send-->
-            <button
-              class="btn btn-primary"
-              type="button"
-              data-kt-element="send"
-            >
-              Send
-            </button>
-            <!--end::Send-->
-          </div>
-          <!--end::Toolbar-->
-        </div>
-        <!--end::Card footer-->
-      </div>
-      <!--end::Messenger-->
-    </div>
-
     <script>
       var hostUrl = "assets/";
     </script>
@@ -5276,26 +3954,13 @@
     <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+
+    <script src="assets/js/custom/apps/projects/project/project.js"></script>
+    <script src="assets/js/custom/utilities/modals/new-target.js"></script>
+
     <script
       src="https://kit.fontawesome.com/69b7156a94.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(".data_table").DataTable({
-        language: {
-          lengthMenu: "Show _MENU_",
-        },
-        dom:
-          "<'row mb-2'" +
-          "<'col-sm-6 d-flex align-items-center justify-conten-start dt-toolbar'l>" +
-          "<'col-sm-6 d-flex align-items-center justify-content-end dt-toolbar'f>" +
-          ">" +
-          "<'table-responsive'tr>" +
-          "<'row'" +
-          "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" +
-          "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" +
-          ">",
-      });
-    </script>
   </body>
 </html>
