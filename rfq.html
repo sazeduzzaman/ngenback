@@ -49,6 +49,25 @@
       type="text/css"
     />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
+      .container {
+        margin: 20px;
+      }
+      .default-div,
+      .hidden-div {
+        padding: 20px;
+      }
+      .rfq-tabs {
+        position: relative;
+        top: 18px !important;
+      }
+    </style>
   </head>
 
   <body
@@ -752,7 +771,7 @@
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
-                        <span class="menu-title">Configuration</span>
+                        <span class="menu-title">Accounts Overview</span>
                       </a>
                     </div>
                   </div>
@@ -869,7 +888,7 @@
               </div>
               <!-- welcome  -->
               <div class="pt-5">
-                <h3 class="mb-0">Task & Projects Dashboard</h3>
+                <h3 class="mb-0">Mange Your RFQ</h3>
               </div>
 
               <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
@@ -2625,95 +2644,257 @@
               >
                 <!-- Main Content Start -->
                 <div class="row gx-8 gx-xl-10">
-                  <div class="col-xl-4">
-                    <div class="card card-flush h-lg-100 shadow-sm">
-                      <div class="card-header mt-6">
-                        <div class="card-title flex-column">
-                          <h3 class="fw-bold mb-1">Tasks Summary</h3>
-
-                          <div class="fs-6 fw-semibold text-gray-500">
-                            24 Overdue Tasks
-                          </div>
-                        </div>
-
-                        <div class="card-toolbar">
-                          <a href="#" class="btn btn-light btn-sm"
-                            >View Tasks</a
+                  <div class="row mb-5">
+                    <!-- Attendance -->
+                    <div class="col-xl-3">
+                      <div class="card card-flush shadow-sm">
+                        <div class="card-body p-0">
+                          <div
+                            class="d-flex flex-stack justify-content-between align-items-center"
                           >
+                            <div
+                              class="d-flex align-items-center me-3 p-8 rounded-3"
+                            >
+                              <a href="">
+                                <span
+                                  class="bg-light-primary rounded-3 p-3 me-3"
+                                  ><i
+                                    class="fa-solid text-primary fa-clipboard-user fs-3"
+                                    aria-hidden="true"
+                                  ></i
+                                ></span>
+                              </a>
+                              <div class="flex-grow-1">
+                                <a href=""> </a
+                                ><a
+                                  href="#"
+                                  class="text-gray-800 fs-5 fw-bold lh-0"
+                                  >Total RFQ
+                                  <span
+                                    class="text-gray-500 fw-semibold d-block fs-6 pt-4"
+                                    >03 Aug 2024</span
+                                  >
+                                </a>
+                              </div>
+                            </div>
+
+                            <div
+                              class="d-flex flex-column align-items-center pe-4"
+                            >
+                              <span class="main_text_color fw-bold fs-1 pe-4">
+                                10
+                              </span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-
-                      <div class="card-body p-9 pt-5">
-                        <div class="d-flex flex-wrap">
+                    </div>
+                    <div class="col-xl-3">
+                      <div class="card card-flush shadow-sm">
+                        <div class="card-body p-0">
                           <div
-                            class="position-relative d-flex flex-center h-175px w-175px me-15 mb-7"
+                            class="d-flex flex-stack justify-content-between"
                           >
                             <div
-                              class="position-absolute translate-middle start-50 top-50 d-flex flex-column flex-center"
+                              class="d-flex align-items-center me-3 p-8 w-50 rounded-3"
                             >
-                              <span class="fs-2qx fw-bold">237</span>
-                              <span class="fs-6 fw-semibold text-gray-500"
-                                >Total Tasks</span
+                              <a href="">
+                                <span
+                                  class="bg-light-primary rounded-3 p-3 me-3"
+                                  ><i
+                                    class="fa-solid text-primary fa-list-check fs-3"
+                                    aria-hidden="true"
+                                  ></i
+                                ></span>
+                              </a>
+                              <div class="flex-grow-1">
+                                <a href=""> </a
+                                ><a
+                                  href="#"
+                                  class="text-gray-800 fs-5 fw-bold lh-0"
+                                  >RFQ
+                                  <span
+                                    class="text-gray-500 fw-semibold d-block fs-6 pt-4"
+                                    >Status</span
+                                  >
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="flex-column d-flex w-50">
+                              <div
+                                class="d-flex align-items-center justify-content-between pe-3"
                               >
-                            </div>
-
-                            <canvas id="project_overview_chart"></canvas>
-                          </div>
-
-                          <div
-                            class="d-flex flex-column justify-content-center flex-row-fluid pe-11 mb-5"
-                          >
-                            <div
-                              class="d-flex fs-6 fw-semibold align-items-center mb-3"
-                            >
-                              <div class="bullet bg-primary me-3"></div>
-                              <div class="text-gray-500">Active</div>
-                              <div class="ms-auto fw-bold text-gray-700">
-                                30
+                                <span class="text-gray-500 fw-semibold">
+                                  Pending</span
+                                >
+                                <span
+                                  class="bg-primary fw-semibold ms-3 px-2 text-white rounded-2"
+                                >
+                                  5
+                                </span>
                               </div>
-                            </div>
-
-                            <div
-                              class="d-flex fs-6 fw-semibold align-items-center mb-3"
-                            >
-                              <div class="bullet bg-success me-3"></div>
-                              <div class="text-gray-500">Completed</div>
-                              <div class="ms-auto fw-bold text-gray-700">
-                                45
+                              <div
+                                class="d-flex align-items-center justify-content-between pe-3 pt-2"
+                              >
+                                <span class="text-gray-500 fw-semibold">
+                                  Quoted
+                                </span>
+                                <span
+                                  class="bg-primary fw-semibold ms-3 px-2 text-white rounded-2"
+                                >
+                                  5
+                                </span>
                               </div>
-                            </div>
-
-                            <div
-                              class="d-flex fs-6 fw-semibold align-items-center mb-3"
-                            >
-                              <div class="bullet bg-danger me-3"></div>
-                              <div class="text-gray-500">Overdue</div>
-                              <div class="ms-auto fw-bold text-gray-700">0</div>
-                            </div>
-
-                            <div
-                              class="d-flex fs-6 fw-semibold align-items-center"
-                            >
-                              <div class="bullet bg-gray-300 me-3"></div>
-                              <div class="text-gray-500">Yet to start</div>
-                              <div class="ms-auto fw-bold text-gray-700">
-                                25
+                              <div
+                                class="d-flex align-items-center justify-content-between pe-3 pt-2"
+                              >
+                                <span class="text-gray-500 fw-semibold">
+                                  Failed
+                                </span>
+                                <span
+                                  class="bg-primary fw-semibold ms-3 px-2 text-white rounded-2"
+                                >
+                                  5
+                                </span>
                               </div>
                             </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                      <div class="card card-flush shadow-sm">
+                        <div class="card-body p-0">
+                          <div
+                            class="d-flex flex-stack justify-content-between"
+                          >
+                            <div
+                              class="d-flex align-items-center me-3 p-8 w-50 rounded-3"
+                            >
+                              <a href="">
+                                <span
+                                  class="bg-light-primary rounded-3 p-3 me-3"
+                                  ><i
+                                    class="fa-solid text-primary fa-bell fs-3"
+                                    aria-hidden="true"
+                                  ></i
+                                ></span>
+                              </a>
+                              <div class="flex-grow-1">
+                                <a href=""> </a
+                                ><a
+                                  href="#"
+                                  class="text-gray-800 fs-5 fw-bold lh-0"
+                                  >Notification
+                                  <span
+                                    class="text-gray-500 fw-semibold d-block fs-6 pt-4"
+                                    >Quick Status</span
+                                  >
+                                </a>
+                              </div>
+                            </div>
 
-                        <div
-                          class="notice d-flex bg-light-primary rounded border-primary border border-dashed p-6"
-                        >
-                          <div class="d-flex flex-stack flex-grow-1">
-                            <div class="fw-semibold">
-                              <div class="fs-6 text-gray-700">
-                                <a href="#" class="fw-bold me-1"
-                                  >Invite New .NET Collaborators</a
+                            <div class="flex-column d-flex w-50">
+                              <div
+                                class="d-flex align-items-center justify-content-between pe-3"
+                              >
+                                <span class="text-gray-500 fw-semibold">
+                                  Deals</span
                                 >
-                                to create great outstanding business to business
-                                .jsp modutr class scripts
+                                <span
+                                  class="fw-semibold ms-3 px-2 text-primary rounded-2"
+                                >
+                                  5
+                                </span>
+                              </div>
+                              <div
+                                class="d-flex align-items-center justify-content-between pe-3 pt-2"
+                              >
+                                <span class="text-gray-500 fw-semibold">
+                                  Bypass</span
+                                >
+                                <span
+                                  class="fw-semibold ms-3 px-2 text-primary rounded-2"
+                                >
+                                  5
+                                </span>
+                              </div>
+                              <div
+                                class="d-flex align-items-center justify-content-between pe-3 pt-2"
+                              >
+                                <span class="text-gray-500 fw-semibold">
+                                  Others</span
+                                >
+                                <span
+                                  class="fw-semibold ms-3 px-2 text-primary rounded-2"
+                                >
+                                  5
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                      <div class="card card-flush shadow-sm">
+                        <div class="card-body p-0">
+                          <div
+                            class="d-flex flex-stack justify-content-between"
+                          >
+                            <div
+                              class="d-flex align-items-center me-3 p-8 w-50 rounded-3"
+                            >
+                              <a href="">
+                                <span
+                                  class="bg-light-primary rounded-3 p-3 me-3"
+                                  ><i
+                                    class="fa-solid text-primary fa-bullseye fs-3"
+                                    aria-hidden="true"
+                                  ></i
+                                ></span>
+                              </a>
+                              <div class="flex-grow-1">
+                                <a href=""> </a
+                                ><a
+                                  href="#"
+                                  class="text-gray-800 fs-5 fw-bold lh-0"
+                                  >RFQ
+                                  <span
+                                    class="text-gray-500 fw-semibold d-block fs-6 pt-4"
+                                    >Query</span
+                                  >
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="flex-column d-flex w-50 me-3">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <select
+                                  class="form-select form-select-sm"
+                                  data-control="select2"
+                                  data-placeholder="Select an option"
+                                >
+                                  <option>Select Country</option>
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                </select>
+                              </div>
+                              <div
+                                class="d-flex align-items-center justify-content-between pt-2"
+                              >
+                                <select
+                                  class="form-select form-select-sm"
+                                  data-control="select2"
+                                  data-placeholder="Select an option"
+                                >
+                                  <option>Select Sales Man</option>
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                </select>
                               </div>
                             </div>
                           </div>
@@ -2721,1765 +2902,542 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="col-xl-8">
-                    <div class="card card-flush h-md-100 shadow-sm">
-                      <div class="card-header pt-7">
+                  <div
+                    class="col-xl-12 mb-5 mb-xl-3 ps-3"
+                    data-select2-id="select2-data-127-jigx"
+                  >
+                    <div
+                      class="card card-flush h-xl-100 border"
+                      data-select2-id="select2-data-126-8c2i"
+                    >
+                      <div class="card-header">
                         <h3 class="card-title align-items-start flex-column">
                           <span class="card-label fw-bold text-gray-800"
-                            >Projects Stats</span
+                            >RFQ Filtered Details</span
+                          >
+                          <span class="text-gray-500 mt-1 fw-semibold fs-6"
+                            >Check All RFQ History Here!</span
                           >
                         </h3>
                         <div class="card-toolbar">
-                          <a
-                            href="https://preview.keenthemes.com/metronic8/demo1/apps/ecommerce/catalog/add-product.html"
-                            class="btn btn-sm btn-light"
-                            >History</a
-                          >
-                        </div>
-                      </div>
-                      <div class="card-body pt-6">
-                        <div class="table-responsive">
-                          <table
-                            class="table table-row-dashed align-middle gs-0 gy-3 my-0"
-                          >
-                            <thead>
-                              <tr
-                                class="fs-7 fw-bold text-gray-500 border-bottom-0"
+                          <ul class="nav nav-tabs nav-line-tabs fs-6 rfq-tabs">
+                            <li class="nav-item">
+                              <a
+                                class="nav-link active px-4"
+                                data-bs-toggle="tab"
+                                href="#kt_tab_pane_1"
+                                >Pending</a
                               >
-                                <th class="p-0 pb-3 text-start">
-                                  ITEM
-                                </th>
-                                <th class="p-0 pb-3 text-end">
-                                  PROGRESS
-                                </th>
-                                <th class="p-0 pb-3 text-end pe-12">
-                                  STATUS
-                                </th>
-                                <th class="p-0 pb-3 text-end pe-7">
-                                  CHART
-                                </th>
-                                <th class="p-0 pb-3 text-end">VIEW</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="symbol symbol-50px me-3">
-                                      <img
-                                        src="https://preview.keenthemes.com/metronic8/demo1/assets/media/stock/600x600/img-49.jpg"
-                                        class=""
-                                        alt=""
-                                      />
-                                    </div>
-                                    <div
-                                      class="d-flex justify-content-start flex-column"
-                                    >
-                                      <a
-                                        href="#"
-                                        class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6"
-                                        >Mivy App</a
-                                      >
-                                      <span
-                                        class="text-gray-500 fw-semibold d-block fs-7"
-                                        >Jane Cooper</span
-                                      >
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="text-end pe-0">
-                                  <span
-                                    class="badge badge-light-success fs-base"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-up-long fs-5 text-success ms-n1"
-                                      ></i>
-                                    9.2%
-                                  </span>
-                                </td>
-                                <td class="text-end pe-12">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-primary"
-                                    >In Process</span
-                                  >
-                                </td>
-                                <td class="text-end pe-0">
-                                  <svg id="SvgjsSvg1277" width="92.25" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><foreignObject x="0" y="0" width="92.25" height="50"><div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml" style="max-height: 25px;"></div></foreignObject><g id="SvgjsG1316" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1279" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 1)"><defs id="SvgjsDefs1278"><clipPath id="gridRectMaskvnz7l0am"><rect id="SvgjsRect1282" width="98.25" height="54" x="-3" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskvnz7l0am"></clipPath><clipPath id="nonForecastMaskvnz7l0am"></clipPath><clipPath id="gridRectMarkerMaskvnz7l0am"><rect id="SvgjsRect1283" width="96.25" height="52" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1290" class="apexcharts-grid"><g id="SvgjsG1291" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1294" x1="0" y1="0" x2="92.25" y2="0" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1295" x1="0" y1="48" x2="92.25" y2="48" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1292" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1297" x1="0" y1="48" x2="92.25" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1296" x1="0" y1="1" x2="0" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1293" class="apexcharts-grid-borders" style="display: none;"></g><g id="SvgjsG1284" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1285" class="apexcharts-series" zIndex="0" seriesName="NetxProfit" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1288" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" fill="rgba(255,255,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48 L 0 48"></path><path id="SvgjsPath1289" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" fill="none" fill-opacity="1" stroke="#17c653" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48" fill-rule="evenodd"></path><g id="SvgjsG1286" class="apexcharts-series-markers-wrap apexcharts-hidden-element-shown" data:realIndex="0"></g></g><g id="SvgjsG1287" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1298" x1="0" y1="0" x2="92.25" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1299" x1="0" y1="0" x2="92.25" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1300" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1301" class="apexcharts-xaxis-texts-g" transform="translate(0, 4)"></g></g><g id="SvgjsG1317" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1318" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1319" class="apexcharts-point-annotations"></g></g></svg>
-                                </td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-right-long fs-6 text-gray-500"
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="symbol symbol-50px me-3">
-                                      <img
-                                        src="https://preview.keenthemes.com/metronic8/demo1/assets/media/stock/600x600/img-40.jpg"
-                                        class=""
-                                        alt=""
-                                      />
-                                    </div>
-                                    <div
-                                      class="d-flex justify-content-start flex-column"
-                                    >
-                                      <a
-                                        href="#"
-                                        class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6"
-                                        >Avionica</a
-                                      >
-                                      <span
-                                        class="text-gray-500 fw-semibold d-block fs-7"
-                                        >Esther Howard</span
-                                      >
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="text-end pe-0">
-                                  <span
-                                    class="badge badge-light-danger fs-base"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-down-long fs-5 text-danger ms-n1"
-                                      ></i>
-                                    0.4%
-                                  </span>
-                                </td>
-                                <td class="text-end pe-12">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-warning"
-                                    >On Hold</span
-                                  >
-                                </td>
-                                <td class="text-end pe-0">
-                                  <svg id="SvgjsSvg1277" width="92.25" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><foreignObject x="0" y="0" width="92.25" height="50"><div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml" style="max-height: 25px;"></div></foreignObject><g id="SvgjsG1316" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1279" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 1)"><defs id="SvgjsDefs1278"><clipPath id="gridRectMaskvnz7l0am"><rect id="SvgjsRect1282" width="98.25" height="54" x="-3" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskvnz7l0am"></clipPath><clipPath id="nonForecastMaskvnz7l0am"></clipPath><clipPath id="gridRectMarkerMaskvnz7l0am"><rect id="SvgjsRect1283" width="96.25" height="52" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1290" class="apexcharts-grid"><g id="SvgjsG1291" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1294" x1="0" y1="0" x2="92.25" y2="0" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1295" x1="0" y1="48" x2="92.25" y2="48" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1292" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1297" x1="0" y1="48" x2="92.25" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1296" x1="0" y1="1" x2="0" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1293" class="apexcharts-grid-borders" style="display: none;"></g><g id="SvgjsG1284" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1285" class="apexcharts-series" zIndex="0" seriesName="NetxProfit" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1288" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" fill="rgba(255,255,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48 L 0 48"></path><path id="SvgjsPath1289" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" fill="none" fill-opacity="1" stroke="#17c653" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48" fill-rule="evenodd"></path><g id="SvgjsG1286" class="apexcharts-series-markers-wrap apexcharts-hidden-element-shown" data:realIndex="0"></g></g><g id="SvgjsG1287" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1298" x1="0" y1="0" x2="92.25" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1299" x1="0" y1="0" x2="92.25" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1300" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1301" class="apexcharts-xaxis-texts-g" transform="translate(0, 4)"></g></g><g id="SvgjsG1317" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1318" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1319" class="apexcharts-point-annotations"></g></g></svg>
-                                </td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-right-long fs-6 text-gray-500"
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="symbol symbol-50px me-3">
-                                      <img
-                                        src="https://preview.keenthemes.com/metronic8/demo1/assets/media/stock/600x600/img-39.jpg"
-                                        class=""
-                                        alt=""
-                                      />
-                                    </div>
-                                    <div
-                                      class="d-flex justify-content-start flex-column"
-                                    >
-                                      <a
-                                        href="#"
-                                        class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6"
-                                        >Charto CRM</a
-                                      >
-                                      <span
-                                        class="text-gray-500 fw-semibold d-block fs-7"
-                                        >Jenny Wilson</span
-                                      >
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="text-end pe-0">
-                                  <span
-                                    class="badge badge-light-success fs-base"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-up-long fs-5 text-success ms-n1"
-                                      ></i>
-                                    9.2%
-                                  </span>
-                                </td>
-                                <td class="text-end pe-12">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-primary"
-                                    >In Process</span
-                                  >
-                                </td>
-                                <td class="text-end pe-0">
-                                  <svg id="SvgjsSvg1277" width="92.25" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><foreignObject x="0" y="0" width="92.25" height="50"><div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml" style="max-height: 25px;"></div></foreignObject><g id="SvgjsG1316" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1279" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 1)"><defs id="SvgjsDefs1278"><clipPath id="gridRectMaskvnz7l0am"><rect id="SvgjsRect1282" width="98.25" height="54" x="-3" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskvnz7l0am"></clipPath><clipPath id="nonForecastMaskvnz7l0am"></clipPath><clipPath id="gridRectMarkerMaskvnz7l0am"><rect id="SvgjsRect1283" width="96.25" height="52" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1290" class="apexcharts-grid"><g id="SvgjsG1291" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1294" x1="0" y1="0" x2="92.25" y2="0" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1295" x1="0" y1="48" x2="92.25" y2="48" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1292" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1297" x1="0" y1="48" x2="92.25" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1296" x1="0" y1="1" x2="0" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1293" class="apexcharts-grid-borders" style="display: none;"></g><g id="SvgjsG1284" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1285" class="apexcharts-series" zIndex="0" seriesName="NetxProfit" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1288" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" fill="rgba(255,255,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48 L 0 48"></path><path id="SvgjsPath1289" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" fill="none" fill-opacity="1" stroke="#17c653" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48" fill-rule="evenodd"></path><g id="SvgjsG1286" class="apexcharts-series-markers-wrap apexcharts-hidden-element-shown" data:realIndex="0"></g></g><g id="SvgjsG1287" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1298" x1="0" y1="0" x2="92.25" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1299" x1="0" y1="0" x2="92.25" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1300" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1301" class="apexcharts-xaxis-texts-g" transform="translate(0, 4)"></g></g><g id="SvgjsG1317" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1318" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1319" class="apexcharts-point-annotations"></g></g></svg>
-                                </td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-right-long fs-6 text-gray-500"
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="symbol symbol-50px me-3">
-                                      <img
-                                        src="https://preview.keenthemes.com/metronic8/demo1/assets/media/stock/600x600/img-47.jpg"
-                                        class=""
-                                        alt=""
-                                      />
-                                    </div>
-                                    <div
-                                      class="d-flex justify-content-start flex-column"
-                                    >
-                                      <a
-                                        href="#"
-                                        class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6"
-                                        >Tower Hill</a
-                                      >
-                                      <span
-                                        class="text-gray-500 fw-semibold d-block fs-7"
-                                        >Cody Fisher</span
-                                      >
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="text-end pe-0">
-                                  <span
-                                    class="badge badge-light-success fs-base"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-up-long fs-5 text-success ms-n1"
-                                      ></i>
-                                    9.2%
-                                  </span>
-                                </td>
-                                <td class="text-end pe-12">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-success"
-                                    >Complated</span
-                                  >
-                                </td>
-                                <td class="text-end pe-0">
-                                  <svg id="SvgjsSvg1277" width="92.25" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><foreignObject x="0" y="0" width="92.25" height="50"><div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml" style="max-height: 25px;"></div></foreignObject><g id="SvgjsG1316" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1279" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 1)"><defs id="SvgjsDefs1278"><clipPath id="gridRectMaskvnz7l0am"><rect id="SvgjsRect1282" width="98.25" height="54" x="-3" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskvnz7l0am"></clipPath><clipPath id="nonForecastMaskvnz7l0am"></clipPath><clipPath id="gridRectMarkerMaskvnz7l0am"><rect id="SvgjsRect1283" width="96.25" height="52" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1290" class="apexcharts-grid"><g id="SvgjsG1291" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1294" x1="0" y1="0" x2="92.25" y2="0" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1295" x1="0" y1="48" x2="92.25" y2="48" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1292" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1297" x1="0" y1="48" x2="92.25" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1296" x1="0" y1="1" x2="0" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1293" class="apexcharts-grid-borders" style="display: none;"></g><g id="SvgjsG1284" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1285" class="apexcharts-series" zIndex="0" seriesName="NetxProfit" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1288" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" fill="rgba(255,255,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48 L 0 48"></path><path id="SvgjsPath1289" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" fill="none" fill-opacity="1" stroke="#17c653" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48" fill-rule="evenodd"></path><g id="SvgjsG1286" class="apexcharts-series-markers-wrap apexcharts-hidden-element-shown" data:realIndex="0"></g></g><g id="SvgjsG1287" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1298" x1="0" y1="0" x2="92.25" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1299" x1="0" y1="0" x2="92.25" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1300" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1301" class="apexcharts-xaxis-texts-g" transform="translate(0, 4)"></g></g><g id="SvgjsG1317" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1318" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1319" class="apexcharts-point-annotations"></g></g></svg>
-                                </td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-right-long fs-6 text-gray-500"
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="symbol symbol-50px me-3">
-                                      <img
-                                        src="https://preview.keenthemes.com/metronic8/demo1/assets/media/stock/600x600/img-48.jpg"
-                                        class=""
-                                        alt=""
-                                      />
-                                    </div>
-                                    <div
-                                      class="d-flex justify-content-start flex-column"
-                                    >
-                                      <a
-                                        href="#"
-                                        class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6"
-                                        >9 Degree</a
-                                      >
-                                      <span
-                                        class="text-gray-500 fw-semibold d-block fs-7"
-                                        >Savannah Nguyen</span
-                                      >
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="text-end pe-0">
-                                  <span
-                                    class="badge badge-light-danger fs-base"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-down-long fs-5 text-danger ms-n1"
-                                      ></i>
-                                    0.4%
-                                  </span>
-                                </td>
-                                <td class="text-end pe-12">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-primary"
-                                    >In Process</span
-                                  >
-                                </td>
-                                <td class="text-end pe-0">
-                                  <svg id="SvgjsSvg1277" width="92.25" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><foreignObject x="0" y="0" width="92.25" height="50"><div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml" style="max-height: 25px;"></div></foreignObject><g id="SvgjsG1316" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1279" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 1)"><defs id="SvgjsDefs1278"><clipPath id="gridRectMaskvnz7l0am"><rect id="SvgjsRect1282" width="98.25" height="54" x="-3" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskvnz7l0am"></clipPath><clipPath id="nonForecastMaskvnz7l0am"></clipPath><clipPath id="gridRectMarkerMaskvnz7l0am"><rect id="SvgjsRect1283" width="96.25" height="52" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1290" class="apexcharts-grid"><g id="SvgjsG1291" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1294" x1="0" y1="0" x2="92.25" y2="0" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1295" x1="0" y1="48" x2="92.25" y2="48" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1292" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1297" x1="0" y1="48" x2="92.25" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1296" x1="0" y1="1" x2="0" y2="48" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1293" class="apexcharts-grid-borders" style="display: none;"></g><g id="SvgjsG1284" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1285" class="apexcharts-series" zIndex="0" seriesName="NetxProfit" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1288" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" fill="rgba(255,255,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6C 92.25 37.6 92.25 37.6 92.25 48 L 0 48z" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48 L 0 48"></path><path id="SvgjsPath1289" d="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" fill="none" fill-opacity="1" stroke="#17c653" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskvnz7l0am)" pathTo="M 0 42.4C 2.483653846153846 42.4 4.612500000000001 40 7.096153846153847 40C 9.579807692307693 40 11.708653846153847 44 14.192307692307693 44C 16.67596153846154 44 18.804807692307694 31.2 21.28846153846154 31.2C 23.772115384615386 31.2 25.90096153846154 43.2 28.384615384615387 43.2C 30.868269230769233 43.2 32.997115384615384 39.2 35.48076923076923 39.2C 37.96442307692308 39.2 40.09326923076924 44 42.57692307692308 44C 45.06057692307692 44 47.18942307692308 29.6 49.67307692307693 29.6C 52.156730769230776 29.6 54.28557692307693 44 56.769230769230774 44C 59.252884615384616 44 61.38173076923077 39.2 63.86538461538462 39.2C 66.34903846153847 39.2 68.47788461538462 33.6 70.96153846153847 33.6C 73.44519230769231 33.6 75.57403846153846 42.4 78.0576923076923 42.4C 80.54134615384615 42.4 82.67019230769232 31.2 85.15384615384616 31.2C 87.6375 31.2 89.76634615384616 37.6 92.25 37.6" pathFrom="M 0 48 L 0 48 L 7.096153846153847 48 L 14.192307692307693 48 L 21.28846153846154 48 L 28.384615384615387 48 L 35.48076923076923 48 L 42.57692307692308 48 L 49.67307692307693 48 L 56.769230769230774 48 L 63.86538461538462 48 L 70.96153846153847 48 L 78.0576923076923 48 L 85.15384615384616 48 L 92.25 48" fill-rule="evenodd"></path><g id="SvgjsG1286" class="apexcharts-series-markers-wrap apexcharts-hidden-element-shown" data:realIndex="0"></g></g><g id="SvgjsG1287" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1298" x1="0" y1="0" x2="92.25" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1299" x1="0" y1="0" x2="92.25" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1300" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1301" class="apexcharts-xaxis-texts-g" transform="translate(0, 4)"></g></g><g id="SvgjsG1317" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1318" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1319" class="apexcharts-point-annotations"></g></g></svg>
-                                </td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"
-                                  >
-                                    <i
-                                      class="fa-solid fa-arrow-right-long fs-6 text-gray-500"
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link px-4"
+                                data-bs-toggle="tab"
+                                href="#kt_tab_pane_2"
+                                >Quoted</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link px-4"
+                                data-bs-toggle="tab"
+                                href="#kt_tab_pane_3"
+                                >Failed</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link px-4"
+                                data-bs-toggle="tab"
+                                href="#kt_tab_pane_4"
+                                >Approved</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="card-toolbar">
+                          <div class="d-flex flex-stack flex-wrap gap-4">
+                            <div class="d-flex align-items-center fw-bold">
+                              <select
+                                class="form-select form-select-transparent text-graY-800 fs-base lh-1 fw-bold py-0 ps-3 w-auto"
+                                data-control="select2"
+                                data-hide-search="true"
+                                data-dropdown-css-class="w-150px"
+                                data-placeholder="Select an option"
+                              >
+                                <option></option>
+                                <option value="Year" selected>Year</option>
+                                <option value="a">2022</option>
+                                <option value="b">2023</option>
+                                <option value="b">2024</option>
+                                <option value="b">2025</option>
+                                <option value="b">2026</option>
+                              </select>
+                            </div>
+                            <div class="d-flex align-items-center fw-bold">
+                              <select
+                                class="form-select form-select-transparent text-gray-900 fs-7 lh-1 fw-bold py-0 ps-3 w-auto"
+                                data-control="select2"
+                                data-hide-search="true"
+                                data-dropdown-css-class="w-150px"
+                                data-placeholder="Select an option"
+                                data-kt-table-widget-4="filter_status"
+                              >
+                                <option></option>
+                                <option value="Month" selected>Month</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Confirmed">Confirmed</option>
+                                <option value="Rejected">Rejected</option>
+                                <option value="Pending">Pending</option>
+                              </select>
+                            </div>
+                            <div class="d-flex align-items-center fw-bold">
+                              <select
+                                class="form-select form-select-transparent text-gray-900 fs-7 lh-1 fw-bold py-0 ps-3 w-auto"
+                                data-control="select2"
+                                data-hide-search="true"
+                                data-dropdown-css-class="w-150px"
+                                data-placeholder="Select an option"
+                                data-kt-table-widget-4="filter_status"
+                              >
+                                <option></option>
+                                <option value="Week" selected>Week</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Confirmed">Confirmed</option>
+                                <option value="Rejected">Rejected</option>
+                                <option value="Pending">Pending</option>
+                              </select>
+                            </div>
+                            <div class="position-relative my-1">
+                              <i
+                                class="fa-solid fa-magnifying-glass fs-3 position-absolute top-50 translate-middle-y ms-4"
+                              ></i>
+                              <input
+                                type="text"
+                                data-kt-table-widget-4="search"
+                                class="form-control w-150px fs-7 ps-12"
+                                placeholder="Search"
+                              />
+                            </div>
+                            <div>
+                              <a
+                                href="javascript:void(0)"
+                                class="btn btn-sm fw-bold btn-primary"
+                                id="toggleBtn"
+                              >
+                                <i class="fa-solid fa-layer-group"></i>
+                              </a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-12 mt-8">
-                    <div class="card card-flush h-lg-100 shadow-sm">
-                      <div class="card-header mt-6">
-                        <div class="card-title flex-column">
-                          <h3 class="fw-bold mb-1">All Tasks</h3>
+                  <div id="defaultDiv" class="default-div visible col-xl-12">
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="kt_tab_pane_1"
+                        role="tabpanel"
+                      >
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <!--begin::Block-->
+                            <div class="py-5">
+                              <div
+                                class="d-flex flex-column flex-md-row rounded"
+                              >
+                                <ul
+                                  class="nav nav-tabs nav-pills flex-row border-0 flex-md-column me-5 mb-3 mb-md-0 fs-6 min-w-lg-250px"
+                                >
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 active btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_4"
+                                    >
+                                      <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <span class="fs-7">05:00pm</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_5"
+                                    >
+                                    <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                    <div class="row w-100">
+                                      <div class="col-sm-12">
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >Brothers IT</span
+                                          >
+                                          <span class="fs-7">#14568RFQ</span>
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >25 Aug 24</span
+                                          >
+                                          <span class="fs-7">05:00pm</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_6"
+                                    >
+                                    <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                    <div class="row w-100">
+                                      <div class="col-sm-12">
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >Brothers IT</span
+                                          >
+                                          <span class="fs-7">#14568RFQ</span>
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >25 Aug 24</span
+                                          >
+                                          <span class="fs-7">05:00pm</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_6"
+                                    >
+                                    <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                    <div class="row w-100">
+                                      <div class="col-sm-12">
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >Brothers IT</span
+                                          >
+                                          <span class="fs-7">#14568RFQ</span>
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >25 Aug 24</span
+                                          >
+                                          <span class="fs-7">05:00pm</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_6"
+                                    >
+                                    <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                    <div class="row w-100">
+                                      <div class="col-sm-12">
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >Brothers IT</span
+                                          >
+                                          <span class="fs-7">#14568RFQ</span>
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >25 Aug 24</span
+                                          >
+                                          <span class="fs-7">05:00pm</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_6"
+                                    >
+                                    <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                    <div class="row w-100">
+                                      <div class="col-sm-12">
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >Brothers IT</span
+                                          >
+                                          <span class="fs-7">#14568RFQ</span>
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >25 Aug 24</span
+                                          >
+                                          <span class="fs-7">05:00pm</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_6"
+                                    >
+                                    <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                    <div class="row w-100">
+                                      <div class="col-sm-12">
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >Brothers IT</span
+                                          >
+                                          <span class="fs-7">#14568RFQ</span>
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >25 Aug 24</span
+                                          >
+                                          <span class="fs-7">05:00pm</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_6"
+                                    >
+                                    <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
+                                    <div class="row w-100">
+                                      <div class="col-sm-12">
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >Brothers IT</span
+                                          >
+                                          <span class="fs-7">#14568RFQ</span>
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-between"
+                                        >
+                                          <span class="fs-7 fw-bold"
+                                            >25 Aug 24</span
+                                          >
+                                          <span class="fs-7">05:00pm</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                  </li>
+                                </ul>
 
-                          <div class="fs-6 text-gray-500">
-                            Total 482 participants
+                                <div class="tab-content w-100 border rounded" id="myTabContent">
+                                  <div
+                                    class="tab-pane fade show active"
+                                    id="kt_vtab_pane_4"
+                                    role="tabpanel"
+                                  >
+                                    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50vh;">
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The RFQ</h1>
+                                        <p class="w-50 mx-auto">We invite you to submit a detailed quote for the requested products/services. Please include comprehensive pricing, payment terms, delivery schedules, and any applicable discounts. Ensure that all relevant specifications, warranties, and certifications are clearly mentioned. We encourage you to provide the most competitive offer while maintaining high standards of quality and service. All quotations should be submitted by [due date]. Should you have any questions or need further clarification, feel free to reach out to us.</p>
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                      <button class="btn btn-primary"><i class="fa-regular fa-handshake pe-2"></i> Deal</button>
+                                      <button class="btn btn-primary"><i class="fa-regular fa-pen-to-square pe-2"></i>Edit</button>
+                                      <button class="btn btn-primary"><i class="fa-solid fa-expand pe-2"></i>View</button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_5"
+                                    role="tabpanel"
+                                  >
+                                    <p>Nulla est ullamco ut irure incididunt nulla
+                                      Lorem Lorem minim irure officia enim
+                                      reprehenderit. Magna duis labore cillum sint
+                                      adipisicing exercitation ipsum. Nostrud ut
+                                      anim non exercitation velit laboris fugiat
+                                      cupidatat. Commodo esse dolore fugiat sint
+                                      velit ullamco magna consequat voluptate
+                                      minim amet aliquip ipsum aute laboris nisi.
+                                      Labore labore veniam irure irure ipsum
+                                      pariatur mollit magna in cupidatat dolore
+                                      magna irure esse tempor ad mollit. Dolore
+                                      commodo nulla minim amet ipsum officia
+                                      consectetur amet ullamco voluptate nisi
+                                      commodo ea sit eu.</p>
+                                  </div>
+
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_6"
+                                    role="tabpanel"
+                                  >
+                                    <p>
+                                      Sint sit mollit irure quis est nostrud
+                                    cillum consequat Lorem esse do quis dolor
+                                    esse fugiat sunt do. Eu ex commodo veniam
+                                    Lorem aliquip laborum occaecat qui Lorem
+                                    esse mollit dolore anim cupidatat. eserunt
+                                    officia id Lorem nostrud aute id commodo
+                                    elit eiusmod enim irure amet eiusmod qui
+                                    reprehenderit nostrud tempor. Fugiat ipsum
+                                    excepteur in aliqua non et quis aliquip ad
+                                    irure in labore cillum elit enim. Consequat
+                                    aliquip incididunt ipsum et minim laborum
+                                    laborum laborum et cillum labore. Deserunt
+                                    adipisicing cillum id nulla minim nostrud
+                                    labore eiusmod et amet.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end::Block-->
                           </div>
-                        </div>
-
-                        <div class="card-toolbar">
-                          <select
-                            name="status"
-                            data-control="select2"
-                            data-hide-search="true"
-                            class="form-select form-select-solid form-select-sm fw-bold w-100px"
-                          >
-                            <option value="1" selected>Options</option>
-                            <option value="2">Option 1</option>
-                            <option value="3">Option 2</option>
-                            <option value="4">Option 3</option>
-                          </select>
                         </div>
                       </div>
-
-                      <div class="card-body p-9 pt-4">
-                        <ul
-                          class="nav nav-pills d-flex flex-nowrap hover-scroll-x py-2 border"
-                        >
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">1</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">2</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">3</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">4</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">5</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">6</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">7</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">8</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">9</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">10</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">11</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">12</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">13</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">14</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">15</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">16</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">17</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_0"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">18</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary active"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_1"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Mo</span
-                              >
-                              <span class="fs-6 fw-bold">19</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_2"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Tu</span
-                              >
-                              <span class="fs-6 fw-bold">20</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_3"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >We</span
-                              >
-                              <span class="fs-6 fw-bold">21</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_4"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Th</span
-                              >
-                              <span class="fs-6 fw-bold">22</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_5"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Fr</span
-                              >
-                              <span class="fs-6 fw-bold">23</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_6"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Sa</span
-                              >
-                              <span class="fs-6 fw-bold">24</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_7"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Su</span
-                              >
-                              <span class="fs-6 fw-bold">25</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_8"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Mo</span
-                              >
-                              <span class="fs-6 fw-bold">26</span>
-                            </a>
-                          </li>
-
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_9"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Tu</span
-                              >
-                              <span class="fs-6 fw-bold">27</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_9"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Tu</span
-                              >
-                              <span class="fs-6 fw-bold">28</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_9"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Tu</span
-                              >
-                              <span class="fs-6 fw-bold">29</span>
-                            </a>
-                          </li>
-                          <li class="nav-item me-1">
-                            <a
-                              class="nav-link btn d-flex flex-column flex-center rounded-pill min-w-45px me-2 py-4 px-3 btn-active-primary"
-                              data-bs-toggle="tab"
-                              href="#kt_schedule_day_9"
-                            >
-                              <span class="opacity-50 fs-7 fw-semibold"
-                                >Tu</span
-                              >
-                              <span class="fs-6 fw-bold">30</span>
-                            </a>
-                          </li>
-                        </ul>
-                        <div class="tab-content">
-                          <div
-                            id="kt_schedule_day_0"
-                            class="tab-pane fade show"
-                          >
-                            <div>
-                              <!-- Task Items Start -->
-                              <div
-                                class="d-flex flex-stack position-relative mt-8"
-                              >
-                                <div
-                                  class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                                ></div>
-
-                                <div class="fw-semibold ms-5 text-gray-600">
-                                  <div class="fs-5">
-                                    9:00 - 10:00
-
-                                    <span
-                                      class="fs-7 text-gray-500 text-uppercase"
-                                    >
-                                      am
-                                    </span>
-                                  </div>
-
-                                  <a
-                                    href="#"
-                                    class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                  >
-                                    Committee Review Approvals
-                                  </a>
-
-                                  <div class="text-gray-500">
-                                    Lead by <a href="#">Karina Clarke</a>
-                                  </div>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                  >View</a
-                                >
-                              </div>
-                              <!-- Task Items End -->
-                            </div>
+                      <div
+                        class="tab-pane fade"
+                        id="kt_tab_pane_2"
+                        role="tabpanel"
+                      >
+                        <div class="row">
+                          <div class="col-xl-4">List</div>
+                          <div class="col-xl-8">
+                            <h1>View</h1>
                           </div>
-
-                          <div
-                            id="kt_schedule_day_1"
-                            class="tab-pane fade show active"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  11:00 - 11:45
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Dashboard UI/UX Design Review
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Naomi Hayabusa</a>
-                                </div>
-                              </div>
-                              <div>
-                                <p>Status</p>
-                                <span class="badge bg-light-info text-warning"
-                                  >In Progress</span
-                                >
-                              </div>
-                              <div>
-                                <p>Complete</p>
-                                <span>45%</span>
-                              </div>
-                              <div>
-                                <p>Start At</p>
-                                <span>26 Aug 2024</span>
-                              </div>
-                              <div>
-                                <p>End At</p>
-                                <span>26 Aug 2024</span>
-                              </div>
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="kt_tab_pane_3"
+                        role="tabpanel"
+                      >
+                        <div class="row">
+                          <div class="col-xl-4">List</div>
+                          <div class="col-xl-8">
+                            <h1>View</h1>
                           </div>
-
-                          <div
-                            id="kt_schedule_day_2"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  16:30 - 17:30
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  9 Degree Project Estimation Meeting
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Sean Bean</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  14:30 - 15:30
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Creative Content Initiative
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Sean Bean</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  13:00 - 14:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Team Backlog Grooming Session
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Michael Walters</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-                          </div>
-
-                          <div
-                            id="kt_schedule_day_3"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  12:00 - 13:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Marketing Campaign Discussion
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Sean Bean</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  11:00 - 11:45
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Development Team Capacity Review
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Michael Walters</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  9:00 - 10:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Project Review & Testing
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Terry Robins</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-                          </div>
-
-                          <div
-                            id="kt_schedule_day_4"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  9:00 - 10:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  9 Degree Project Estimation Meeting
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Karina Clarke</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  13:00 - 14:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Creative Content Initiative
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Mark Randall</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  16:30 - 17:30
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Development Team Capacity Review
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Naomi Hayabusa</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-                          </div>
-
-                          <div
-                            id="kt_schedule_day_5"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  14:30 - 15:30
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Sales Pitch Proposal
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Caleb Donaldson</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  12:00 - 13:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Development Team Capacity Review
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">David Stevenson</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  11:00 - 11:45
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Sales Pitch Proposal
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Naomi Hayabusa</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-                          </div>
-
-                          <div
-                            id="kt_schedule_day_6"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  16:30 - 17:30
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Marketing Campaign Discussion
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Terry Robins</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  13:00 - 14:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Project Review & Testing
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Kendell Trevor</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  16:30 - 17:30
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Dashboard UI/UX Design Review
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Yannis Gloverson</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-                          </div>
-
-                          <div
-                            id="kt_schedule_day_7"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  10:00 - 11:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Sales Pitch Proposal
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Karina Clarke</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  13:00 - 14:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Lunch & Learn Catch Up
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Karina Clarke</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  12:00 - 13:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Creative Content Initiative
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Bob Harris</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-                          </div>
-
-                          <div
-                            id="kt_schedule_day_8"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  14:30 - 15:30
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Sales Pitch Proposal
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Terry Robins</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  13:00 - 14:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  9 Degree Project Estimation Meeting
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Naomi Hayabusa</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  10:00 - 11:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  9 Degree Project Estimation Meeting
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Michael Walters</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-                          </div>
-
-                          <div
-                            id="kt_schedule_day_9"
-                            class="tab-pane fade show"
-                          >
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  11:00 - 11:45
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Team Backlog Grooming Session
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Naomi Hayabusa</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  9:00 - 10:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    am
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Creative Content Initiative
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Mark Randall</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
-
-                            <div
-                              class="d-flex flex-stack position-relative mt-8"
-                            >
-                              <div
-                                class="position-absolute h-100 w-4px bg-secondary rounded top-0 start-0"
-                              ></div>
-
-                              <div class="fw-semibold ms-5 text-gray-600">
-                                <div class="fs-5">
-                                  12:00 - 13:00
-
-                                  <span
-                                    class="fs-7 text-gray-500 text-uppercase"
-                                  >
-                                    pm
-                                  </span>
-                                </div>
-
-                                <a
-                                  href="#"
-                                  class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
-                                >
-                                  Committee Review Approvals
-                                </a>
-
-                                <div class="text-gray-500">
-                                  Lead by <a href="#">Kendell Trevor</a>
-                                </div>
-                              </div>
-
-                              <a
-                                href="#"
-                                class="btn btn-bg-light btn-active-color-primary btn-sm"
-                                >View</a
-                              >
-                            </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="kt_tab_pane_4"
+                        role="tabpanel"
+                      >
+                        <div class="row">
+                          <div class="col-xl-4">List</div>
+                          <div class="col-xl-8">
+                            <h1>View</h1>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="col-xl-12 hidden-div hidden" id="hiddenDiv">
+                    <table
+                      class="data_table table table-striped table-row-bordered gy-5 gs-7 border rounded"
+                    >
+                      <thead>
+                        <tr class="fw-bold fs-6 text-gray-800 px-7">
+                          <th>Sl</th>
+                          <th>RFQ Code</th>
+                          <th>Company Name</th>
+                          <th>Client Name</th>
+                          <th>Created At</th>
+                          <th>Assign To</th>
+                          <th>Status</th>
+                          <th>Contry</th>
+                          <th>Details</th>
+                          <th>Quick View</th>
+                          <th class="text-end">
+                            Action
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="">
+                          <td>01</td>
+                          <td>#RFQ1558</td>
+                          <td>NGen It</td>
+                          <td>Robert Hue</td>
+                          <td>2024-01-06</td>
+                          <td>Akash Hossain</td>
+                          <td>Pending</td>
+                          <td>United State</td>
+                          <td>
+                            Assigned
+                          </td>
+                          <td class="text-center">
+                            
+                          </td>
+                          <td class="text-end">
+                            <a href="" class="pe-3"><i class="fa-solid fa-eye"></i></a>
+                            <a href="" class="pe-3"><i class="fa-solid fa-eye"></i></a>
+                            <a href="" class="pe-3"><i class="fa-solid fa-eye"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
                 <!-- Main Content End -->
@@ -5776,5 +4734,36 @@
       src="https://kit.fontawesome.com/69b7156a94.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(".data_table").DataTable({
+        language: {
+          lengthMenu: "Show _MENU_",
+        },
+        dom:
+          "<'row mb-2'" +
+          "<'col-sm-6 d-flex align-items-center justify-conten-start dt-toolbar'l>" +
+          "<'col-sm-6 d-flex align-items-center justify-content-end dt-toolbar'f>" +
+          ">" +
+          "<'table-responsive'tr>" +
+          "<'row'" +
+          "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" +
+          "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" +
+          ">",
+      });
+    </script>
+    <script>
+      // JavaScript for toggling div visibility
+      const toggleBtn = document.getElementById("toggleBtn");
+      const defaultDiv = document.getElementById("defaultDiv");
+      const hiddenDiv = document.getElementById("hiddenDiv");
+
+      toggleBtn.addEventListener("click", function () {
+        // Toggle visibility classes
+        defaultDiv.classList.toggle("hidden");
+        defaultDiv.classList.toggle("visible");
+        hiddenDiv.classList.toggle("hidden");
+        hiddenDiv.classList.toggle("visible");
+      });
+    </script>
   </body>
 </html>
