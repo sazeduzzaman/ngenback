@@ -67,6 +67,21 @@
         position: relative;
         top: 18px !important;
       }
+      .table td,
+      .table th,
+      .table tr {
+        border: 1px solid #eee;
+      }
+      .table > :not(:first-child) {
+        border-color: #eee;
+        border-width: 1px;
+        border-style: solid;
+      }
+      .table td:first-child,
+      .table th:first-child,
+      .table tr:first-child {
+        padding-left: 10px;
+      }
     </style>
   </head>
 
@@ -888,7 +903,7 @@
               </div>
               <!-- welcome  -->
               <div class="pt-5">
-                <h3 class="mb-0">Mange Your Salary</h3>
+                <h3 class="mb-0">Mange Your Salary Sheet</h3>
               </div>
 
               <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
@@ -2672,7 +2687,9 @@
                                   class="text-gray-800 fs-5 fw-bold lh-0"
                                   >Current Salary
                                 </a>
-                                <span class="fw-semibold badge bg-primary pe-5">
+                                <span
+                                  class="fw-semibold badge bg-primary pe-5 py-3"
+                                >
                                   14,000 Tk
                                 </span>
                               </div>
@@ -2707,43 +2724,10 @@
                                   class="text-gray-800 fs-5 fw-bold lh-0"
                                   >Employe Status
                                 </a>
-                                <span class="fw-semibold badge bg-primary pe-5">
-                                  Parmanent
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-3">
-                      <div class="card card-flush shadow-sm">
-                        <div class="card-body p-0">
-                          <div
-                            class="d-flex flex-stack justify-content-between"
-                          >
-                            <div
-                              class="d-flex align-items-center me-3 p-8 w-100 rounded-3"
-                            >
-                              <a href="javascript:void(0)">
                                 <span
-                                  class="bg-light-primary rounded-3 p-3 me-3"
-                                  ><i
-                                    class="fa-solid text-primary fa-user fs-3"
-                                    aria-hidden="true"
-                                  ></i
-                                ></span>
-                              </a>
-                              <div
-                                class="flex-grow-1 d-flex justify-content-between align-items-center"
-                              >
-                                <a
-                                  href="javascript:void(0)"
-                                  class="text-gray-800 fs-5 fw-bold lh-0"
-                                  >Employe Name
-                                </a>
-                                <span class="fw-semibold badge bg-primary">
-                                  Sazeduzzaman Saju
+                                  class="fw-semibold badge bg-primary pe-5 py-3"
+                                >
+                                  Parmanent
                                 </span>
                               </div>
                             </div>
@@ -2777,8 +2761,43 @@
                                   class="text-gray-800 fs-5 fw-bold lh-0"
                                   >Effective From
                                 </a>
-                                <span class="fw-semibold badge bg-primary">
-                                  December 01
+                                <span class="fw-semibold badge bg-primary py-3">
+                                  December 01 2023
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                      <div class="card card-flush shadow-sm">
+                        <div class="card-body p-0">
+                          <div
+                            class="d-flex flex-stack justify-content-between"
+                          >
+                            <div
+                              class="d-flex align-items-center me-3 p-8 w-100 rounded-3"
+                            >
+                              <a href="javascript:void(0)">
+                                <span
+                                  class="bg-light-primary rounded-3 p-3 me-3"
+                                  ><i
+                                    class="fa-solid text-primary fa-user fs-3"
+                                    aria-hidden="true"
+                                  ></i
+                                ></span>
+                              </a>
+                              <div
+                                class="flex-grow-1 d-flex justify-content-between align-items-center"
+                              >
+                                <a
+                                  href="javascript:void(0)"
+                                  class="text-gray-800 fs-5 fw-bold lh-0"
+                                  >Employe Name
+                                </a>
+                                <span class="fw-semibold badge bg-primary py-3">
+                                  Sazeduzzaman Saju
                                 </span>
                               </div>
                             </div>
@@ -2795,74 +2814,78 @@
                       class="card card-flush h-xl-100 border"
                       data-select2-id="select2-data-126-8c2i"
                     >
-                      <div class="card-header">
-                      
-                        <div class="card-toolbar">
-                          <ul class="nav nav-tabs nav-line-tabs fs-6 rfq-tabs ps-0">
+                      <div class="card-header ps-4">
+                        <div class="flex-column">
+                          <p class="card-label fw-bold text-primary mt-2"
+                            >Salary Filtered Details</p
+                          >
+                          <ul
+                            class="nav nav-tabs nav-line-tabs fs-6 rfq-tabs ps-0" style="margin-top: -25px;"
+                          >
                             <li class="nav-item">
                               <a
                                 class="nav-link active px-4"
                                 data-bs-toggle="tab"
-                                href="#kt_tab_pane_1"
-                                >Pending</a
+                                href="#salary"
+                                >Salary</a
                               >
                             </li>
                             <li class="nav-item">
                               <a
                                 class="nav-link px-4"
                                 data-bs-toggle="tab"
-                                href="#kt_tab_pane_2"
-                                >Quoted</a
+                                href="#bonus"
+                                >Bonus</a
                               >
                             </li>
                             <li class="nav-item">
                               <a
                                 class="nav-link px-4"
                                 data-bs-toggle="tab"
-                                href="#kt_tab_pane_3"
-                                >Failed</a
+                                href="#benifit"
+                                >Benefit</a
                               >
                             </li>
                             <li class="nav-item">
                               <a
                                 class="nav-link px-4"
                                 data-bs-toggle="tab"
-                                href="#kt_tab_pane_4"
-                                >Approved</a
+                                href="#insentive"
+                                >Incentive</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link px-4"
+                                data-bs-toggle="tab"
+                                href="#others"
+                                >Others</a
                               >
                             </li>
                           </ul>
                         </div>
-                        <h3 class="card-title align-items-start flex-column">
-                          <span class="card-label fw-bold text-gray-800"
-                            >Salary Filtered Details</span
-                          >
-                          <span class="text-gray-500 mt-1 fw-semibold fs-6"
-                            >Check All Salary History Here!</span
-                          >
-                        </h3>
                         <div class="card-toolbar">
                           <div class="d-flex flex-stack flex-wrap gap-4">
                             <div class="d-flex align-items-center fw-bold">
                               <select
-                                class="form-select form-select-transparent text-graY-800 fs-base lh-1 fw-bold py-0 ps-3 w-auto"
+                                class="form-select form-select-transparent text-graY-800 fs-base lh-1 fw-bold py-4 ps-3 w-auto border"
                                 data-control="select2"
                                 data-hide-search="true"
                                 data-dropdown-css-class="w-150px"
                                 data-placeholder="Select an option"
                               >
                                 <option></option>
-                                <option value="Year" selected>Year</option>
+                                <option value="Year">Year</option>
                                 <option value="a">2022</option>
                                 <option value="b">2023</option>
                                 <option value="b">2024</option>
                                 <option value="b">2025</option>
-                                <option value="b">2026</option>
+                                <option value="b" selected>2026</option>
                               </select>
                             </div>
                             <div class="d-flex align-items-center fw-bold">
                               <select
-                                class="form-select form-select-transparent text-gray-900 fs-7 lh-1 fw-bold py-0 ps-3 w-auto"
+                                class="form-select form-select-transparent text-gray-900 fs-7 lh-1 fw-bold py-4 ps-3 w-auto border"
                                 data-control="select2"
                                 data-hide-search="true"
                                 data-dropdown-css-class="w-150px"
@@ -2870,24 +2893,7 @@
                                 data-kt-table-widget-4="filter_status"
                               >
                                 <option></option>
-                                <option value="Month" selected>Month</option>
-                                <option value="Shipped">Shipped</option>
-                                <option value="Confirmed">Confirmed</option>
-                                <option value="Rejected">Rejected</option>
-                                <option value="Pending">Pending</option>
-                              </select>
-                            </div>
-                            <div class="d-flex align-items-center fw-bold">
-                              <select
-                                class="form-select form-select-transparent text-gray-900 fs-7 lh-1 fw-bold py-0 ps-3 w-auto"
-                                data-control="select2"
-                                data-hide-search="true"
-                                data-dropdown-css-class="w-150px"
-                                data-placeholder="Select an option"
-                                data-kt-table-widget-4="filter_status"
-                              >
-                                <option></option>
-                                <option value="Week" selected>Week</option>
+                                <option value="Month" selected>January</option>
                                 <option value="Shipped">Shipped</option>
                                 <option value="Confirmed">Confirmed</option>
                                 <option value="Rejected">Rejected</option>
@@ -2923,7 +2929,7 @@
                     <div class="tab-content" id="myTabContent">
                       <div
                         class="tab-pane fade show active"
-                        id="kt_tab_pane_1"
+                        id="salary"
                         role="tabpanel"
                       >
                         <div class="row">
@@ -2940,7 +2946,7 @@
                                     <a
                                       class="nav-link w-100 active btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_4"
+                                      href="#kt_vtab_pane_january"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -2951,7 +2957,7 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >January</span
                                             >
                                           </div>
                                         </div>
@@ -2962,7 +2968,7 @@
                                     <a
                                       class="nav-link w-100 btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_5"
+                                      href="#kt_vtab_pane_february"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -2973,7 +2979,7 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >February</span
                                             >
                                           </div>
                                         </div>
@@ -2984,7 +2990,7 @@
                                     <a
                                       class="nav-link w-100 btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_6"
+                                      href="#kt_vtab_pane_march"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -2995,7 +3001,7 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >March</span
                                             >
                                           </div>
                                         </div>
@@ -3006,7 +3012,7 @@
                                     <a
                                       class="nav-link w-100 btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_6"
+                                      href="#kt_vtab_pane_april"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -3017,7 +3023,7 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >April</span
                                             >
                                           </div>
                                         </div>
@@ -3028,7 +3034,7 @@
                                     <a
                                       class="nav-link w-100 btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_6"
+                                      href="#kt_vtab_pane_may"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -3039,7 +3045,7 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >May</span
                                             >
                                           </div>
                                         </div>
@@ -3050,7 +3056,7 @@
                                     <a
                                       class="nav-link w-100 btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_6"
+                                      href="#kt_vtab_pane_june"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -3061,7 +3067,7 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >June</span
                                             >
                                           </div>
                                         </div>
@@ -3072,7 +3078,7 @@
                                     <a
                                       class="nav-link w-100 btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_6"
+                                      href="#kt_vtab_pane_july"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -3083,7 +3089,7 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >July</span
                                             >
                                           </div>
                                         </div>
@@ -3094,7 +3100,7 @@
                                     <a
                                       class="nav-link w-100 btn btn-flex btn-active-primary border"
                                       data-bs-toggle="tab"
-                                      href="#kt_vtab_pane_6"
+                                      href="#kt_vtab_pane_august"
                                     >
                                       <i
                                         class="fa-regular fa-file fs-2 text-primary pe-3"
@@ -3105,7 +3111,617 @@
                                             class="d-flex justify-content-between"
                                           >
                                             <span class="fs-7 fw-bold"
-                                              >Brothers IT</span
+                                              >August</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_september"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >September</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_october"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >October</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_november"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >November</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_december"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >December</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+
+                                <div
+                                  class="tab-content w-100 rounded"
+                                  id="myTabContent"
+                                >
+                                  <div
+                                    class="tab-pane fade show active"
+                                    id="kt_vtab_pane_january"
+                                    role="tabpanel"
+                                  >
+                                    <div class="card shadow-sm">
+                                      <div class="card-header bg-light">
+                                        <h3 class="card-title">
+                                          Salary Sheet Of January
+                                        </h3>
+                                        <div class="card-toolbar">
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary me-2"
+                                          >
+                                            Active Facilities
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light"
+                                          >
+                                            Active Benifit
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary ms-2"
+                                          >
+                                            All Bonus
+                                          </button>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Current Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Basic</th>
+                                                    <th>Facilities</th>
+                                                    <th>Bonus</th>
+                                                    <th>HR KPI</th>
+                                                    <th>Job KPI</th>
+                                                    <th>PSI</th>
+                                                    <th>Salary</th>
+                                                    <th class="text-center">
+                                                      Total
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-warning"
+                                                    >
+                                                      Tk. 2,457.26
+                                                    </td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 1,001.26</td>
+                                                    <td
+                                                      class="bg-light-success text-center"
+                                                    >
+                                                      Tk. 1,001.26
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Recommend Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Basic</th>
+                                                    <th>Facilities</th>
+                                                    <th>Bonus</th>
+                                                    <th>HR KPI</th>
+                                                    <th>Job KPI</th>
+                                                    <th>PSI</th>
+                                                    <th>Salary</th>
+                                                    <th class="text-center">
+                                                      Total
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-warning"
+                                                    >
+                                                      Tk. 2,457.26
+                                                    </td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td>Tk. 2,457.26</td>
+                                                    <td
+                                                      class="bg-light-success text-center"
+                                                    >
+                                                      Tk. 15,457.26
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card-footer">
+                                        <p>
+                                          The salary sheet includes details such as employee names, basic salary, bonuses, deductions, net pay, and tax contributions. It ensures accurate calculations of monthly payments, allowing transparency in earnings, with clear records for payroll, benefits, and taxes.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_february"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        February
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_march"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        March
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end::Block-->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="bonus" role="tabpanel">
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <!--begin::Block-->
+                            <div class="py-5">
+                              <div
+                                class="d-flex flex-column flex-md-row rounded"
+                              >
+                                <ul
+                                  class="nav nav-tabs nav-pills flex-row border-0 flex-md-column me-5 mb-3 mb-md-0 fs-6 min-w-lg-250px"
+                                >
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 active btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_january"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >January</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_february"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >February</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_march"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >March</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_april"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >April</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_may"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >May</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_june"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >June</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_july"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >July</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_august"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >August</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_september"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >September</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_october"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >October</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_november"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >November</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_december"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >December</span
                                             >
                                           </div>
                                         </div>
@@ -3120,7 +3736,196 @@
                                 >
                                   <div
                                     class="tab-pane fade show active"
-                                    id="kt_vtab_pane_4"
+                                    id="kt_vtab_pane_january"
+                                    role="tabpanel"
+                                  >
+                                    <div class="card shadow-sm">
+                                      <div class="card-header bg-light">
+                                        <h3 class="card-title">
+                                          Bonus Sheet Of January
+                                        </h3>
+                                        <div class="card-toolbar">
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary me-2"
+                                          >
+                                            Active Facilities
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light"
+                                          >
+                                            Active Benifit
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary ms-2"
+                                          >
+                                            All Bonus
+                                          </button>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Current Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Travel Bonus</th>
+                                                    <th>Festival Bonus</th>
+                                                    <th>Entert. Bonus</th>
+                                                    <th>HR Bonus</th>
+                                                    <th>Project Bonus</th>
+                                                    <th>Year End Bonus</th>
+                                                    <th class="text-center">
+                                                      Total Bonus Ammount
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-warning"
+                                                    >
+                                                      10%
+                                                    </td>
+                                                    <td>25%</td>
+                                                    <td>5%</td>
+                                                    <td>10%</td>
+                                                    <td>10%</td>
+                                                    <td>2.5%</td>
+                                                    <td
+                                                      class="bg-light-success text-center"
+                                                    >
+                                                      5652 TK
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Recommend Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Travel Bonus</th>
+                                                    <th>Festival Bonus</th>
+                                                    <th>Entert. Bonus</th>
+                                                    <th>HR Bonus</th>
+                                                    <th>Project Bonus</th>
+                                                    <th>Year End Bonus</th>
+                                                    <th class="text-center">
+                                                      Total Bonus Ammount
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-primary"
+                                                    >
+                                                      10%
+                                                    </td>
+                                                    <td>25%</td>
+                                                    <td>5%</td>
+                                                    <td>10%</td>
+                                                    <td>10%</td>
+                                                    <td>2.5%</td>
+                                                    <td
+                                                      class="bg-light-primary text-center"
+                                                    >
+                                                      5652 TK
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card-footer">
+                                        <p>
+                                          The salary sheet includes details such as employee names, basic salary, bonuses, deductions, net pay, and tax contributions. It ensures accurate calculations of monthly payments, allowing transparency in earnings, with clear records for payroll, benefits, and taxes.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_february"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        February
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_march"
                                     role="tabpanel"
                                   >
                                     <div
@@ -3129,24 +3934,1371 @@
                                     >
                                       <div class="text-center pb-5">
                                         <h1 class="pb-5">View The Salary</h1>
-                                        <p class="w-50 mx-auto">
-                                          We invite you to submit a detailed
-                                          quote for the requested
-                                          products/services. Please include
-                                          comprehensive pricing, payment terms,
-                                          delivery schedules, and any applicable
-                                          discounts. Ensure that all relevant
-                                          specifications, warranties, and
-                                          certifications are clearly mentioned.
-                                          We encourage you to provide the most
-                                          competitive offer while maintaining
-                                          high standards of quality and service.
-                                          All quotations should be submitted by
-                                          [due date]. Should you have any
-                                          questions or need further
-                                          clarification, feel free to reach out
-                                          to us.
+                                        March
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end::Block-->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="insentive" role="tabpanel">
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <!--begin::Block-->
+                            <div class="py-5">
+                              <div
+                                class="d-flex flex-column flex-md-row rounded"
+                              >
+                                <ul
+                                  class="nav nav-tabs nav-pills flex-row border-0 flex-md-column me-5 mb-3 mb-md-0 fs-6 min-w-lg-250px"
+                                >
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 active btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_january"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >January</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_february"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >February</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_march"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >March</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_april"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >April</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_may"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >May</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_june"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >June</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_july"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >July</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_august"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >August</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_september"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >September</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_october"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >October</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_november"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >November</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_december"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >December</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+
+                                <div
+                                  class="tab-content w-100 border rounded"
+                                  id="myTabContent"
+                                >
+                                  <div
+                                    class="tab-pane fade show active"
+                                    id="kt_vtab_pane_january"
+                                    role="tabpanel"
+                                  >
+                                    <div class="card shadow-sm">
+                                      <div class="card-header bg-light">
+                                        <h3 class="card-title">
+                                          Incentive Sheet Of January
+                                        </h3>
+                                        <div class="card-toolbar">
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary me-2"
+                                          >
+                                            Active Facilities
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light"
+                                          >
+                                            Active Benifit
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary ms-2"
+                                          >
+                                            All Bonus
+                                          </button>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Current Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Score</th>
+                                                    <th>Weight</th>
+                                                    <th>Job KPI</th>
+                                                    <th>HR KPI</th>
+                                                    <th>PSI</th>
+                                                    <th>Management</th>
+                                                    <th class="text-center">
+                                                      Total Incentive Ammount
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-warning"
+                                                    >
+                                                      68%
+                                                    </td>
+                                                    <td>89%</td>
+                                                    <td>64%</td>
+                                                    <td>70%</td>
+                                                    <td>67%</td>
+                                                    <td>72%</td>
+                                                    <td
+                                                      class="bg-light-success text-center"
+                                                    >
+                                                      22.02%
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Recommend Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Score</th>
+                                                    <th>Weight</th>
+                                                    <th>Job KPI</th>
+                                                    <th>HR KPI</th>
+                                                    <th>PSI</th>
+                                                    <th>Management</th>
+                                                    <th class="text-center">
+                                                      Total Incentive Ammount
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-warning"
+                                                    >
+                                                      68%
+                                                    </td>
+                                                    <td>89%</td>
+                                                    <td>64%</td>
+                                                    <td>70%</td>
+                                                    <td>67%</td>
+                                                    <td>72%</td>
+                                                    <td
+                                                      class="bg-light-success text-center"
+                                                    >
+                                                      22.02%
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card-footer">
+                                        <p>
+                                          The salary sheet includes details such as employee names, basic salary, bonuses, deductions, net pay, and tax contributions. It ensures accurate calculations of monthly payments, allowing transparency in earnings, with clear records for payroll, benefits, and taxes.
                                         </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_february"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        February
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_march"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        March
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end::Block-->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="benifit" role="tabpanel">
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <!--begin::Block-->
+                            <div class="py-5">
+                              <div
+                                class="d-flex flex-column flex-md-row rounded"
+                              >
+                                <ul
+                                  class="nav nav-tabs nav-pills flex-row border-0 flex-md-column me-5 mb-3 mb-md-0 fs-6 min-w-lg-250px"
+                                >
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 active btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_january"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >January</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_february"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >February</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_march"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >March</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_april"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >April</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_may"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >May</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_june"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >June</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_july"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >July</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_august"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >August</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_september"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >September</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_october"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >October</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_november"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >November</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_december"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >December</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+
+                                <div
+                                  class="tab-content w-100 border rounded"
+                                  id="myTabContent"
+                                >
+                                  <div
+                                    class="tab-pane fade show active"
+                                    id="kt_vtab_pane_january"
+                                    role="tabpanel"
+                                  >
+                                    <div class="card shadow-sm">
+                                      <div class="card-header bg-light">
+                                        <h3 class="card-title">
+                                          Benefit Sheet Of January
+                                        </h3>
+                                        <div class="card-toolbar">
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary me-2"
+                                          >
+                                            Active Facilities
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light"
+                                          >
+                                            Active Benifit
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="btn btn-sm btn-light-primary ms-2"
+                                          >
+                                            All Bonus
+                                          </button>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Current Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Lunch / Meal</th>
+                                                    <th>Mkt. Conv. Bill</th>
+                                                    <th>Mobile Bill</th>
+                                                    <th>*Provid. Fund</th>
+                                                    <th>*Gratuity</th>
+                                                    <th>H. Incentive</th>
+                                                    <th class="text-center">
+                                                      Total Benefits Ammount
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-warning"
+                                                    >
+                                                      8%
+                                                    </td>
+                                                    <td>0%</td>
+                                                    <td>16.6%</td>
+                                                    <td>5%</td>
+                                                    <td>2.05%</td>
+                                                    <td>10%</td>
+                                                    <td
+                                                      class="bg-light-success text-center"
+                                                    >
+                                                      22.02%
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-center align-items-center px-3"
+                                          >
+                                            <div>
+                                              <h3 class="text-center pt-3">
+                                                Recommend Value
+                                              </h3>
+                                              <p class="text-center">
+                                                Check The Sheet
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <div class="table-responsive px-3">
+                                              <table
+                                                class="table table-bordered"
+                                              >
+                                                <thead>
+                                                  <tr
+                                                    class="fw-bold fs-6 bg-primary text-white"
+                                                  >
+                                                    <th>Lunch / Meal</th>
+                                                    <th>Mkt. Conv. Bill</th>
+                                                    <th>Mobile Bill</th>
+                                                    <th>*Provid. Fund</th>
+                                                    <th>*Gratuity</th>
+                                                    <th>H. Incentive</th>
+                                                    <th class="text-center">
+                                                      Total Benefits Ammount
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      class="bg-light-warning"
+                                                    >
+                                                      8%
+                                                    </td>
+                                                    <td>0%</td>
+                                                    <td>16.6%</td>
+                                                    <td>5%</td>
+                                                    <td>2.05%</td>
+                                                    <td>10%</td>
+                                                    <td
+                                                      class="bg-light-success text-center"
+                                                    >
+                                                      22.02%
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card-footer">
+                                        <p>
+                                          The salary sheet includes details such as employee names, basic salary, bonuses, deductions, net pay, and tax contributions. It ensures accurate calculations of monthly payments, allowing transparency in earnings, with clear records for payroll, benefits, and taxes.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_february"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        February
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="tab-pane fade"
+                                    id="kt_vtab_pane_march"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        March
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end::Block-->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="others" role="tabpanel">
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <!--begin::Block-->
+                            <div class="py-5">
+                              <div
+                                class="d-flex flex-column flex-md-row rounded"
+                              >
+                                <ul
+                                  class="nav nav-tabs nav-pills flex-row border-0 flex-md-column me-5 mb-3 mb-md-0 fs-6 min-w-lg-250px"
+                                >
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 active btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_january"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >January</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 me-0 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_february"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >February</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_march"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >March</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_april"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >April</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_may"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >May</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_june"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >June</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_july"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >July</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_august"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >August</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_september"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >September</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_october"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >October</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_november"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >November</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item w-100 mb-md-2">
+                                    <a
+                                      class="nav-link w-100 btn btn-flex btn-active-primary border"
+                                      data-bs-toggle="tab"
+                                      href="#kt_vtab_pane_december"
+                                    >
+                                      <i
+                                        class="fa-regular fa-file fs-2 text-primary pe-3"
+                                      ></i>
+                                      <div class="row w-100">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between"
+                                          >
+                                            <span class="fs-7 fw-bold"
+                                              >December</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+
+                                <div
+                                  class="tab-content w-100 border rounded"
+                                  id="myTabContent"
+                                >
+                                  <div
+                                    class="tab-pane fade show active"
+                                    id="kt_vtab_pane_january"
+                                    role="tabpanel"
+                                  >
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        January
                                       </div>
                                       <div>
                                         <button class="btn btn-primary me-2">
@@ -3177,90 +5329,86 @@
 
                                   <div
                                     class="tab-pane fade"
-                                    id="kt_vtab_pane_5"
+                                    id="kt_vtab_pane_february"
                                     role="tabpanel"
                                   >
-                                    <p>
-                                      Nulla est ullamco ut irure incididunt
-                                      nulla Lorem Lorem minim irure officia enim
-                                      reprehenderit. Magna duis labore cillum
-                                      sint adipisicing exercitation ipsum.
-                                      Nostrud ut anim non exercitation velit
-                                      laboris fugiat cupidatat. Commodo esse
-                                      dolore fugiat sint velit ullamco magna
-                                      consequat voluptate minim amet aliquip
-                                      ipsum aute laboris nisi. Labore labore
-                                      veniam irure irure ipsum pariatur mollit
-                                      magna in cupidatat dolore magna irure esse
-                                      tempor ad mollit. Dolore commodo nulla
-                                      minim amet ipsum officia consectetur amet
-                                      ullamco voluptate nisi commodo ea sit eu.
-                                    </p>
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        February
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
                                   </div>
-
                                   <div
                                     class="tab-pane fade"
-                                    id="kt_vtab_pane_6"
+                                    id="kt_vtab_pane_march"
                                     role="tabpanel"
                                   >
-                                    <p>
-                                      Sint sit mollit irure quis est nostrud
-                                      cillum consequat Lorem esse do quis dolor
-                                      esse fugiat sunt do. Eu ex commodo veniam
-                                      Lorem aliquip laborum occaecat qui Lorem
-                                      esse mollit dolore anim cupidatat. eserunt
-                                      officia id Lorem nostrud aute id commodo
-                                      elit eiusmod enim irure amet eiusmod qui
-                                      reprehenderit nostrud tempor. Fugiat ipsum
-                                      excepteur in aliqua non et quis aliquip ad
-                                      irure in labore cillum elit enim.
-                                      Consequat aliquip incididunt ipsum et
-                                      minim laborum laborum laborum et cillum
-                                      labore. Deserunt adipisicing cillum id
-                                      nulla minim nostrud labore eiusmod et
-                                      amet.
-                                    </p>
+                                    <div
+                                      class="d-flex flex-column justify-content-center align-items-center"
+                                      style="height: 50vh"
+                                    >
+                                      <div class="text-center pb-5">
+                                        <h1 class="pb-5">View The Salary</h1>
+                                        March
+                                      </div>
+                                      <div>
+                                        <button class="btn btn-primary me-2">
+                                          <i
+                                            class="fa-solid fa-signs-post pe-2"
+                                          ></i
+                                          >Bypass
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-handshake pe-2"
+                                          ></i>
+                                          Deal
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i
+                                            class="fa-regular fa-pen-to-square pe-2"
+                                          ></i
+                                          >Edit
+                                        </button>
+                                        <button class="btn btn-primary">
+                                          <i class="fa-solid fa-expand pe-2"></i
+                                          >View
+                                        </button>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                             <!--end::Block-->
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="kt_tab_pane_2"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-xl-4">List</div>
-                          <div class="col-xl-8">
-                            <h1>View</h1>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="kt_tab_pane_3"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-xl-4">List</div>
-                          <div class="col-xl-8">
-                            <h1>View</h1>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="kt_tab_pane_4"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-xl-4">List</div>
-                          <div class="col-xl-8">
-                            <h1>View</h1>
                           </div>
                         </div>
                       </div>
