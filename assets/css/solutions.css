@@ -48,7 +48,7 @@
   background-color: #eee;
 }
 .style-columns {
-  background-color: #eee;
+  background-color: #f7f7f7;
   height: 96vh;
   overflow: auto;
 }
@@ -56,25 +56,25 @@
   background-color: #eee;
 }
 
-.solutions-tabss{
+.solutions-tabss {
   background: #0b6476;
   padding: 5px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
 }
-.solutions-tabss .nav-item .nav-link{
+.solutions-tabss .nav-item .nav-link {
   text-align: center;
   border-bottom: 0 !important;
 }
-.solutions-tabss .nav-item:hover{
+.solutions-tabss .nav-item:hover {
   background: white;
   color: black;
   border-radius: 0;
   text-align: center;
   border-bottom: 0 !important;
 }
-.solutions-tabss .nav-item .nav-link.active{
+.solutions-tabss .nav-item .nav-link.active {
   background: white;
   border-radius: 5px !important;
   color: black;
@@ -82,38 +82,38 @@
   text-align: center;
   border-bottom: 0 !important;
 }
-.solutions-tabss .nav-item .nav-link.active:hover{
+.solutions-tabss .nav-item .nav-link.active:hover {
   background: white;
   color: black;
   border-radius: 0;
   text-align: center;
   border-bottom: 0 !important;
 }
-.nav-line-tabs .nav-item .nav-link:hover{
+.nav-line-tabs .nav-item .nav-link:hover {
   border-bottom: 0 !important;
 }
 /* General container with both horizontal and vertical scrolling */
 .styling-container {
   height: 96vh;
-  overflow: auto;  /* Enables both horizontal and vertical scrolling */
-  scrollbar-width: none;  /* Firefox - hides the scrollbar */
-  -ms-overflow-style: none;  /* IE and Edge - hides the scrollbar */
+  overflow: auto; /* Enables both horizontal and vertical scrolling */
+  scrollbar-width: none; /* Firefox - hides the scrollbar */
+  -ms-overflow-style: none; /* IE and Edge - hides the scrollbar */
 }
 
 .styling-container::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari, and Opera - hides the scrollbar */
+  display: none; /* Chrome, Safari, and Opera - hides the scrollbar */
 }
 
 /* Vertical scrolling only */
 .styling-container-1 {
   height: 100vh;
-  overflow-y: auto;  /* Enables vertical scrolling only */
-  scrollbar-width: none;  /* Firefox - hides the scrollbar */
-  -ms-overflow-style: none;  /* IE and Edge - hides the scrollbar */
+  overflow-y: auto; /* Enables vertical scrolling only */
+  scrollbar-width: none; /* Firefox - hides the scrollbar */
+  -ms-overflow-style: none; /* IE and Edge - hides the scrollbar */
 }
 
 .styling-container-1::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari, and Opera - hides the scrollbar */
+  display: none; /* Chrome, Safari, and Opera - hides the scrollbar */
 }
 /* 
 .checkbox-image input[type="checkbox"] {
@@ -231,7 +231,7 @@
   box-shadow: inset 0 -5.5rem 0 #e91e63;
   border-bottom: 2px solid #e91e63;
 }
-.titles{
+.titles {
   background: #0b6476;
   color: white;
 }
@@ -338,4 +338,36 @@
   50% {
     transform: scale(0.9);
   }
+}
+
+.preview-image.selected {
+  border: 3px solid #007bff;
+}
+.preview-image {
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.image-icons {
+  display: flex; /* Change to flex to arrange icons horizontally */
+  position: absolute;
+  top: 5px; /* Adjust position as needed */
+  right: 5px; /* Adjust position as needed */
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 10; /* Ensure icons appear above the image */
+}
+
+.image-icons i {
+  color: white;
+  cursor: pointer;
+  margin-left: 5px; /* Space between icons */
+}
+.preview-not-text {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
