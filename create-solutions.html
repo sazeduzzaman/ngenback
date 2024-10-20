@@ -50,6 +50,7 @@
     />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/css/solutions.css" />
+    <link rel="stylesheet" href="assets/css/checkBoxs.css" />
   </head>
 
   <body
@@ -2743,7 +2744,7 @@
                           <div class="pe-0 styling-container">
                             <div class="m-3 pt-3">
                               <!--begin::Accordion-->
-                              <div class="accordion" id="kt_accordion_1">
+                              <div class="accordion" id="kt_accordion_11">
                                 <!-- Accordion Item 1 -->
                                 <div class="accordion-item">
                                   <h2
@@ -3359,8 +3360,8 @@
                                 class="nav-link active"
                                 data-bs-toggle="tab"
                                 href="#kt_tab_pane_1"
-                                ><i class="fa-solid fa-newspaper pe-2"></i>
-                                Templates</a
+                                ><i class="fa-solid fa-newspaper pe-2"></i> Edit
+                                Sections</a
                               >
                             </li>
                             <li class="nav-item w-50">
@@ -3368,7 +3369,7 @@
                                 class="nav-link"
                                 data-bs-toggle="tab"
                                 href="#kt_tab_pane_2"
-                                ><i class="fa-solid fa-shapes pe-2"></i>
+                                ><i class="fa-solid fa-shapes pe-2"></i> Add
                                 Components</a
                               >
                             </li>
@@ -3479,7 +3480,7 @@
                                                     <input
                                                       type="password"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3509,7 +3510,7 @@
                                                     <input
                                                       type="file"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3524,7 +3525,7 @@
                                                     <input
                                                       type="file"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3539,7 +3540,7 @@
                                                     <input
                                                       type="text"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3554,7 +3555,7 @@
                                                     <input
                                                       type="text"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3569,7 +3570,7 @@
                                                     <input
                                                       type="text"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3584,7 +3585,7 @@
                                                     <input
                                                       type="text"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3599,7 +3600,7 @@
                                                     <input
                                                       type="text"
                                                       id="inputPassword5"
-                                                      class="form-control"
+                                                      class="form-control form-control-sm"
                                                       aria-describedby="passwordHelpBlock"
                                                     />
                                                   </div>
@@ -3615,142 +3616,283 @@
                                           role="tabpanel"
                                           aria-labelledby="profile-tab"
                                         >
+                                          <div class="pt-2">
+                                            <label for="">Change Style</label>
+                                            <select
+                                              class="form-select form-select-sm"
+                                              data-control="select2"
+                                              data-placeholder="Select Element"
+                                            >
+                                              <option></option>
+                                              <option value="Title">
+                                                Title
+                                              </option>
+                                              <option value="Paragraph">
+                                                Paragraph Description
+                                              </option>
+                                              <option value="Buttons">
+                                                Buttons
+                                              </option>
+                                              <option value="Badges">
+                                                Badges
+                                              </option>
+                                            </select>
+                                          </div>
                                           <div class="py-5 mt-3">
                                             <!-- Alignment -->
-                                          <div
-                                          class="d-flex justify-content-between align-items-center pb-2"
-                                        >
-                                          <small>Alignment</small>
-                                          <div>
-                                            <a
-                                              href="#"
-                                              class="btn btn-sm btn-icon btn-primary me-1"
+                                            <div
+                                              class="d-flex justify-content-between align-items-center pb-2"
                                             >
-                                              <i
-                                                class="fa-solid fa-align-left fs-6"
-                                              ></i>
-                                            </a>
-                                            <a
-                                              href="#"
-                                              class="btn btn-sm btn-icon btn-primary me-1"
-                                            >
-                                              <i
-                                                class="fa-solid fa-align-center fs-6"
-                                              ></i>
-                                            </a>
-                                            <a
-                                              href="#"
-                                              class="btn btn-sm btn-icon btn-primary me-1"
-                                            >
-                                              <i
-                                                class="fa-solid fa-align-right fs-6"
-                                              ></i>
-                                            </a>
-                                            <a
-                                              href="#"
-                                              class="btn btn-sm btn-icon btn-primary me-1"
-                                            >
-                                              <i
-                                                class="fa-solid fa-align-justify fs-6"
-                                              ></i>
-                                            </a>
-                                          </div>
-                                        </div>
-                                        <!-- Color -->
-                                        <div
-                                          class="d-flex justify-content-between align-items-center py-2"
-                                        >
-                                          <small>Text Color</small>
-                                          <div>
-                                            <input
-                                              type="color"
-                                              name=""
-                                              id=""
-                                            />
-                                          </div>
-                                        </div>
-                                        <!-- Color -->
-                                        <div
-                                          class="d-flex justify-content-between align-items-center py-2"
-                                        >
-                                          <small>Typography</small>
-                                          <div>
-                                            <span class="button_container">
-                                              <span class="my_button">
-                                                <i
-                                                  class="fa-solid fa-pen"
-                                                ></i>
-                                              </span>
-                                              <div class="my_target">
-                                                <div>
-                                                  <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <div class="w-50">
-                                                      <label
-                                                      for=""
-                                                      class="form-label mb-0"
-                                                      >Fonts</label
-                                                    >
-                                                    </div>
-                                                    <div class="mb-0 w-50">
-                                                      <select
-                                                      class="form-select form-select-sm"
-                                                      data-control="select2"
-                                                      data-placeholder="Select Font"
-                                                    >
-                                                      <option></option>
-                                                      <option value="Poppins">
-                                                        Poppins
-                                                      </option>
-                                                      <option value="2">
-                                                        Option 2
-                                                      </option>
-                                                    </select>
-                                                    </div>
-                                                  </div>
-                                                  <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="w-50">
-                                                      <label
-                                                      for=""
-                                                      class="form-label mb-0"
-                                                      >Fonts Size</label
-                                                    >
-                                                    </div>
-                                                    <div class="mb-0 w-50">
-                                                      <select
-                                                      class="form-select form-select-sm"
-                                                      data-control="select2"
-                                                      data-placeholder="Choose Font Size"
-                                                  >
-                                                    <option></option>
-                                                    <option value="10">
-                                                      10
-                                                    </option>
-                                                    <option value="11">
-                                                      12
-                                                    </option>
-                                                    <option value="13">
-                                                      13
-                                                    </option>
-                                                    <option value="10">
-                                                      10
-                                                    </option>
-                                                    <option value="10">
-                                                      10
-                                                    </option>
-                                                    <option value="10">
-                                                      10
-                                                    </option>
-                                                    <option value="10">
-                                                      10
-                                                    </option>
-                                                    </select>
-                                                    </div>
-                                                  </div>
-                                                </div>
+                                              <small>Alignment</small>
+                                              <div>
+                                                <a
+                                                  href="#"
+                                                  class="btn btn-sm btn-icon btn-primary me-1"
+                                                >
+                                                  <i
+                                                    class="fa-solid fa-align-left fs-6"
+                                                  ></i>
+                                                </a>
+                                                <a
+                                                  href="#"
+                                                  class="btn btn-sm btn-icon btn-primary me-1"
+                                                >
+                                                  <i
+                                                    class="fa-solid fa-align-center fs-6"
+                                                  ></i>
+                                                </a>
+                                                <a
+                                                  href="#"
+                                                  class="btn btn-sm btn-icon btn-primary me-1"
+                                                >
+                                                  <i
+                                                    class="fa-solid fa-align-right fs-6"
+                                                  ></i>
+                                                </a>
+                                                <a
+                                                  href="#"
+                                                  class="btn btn-sm btn-icon btn-primary me-1"
+                                                >
+                                                  <i
+                                                    class="fa-solid fa-align-justify fs-6"
+                                                  ></i>
+                                                </a>
                                               </div>
-                                            </span>
-                                          </div>
-                                        </div>
+                                            </div>
+                                            <!-- Color -->
+                                            <div
+                                              class="d-flex justify-content-between align-items-center py-2"
+                                            >
+                                              <small>Text Color</small>
+                                              <div>
+                                                <input
+                                                  type="color"
+                                                  name=""
+                                                  id=""
+                                                />
+                                              </div>
+                                            </div>
+                                            <!-- Color -->
+                                            <div
+                                              class="d-flex justify-content-between align-items-center py-2"
+                                            >
+                                              <small>Typography</small>
+                                              <div>
+                                                <span class="button_container">
+                                                  <span class="my_button">
+                                                    <i
+                                                      class="fa-solid fa-pen"
+                                                    ></i>
+                                                  </span>
+                                                  <div class="my_target">
+                                                    <div>
+                                                      <div
+                                                        class="d-flex justify-content-between align-items-center mb-2"
+                                                      >
+                                                        <div class="w-50">
+                                                          <label
+                                                            for=""
+                                                            class="form-label mb-0"
+                                                            >Fonts</label
+                                                          >
+                                                        </div>
+                                                        <div class="mb-0 w-50">
+                                                          <select
+                                                            class="form-select form-select-sm"
+                                                            data-control="select2"
+                                                            data-placeholder="Select Font"
+                                                          >
+                                                            <option></option>
+                                                            <option
+                                                              value="Poppins"
+                                                            >
+                                                              Poppins
+                                                            </option>
+                                                            <option value="2">
+                                                              Option 2
+                                                            </option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                      <div
+                                                        class="d-flex justify-content-between align-items-center mb-2"
+                                                      >
+                                                        <div class="w-50">
+                                                          <label
+                                                            for=""
+                                                            class="form-label mb-0"
+                                                            >Fonts Size</label
+                                                          >
+                                                        </div>
+                                                        <div class="mb-0 w-50">
+                                                          <select
+                                                            class="form-select form-select-sm"
+                                                            data-control="select2"
+                                                            data-placeholder="Choose Font Size"
+                                                          >
+                                                            <option></option>
+                                                            <option value="10">
+                                                              10
+                                                            </option>
+                                                            <option value="11">
+                                                              12
+                                                            </option>
+                                                            <option value="13">
+                                                              13
+                                                            </option>
+                                                            <option value="10">
+                                                              10
+                                                            </option>
+                                                            <option value="10">
+                                                              10
+                                                            </option>
+                                                            <option value="10">
+                                                              10
+                                                            </option>
+                                                            <option value="10">
+                                                              10
+                                                            </option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                      <div
+                                                        class="d-flex justify-content-between align-items-center mb-2"
+                                                      >
+                                                        <div class="w-50">
+                                                          <label
+                                                            for=""
+                                                            class="form-label mb-0"
+                                                            >Weight</label
+                                                          >
+                                                        </div>
+                                                        <div class="mb-0 w-50">
+                                                          <select
+                                                            class="form-select form-select-sm"
+                                                            data-control="select2"
+                                                            data-placeholder="Select Font"
+                                                          >
+                                                            <option></option>
+                                                            <option
+                                                              value="Poppins"
+                                                            >
+                                                              Poppins
+                                                            </option>
+                                                            <option value="2">
+                                                              Option 2
+                                                            </option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                      <div
+                                                        class="d-flex justify-content-between align-items-center mb-2"
+                                                      >
+                                                        <div class="w-50">
+                                                          <label
+                                                            for=""
+                                                            class="form-label mb-0"
+                                                            >Transformation</label
+                                                          >
+                                                        </div>
+                                                        <div class="mb-0 w-50">
+                                                          <select
+                                                            class="form-select form-select-sm"
+                                                            data-control="select2"
+                                                            data-placeholder="Select Font"
+                                                          >
+                                                            <option></option>
+                                                            <option
+                                                              value="Poppins"
+                                                            >
+                                                              Poppins
+                                                            </option>
+                                                            <option value="2">
+                                                              Option 2
+                                                            </option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                      <div
+                                                        class="d-flex justify-content-between align-items-center mb-2"
+                                                      >
+                                                        <div class="w-50">
+                                                          <label
+                                                            for=""
+                                                            class="form-label mb-0"
+                                                            >Text Style</label
+                                                          >
+                                                        </div>
+                                                        <div class="mb-0 w-50">
+                                                          <select
+                                                            class="form-select form-select-sm"
+                                                            data-control="select2"
+                                                            data-placeholder="Select Font"
+                                                          >
+                                                            <option></option>
+                                                            <option
+                                                              value="Poppins"
+                                                            >
+                                                              Poppins
+                                                            </option>
+                                                            <option value="2">
+                                                              Option 2
+                                                            </option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                      <div
+                                                        class="d-flex justify-content-between align-items-center mb-2"
+                                                      >
+                                                        <div class="w-50">
+                                                          <label
+                                                            for=""
+                                                            class="form-label mb-0"
+                                                            >Text
+                                                            Decoration</label
+                                                          >
+                                                        </div>
+                                                        <div class="mb-0 w-50">
+                                                          <select
+                                                            class="form-select form-select-sm"
+                                                            data-control="select2"
+                                                            data-placeholder="Select Font"
+                                                          >
+                                                            <option></option>
+                                                            <option
+                                                              value="Poppins"
+                                                            >
+                                                              Poppins
+                                                            </option>
+                                                            <option value="2">
+                                                              Option 2
+                                                            </option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </span>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
                                         <div
@@ -3759,7 +3901,7 @@
                                           role="tabpanel"
                                           aria-labelledby="contact-tab"
                                         >
-                                          ...
+                                          Advance Tabs
                                         </div>
                                       </div>
                                     </div>
@@ -3831,9 +3973,405 @@
                               role="tabpanel"
                             >
                               <div class="templates-comps pe-0">
-                                <div class="m-3">
+                                <div class="m-3 py-2">
                                   <!--begin::Accordion-->
-                                  asdadasd
+                                  <div
+                                    class="accordion my-3"
+                                    id="kt_accordion_20"
+                                  >
+                                    <div class="accordion-item">
+                                      <h2
+                                        class="accordion-header"
+                                        id="kt_accordion_111_header_1"
+                                      >
+                                        <button
+                                          class="accordion-button fs-6 fw-semibold"
+                                          type="button"
+                                          data-bs-toggle="collapse"
+                                          data-bs-target="#kt_accordion_111_body_1"
+                                          aria-expanded="true"
+                                          aria-controls="kt_accordion_111_body_1"
+                                        >
+                                          Buttons
+                                        </button>
+                                      </h2>
+                                      <div
+                                        id="kt_accordion_111_body_1"
+                                        class="accordion-collapse collapse show"
+                                        aria-labelledby="kt_accordion_111_header_1"
+                                        data-bs-parent="#kt_accordion_111"
+                                      >
+                                        <div class="accordion-body">
+                                          <div>
+                                            <a
+                                              href="#"
+                                              class="btn btn-light m-2"
+                                              >Light</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-primary m-2"
+                                              >Primary</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-secondary m-2"
+                                              >Secondary</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-success m-2"
+                                              >Success</a
+                                            >
+                                            <a href="#" class="btn btn-info m-2"
+                                              >Info</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-warning m-2"
+                                              >Warning</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-danger m-2"
+                                              >Danger</a
+                                            >
+                                            <a href="#" class="btn btn-dark m-2"
+                                              >Dark</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-light-primary"
+                                              >Primary</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-light-secondary m-2"
+                                              >Secondary</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-light-success m-2"
+                                              >Success</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-light-info m-2"
+                                              >Info</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-light-warning m-2"
+                                              >Warning</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-light-danger m-2"
+                                              >Danger</a
+                                            >
+                                            <a
+                                              href="#"
+                                              class="btn btn-light-dark m-2"
+                                              >Dark</a
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h2
+                                        class="accordion-header"
+                                        id="kt_accordion_122_header_2"
+                                      >
+                                        <button
+                                          class="accordion-button fs-6 fw-semibold collapsed"
+                                          type="button"
+                                          data-bs-toggle="collapse"
+                                          data-bs-target="#kt_accordion_122_body_2"
+                                          aria-expanded="false"
+                                          aria-controls="kt_accordion_122_body_2"
+                                        >
+                                          Check Box & Radios
+                                        </button>
+                                      </h2>
+                                      <div
+                                        id="kt_accordion_122_body_2"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="kt_accordion_1_header_2"
+                                        data-bs-parent="#kt_accordion_1"
+                                      >
+                                        <div class="accordion-body">
+                                          <div class="row">
+                                            <!-- Checkbox One -->
+                                            <div class="col-lg-4">
+                                              <div class="checkbox-wrapper-1">
+                                                <input
+                                                  id="example-1"
+                                                  class="substituted"
+                                                  type="checkbox"
+                                                  aria-hidden="true"
+                                                />
+                                                <label for="example-1"
+                                                  >Checkbox</label
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                              <div class="checkbox-wrapper-2">
+                                                <input
+                                                  type="checkbox"
+                                                  class="sc-gJwTLC ikxBAC"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                              <div class="checkbox-wrapper-12">
+                                                <div class="cbx">
+                                                  <input
+                                                    id="cbx-12"
+                                                    type="checkbox"
+                                                  />
+                                                  <label for="cbx-12"></label>
+                                                  <svg
+                                                    width="15"
+                                                    height="14"
+                                                    viewbox="0 0 15 14"
+                                                    fill="none"
+                                                  >
+                                                    <path
+                                                      d="M2 8.36364L6.23077 12L13 2"
+                                                    ></path>
+                                                  </svg>
+                                                </div>
+                                                <!-- Gooey-->
+                                                <svg
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  version="1.1"
+                                                >
+                                                  <defs>
+                                                    <filter id="goo-12">
+                                                      <fegaussianblur
+                                                        in="SourceGraphic"
+                                                        stddeviation="4"
+                                                        result="blur"
+                                                      ></fegaussianblur>
+                                                      <fecolormatrix
+                                                        in="blur"
+                                                        mode="matrix"
+                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7"
+                                                        result="goo-12"
+                                                      ></fecolormatrix>
+                                                      <feblend
+                                                        in="SourceGraphic"
+                                                        in2="goo-12"
+                                                      ></feblend>
+                                                    </filter>
+                                                  </defs>
+                                                </svg>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h2
+                                        class="accordion-header"
+                                        id="kt_accordion_113_header_3"
+                                      >
+                                        <button
+                                          class="accordion-button fs-6 fw-semibold collapsed"
+                                          type="button"
+                                          data-bs-toggle="collapse"
+                                          data-bs-target="#kt_accordion_113_body_3"
+                                          aria-expanded="false"
+                                          aria-controls="kt_accordion_113_body_3"
+                                        >
+                                          Pop Hover
+                                        </button>
+                                      </h2>
+                                      <div
+                                        id="kt_accordion_113_body_3"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="kt_accordion_113_header_3"
+                                        data-bs-parent="#kt_accordion_113"
+                                      >
+                                        <div class="accordion-body">
+                                          <div>
+                                            <button
+                                              type="button"
+                                              class="btn btn-secondary my-2 me-5"
+                                              data-bs-toggle="popover"
+                                              data-bs-placement="top"
+                                              title="Popover on top"
+                                              data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                                            >
+                                              Popover on top
+                                            </button>
+
+                                            <button
+                                              type="button"
+                                              class="btn btn-secondary my-2 me-5"
+                                              data-bs-toggle="popover"
+                                              data-bs-placement="right"
+                                              title="Popover on right"
+                                              data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                                            >
+                                              Popover on right
+                                            </button>
+
+                                            <button
+                                              type="button"
+                                              class="btn btn-secondary my-2 me-5"
+                                              data-bs-toggle="popover"
+                                              data-bs-placement="bottom"
+                                              title="Popover on bottom"
+                                              data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                                            >
+                                              Popover on bottom
+                                            </button>
+
+                                            <button
+                                              type="button"
+                                              class="btn btn-secondary my-2 me-5"
+                                              data-bs-toggle="popover"
+                                              data-bs-placement="left"
+                                              title="Popover on left"
+                                              data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                                            >
+                                              Popover on left
+                                            </button>
+
+                                            <button
+                                              type="button"
+                                              class="btn btn-secondary my-2"
+                                              data-bs-toggle="popover"
+                                              data-bs-html="true"
+                                              title="<span><em>Popover</em> <u>title with</u> <b>HTML</b></span>"
+                                              data-bs-content="And here's some amazing content. It's very <b class='text-danger'>engaging</b>. Right?"
+                                            >
+                                              Popover with HTML
+                                            </button>
+                                            <div class="row">
+                                              <div
+                                                class="d-flex flex-column col-lg-4"
+                                              >
+                                                <li
+                                                  class="d-flex align-items-center py-2"
+                                                >
+                                                  <span
+                                                    class="bullet bullet-dot me-5"
+                                                  ></span>
+                                                  Item 1
+                                                </li>
+                                                <li
+                                                  class="d-flex align-items-center py-2"
+                                                >
+                                                  <span
+                                                    class="bullet bullet-dot bg-danger me-5"
+                                                  ></span>
+                                                  Item 2
+                                                </li>
+                                                <li
+                                                  class="d-flex align-items-center py-2"
+                                                >
+                                                  <span
+                                                    class="bullet bullet-dot bg-success me-5"
+                                                  ></span>
+                                                  Item 3
+                                                </li>
+                                                <li
+                                                  class="d-flex align-items-center py-2"
+                                                >
+                                                  <span
+                                                    class="bullet bullet-dot bg-info me-5"
+                                                  ></span>
+                                                  Item 4
+                                                </li>
+                                                <li
+                                                  class="d-flex align-items-center py-2"
+                                                >
+                                                  <span
+                                                    class="bullet bullet-dot bg-primary me-5"
+                                                  ></span>
+                                                  Item 5
+                                                </li>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2
+                                        class="accordion-header"
+                                        id="kt_accordion_114_header_3"
+                                      >
+                                        <button
+                                          class="accordion-button fs-6 fw-semibold collapsed"
+                                          type="button"
+                                          data-bs-toggle="collapse"
+                                          data-bs-target="#kt_accordion_114_body_3"
+                                          aria-expanded="false"
+                                          aria-controls="kt_accordion_114_body_3"
+                                        >
+                                          Form Elememts
+                                        </button>
+                                      </h2>
+                                      <div
+                                        id="kt_accordion_114_body_3"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="kt_accordion_114_header_3"
+                                        data-bs-parent="#kt_accordion_114"
+                                      >
+                                        <div class="accordion-body">
+                                          <div>
+                                            <input
+                                              type="text"
+                                              class="form-control mb-2"
+                                              placeholder="name@example.com"
+                                            />
+                                            <input
+                                              type="text"
+                                              class="form-control form-control-solid mb-2"
+                                              placeholder="name@example.com"
+                                            />
+                                            <input
+                                              type="text"
+                                              class="form-control form-control-transparent mb-2"
+                                              placeholder="name@example.com"
+                                            />
+                                            <select
+                                              class="form-select mb-2"
+                                              aria-label="Select example"
+                                            >
+                                              <option>
+                                                Open this select menu
+                                              </option>
+                                              <option value="1">One</option>
+                                              <option value="2">Two</option>
+                                              <option value="3">Three</option>
+                                            </select>
+                                            <div class="mb-2">
+                                              <label
+                                                for="customRange1"
+                                                class="form-label"
+                                                >Example range</label
+                                              >
+                                              <input
+                                                type="range"
+                                                class="form-range"
+                                                id="customRange1"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--end::Accordion-->
                                   <!--end::Accordion-->
                                 </div>
                               </div>

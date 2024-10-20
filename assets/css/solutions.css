@@ -361,6 +361,7 @@
 }
 
 .image-icons i {
+ display: none;
   color: white;
   cursor: pointer;
   margin-left: 5px; /* Space between icons */

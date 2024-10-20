@@ -34,10 +34,9 @@ function drop(event) {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize the editor
-  ClassicEditor.create(document.querySelector("#editor"))
-    .catch((error) => {
-      console.error(error);
-    });
+  ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+    console.error(error);
+  });
 
   // Reference to the empty message element
   const emptyMessage = document.getElementById("emptyMessage");
@@ -111,6 +110,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ? "flex"
             : "none";
 
+          // Show the remove area/column if an image is selected
+          toggleRemoveArea();
+
           // Add event listener to the add icon
           addIcon.onclick = function (event) {
             event.stopPropagation(); // Prevent triggering the image's click event
@@ -122,12 +124,12 @@ document.addEventListener("DOMContentLoaded", function () {
             event.stopPropagation(); // Prevent triggering the image's click event
 
             // Toggle the edit/close icon
-            if (editIcon.classList.contains("fa-pencil")) {
-              editIcon.classList.remove("fa-pencil"); // Remove the pencil icon
-              editIcon.classList.add("fa-times"); // Add the close icon
+            if (editIcon.classList.contains("")) {
+              editIcon.classList.remove(""); // Remove the pencil icon
+              editIcon.classList.add(""); // Add the close icon
             } else {
-              editIcon.classList.remove("fa-times"); // Remove the close icon
-              editIcon.classList.add("fa-pencil"); // Add the pencil icon back
+              editIcon.classList.remove(""); // Remove the close icon
+              editIcon.classList.add(""); // Add the pencil icon back
             }
 
             // Reference to the columns
@@ -183,6 +185,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (imgToRemove) {
           previewContainer.removeChild(imgToRemove.parentNode); // Remove the wrapper with the image
         }
+
+        // Hide the remove area if no images are selected
+        toggleRemoveArea();
       }
 
       // Check if the preview container is empty and show the message if it is
@@ -193,7 +198,41 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Function to toggle the remove area based on selected images
+  function toggleRemoveArea() {
+    const previewContainer = document.getElementById("previewContainer");
+    const selectedImages = previewContainer.querySelectorAll(
+      ".preview-image.selected"
+    );
+    const removeIconsHeader = document.querySelector(".remove_icons");
+
+    if (selectedImages.length > 0) {
+      // Show the remove icons header
+      removeIconsHeader.style.display = "block";
+
+      // Change column classes accordingly
+      const mainColumn = document.getElementById("mainColumn");
+      const secondColumn = document.getElementById("secondColumn");
+      mainColumn.classList.remove("col-lg-9");
+      mainColumn.classList.add("col-lg-7");
+      secondColumn.classList.remove("col-3");
+      secondColumn.classList.add("col-2");
+    } else {
+      // Hide the remove icons header
+      removeIconsHeader.style.display = "none";
+
+      // Revert column classes back to default
+      const mainColumn = document.getElementById("mainColumn");
+      const secondColumn = document.getElementById("secondColumn");
+      mainColumn.classList.remove("col-lg-7");
+      mainColumn.classList.add("col-lg-9");
+      secondColumn.classList.remove("col-2");
+      secondColumn.classList.add("col-3");
+    }
+  }
 });
+
 
 
 // Select all template checkboxes and add event listeners
