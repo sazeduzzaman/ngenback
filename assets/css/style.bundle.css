@@ -48087,3 +48087,20 @@ td {
   border: 1px solid var(--site-primary);
   border-radius: .625rem;
 }
+[data-kt-aside-minimize="on"] .aside-dark .menu .menu-item .menu-link.active {
+  background-color: #0b6476 !important;
+  width: 20%;
+  color: #0b6476;
+}
+[data-kt-aside-minimize="on"] .aside-logo img {
+  width: 110px !important;
+  position: relative;
+  left: 10px;
+  height: auto !important;
+}
+
+[data-kt-aside-minimize="on"] .aside-menu .menu-item .menu-icon {
+  justify-content: start;
+  position: relative;
+  left: -6px;
+}

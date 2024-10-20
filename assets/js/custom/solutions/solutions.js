@@ -261,3 +261,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// PopUpTooltip
+$(document).ready(function() {
+  // Handle button click to toggle the popup
+  $(".my_button").click(function(e) {
+      e.stopPropagation(); // Prevent the click event from bubbling up to the document
+      if ($(this).next(".my_target").is(":visible")) {
+          $(this).next(".my_target").hide();
+          return;
+      }
+      $(".my_target").hide(); // Hide all popups first
+      $(this).next(".my_target").show(); // Show the clicked popup
+  });
+
+  // Handle close button inside the popup
+  $(".close_button").click(function() {
+      $(this).parent().hide();
+  });
+
+  // Handle click outside the popup to hide it
+  $(document).click(function(e) {
+      if (!$(e.target).closest(".my_target, .my_button").length) {
+          $(".my_target").hide(); // Hide the popup when clicking outside
+      }
+  });
+});
