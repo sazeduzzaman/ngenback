@@ -2977,8 +2977,8 @@ fieldset:disabled .btn {
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #26adf8;
-  border-color: #1aa8f8;
+border-color: 1px solid #0095e8 !important;
+background-color: transparent !important;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
@@ -32346,7 +32346,6 @@ a:hover {
 .btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(
     .border-active
   ):not(.btn-flush):not(.btn-icon) {
-  border: 0;
   padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
 }
 .btn-group-lg
@@ -32689,9 +32688,9 @@ a:hover {
 .btn.btn-primary:focus:not(.btn-active),
 .btn.btn-primary:hover:not(.btn-active),
 .show > .btn.btn-primary {
-  color: #fff;
-  border-color: #0095e8;
-  background-color: #0095e8 !important;
+  color: var(--site-primary);
+  border-color: 1px solid #0095e8 !important;
+  background-color: transparent !important;
 }
 .btn-check:active + .btn.btn-primary .svg-icon,
 .btn-check:active + .btn.btn-primary i,
@@ -32709,7 +32708,7 @@ a:hover {
 .btn.btn-primary:hover:not(.btn-active) i,
 .show > .btn.btn-primary .svg-icon,
 .show > .btn.btn-primary i {
-  color: #fff;
+  color: var(--site-primary);
 }
 .btn-check:active + .btn.btn-primary.dropdown-toggle:after,
 .btn-check:checked + .btn.btn-primary.dropdown-toggle:after,
@@ -32785,9 +32784,9 @@ a:hover {
 .btn.btn-active-primary:focus:not(.btn-active),
 .btn.btn-active-primary:hover:not(.btn-active),
 .show > .btn.btn-active-primary {
-  color: #fff;
+  color: var(--site-primary);
   border-color: var(--site-primary);
-  background-color: var(--site-primary) !important;
+  background-color: transparent !important;
 }
 .btn-check:active + .btn.btn-active-primary .svg-icon,
 .btn-check:active + .btn.btn-active-primary i,
@@ -32826,8 +32825,8 @@ a:hover {
 .btn.btn-active-light-primary:hover:not(.btn-active),
 .show > .btn.btn-active-light-primary {
   color: var(--site-primary);
-  border-color: #f1faff;
-  background-color: #f1faff !important;
+  border-color: 1px solid #0095e8 !important;
+  background-color: transparent !important;
 }
 .btn-check:active + .btn.btn-active-light-primary .svg-icon,
 .btn-check:active + .btn.btn-active-light-primary i,
