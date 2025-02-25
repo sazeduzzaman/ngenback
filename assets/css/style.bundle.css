@@ -48103,3 +48103,11 @@ td {
   position: relative;
   left: -6px;
 }
+
+.hidden { display: none; }
+.active-is { background-color: #007bff; color: white; }
+
+.meeting-shedule-box{
+  height: 195px;
+  overflow: auto;
+}
