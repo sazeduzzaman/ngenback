@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Quotation</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Sora", sans-serif;
+        font-size: 14px;
+        background-color: #f8f9fa;
+      }
+      .pdf-container {
+        width: 210mm; /* A4 width */
+        height: 297mm; /* A4 height */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: white;
+      }
+      .header {
+        height: 61px;
+        background-color: #ae0a46;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        padding: 0 30px;
+        color: white;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .content {
+        padding: 30px;
+        flex: 1;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+      }
+      .bottom-section {
+        padding: 30px;
+        margin-top: auto;
+      }
+      table {
+        border: 0;
+        width: 100%;
+      }
+      th,
+      td {
+        text-align: left;
+      }
+      .footer {
+        height: 47px;
+        background-color: #ae0a46;
+        text-align: center;
+        color: white;
+      }
+      .footer-link {
+        font-family: Sora;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+      }
+      @media print {
+        .pdf-container {
+          background-color: white;
+          box-shadow: none;
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+        .header,
+        .footer,
+        .bottom-section {
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pdf-container">
+      <!-- Header -->
+      <div class="header">
+        <div class="header-content">
+          <div>
+            <img src="./img/logo.png" alt="Logo" style="height: 40px" />
+          </div>
+          <div>
+            <h1
+              style="
+                margin: 0;
+                font-size: 24px;
+                position: relative;
+                left: -65px;
+              "
+            >
+              Price Quotation
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Main Content Here -->
+      </div>
+
+      <!-- Contact Info Content Table (Bottom Section) -->
+      <div class="bottom-section">
+        <div style="display: flex; align-items: center">
+          <table style="width: 70%">
+            <thead>
+              <tr>
+                <th style="font-weight: bold">Adan Mahmud</th>
+                <th style="font-weight: normal; padding: 0">
+                  sales@ngenitltd.com
+                </th>
+              </tr>
+              <tr>
+                <th style="font-weight: normal; padding: 0">Sr. Manager</th>
+                <th style="font-weight: normal; padding: 0">
+                  +880 1714 243446 (What’s App)
+                </th>
+              </tr>
+              <tr>
+                <th style="font-weight: normal; padding: 0">
+                  Partner & Business Development
+                </th>
+                <th style="font-weight: normal; padding: 0">
+                  +10917-720-3065 (Skype)
+                </th>
+              </tr>
+            </thead>
+          </table>
+          <table style="width: 30%; text-align: center">
+            <thead>
+              <tr>
+                <th>
+                  <h2 style="margin: 0; color: #ae0a46">NGEN PTE. LTd.</h2>
+                  <p style="margin: 0">Reg-no: 20434861K</p>
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p style="margin-top: 15px">
+          <a class="footer-link" href="https://www.ngenitltd.com"
+            >www.ngenitltd.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Quotation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        /* font-family: "Sora", sans-serif; */
+        /* font-family: "Roboto", sans-serif; */
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+      }
+      .footer-link {
+        font-family: Sora;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22.68px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+      }
+      .pdf-container {
+        width: 210mm; /* A4 width */
+        height: 297mm; /* A4 height */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+      .header {
+        height: 61px;
+        background-color: #ae0a46;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        padding: 0 30px;
+        color: white;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .content {
+        padding: 30px;
+        padding-top: 30px;
+        flex: 1;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+      }
+      table {
+        border: 0;
+      }
+      th {
+        border-right: 0;
+      }
+      table.content-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table.content-table th,
+      table.content-table td {
+        border-bottom: 1px solid #eee;
+        padding: 10px;
+        text-align: left;
+      }
+      .footer {
+        height: 45px;
+        background-color: #ae0a46;
+        text-align: center;
+        color: white;
+      }
+      .table-two-th {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.64px;
+        text-align: left;
+      }
+      .table-two-td {
+        font-family: Sora;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.64px;
+        text-align: left;
+      }
+      .bottom-section {
+        padding: 30px;
+        margin-top: auto;
+        border-top: 1px solid #eee;
+      }
+      th {
+        vertical-align: bottom;
+      }
+      @media print {
+        .pdf-container {
+          background-color: white;
+          box-shadow: none;
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+        .header,
+        .footer,
+        .bottom-section {
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pdf-container">
+      <!-- Header -->
+      <div class="header">
+        <div class="header-content">
+          <div>
+            <img src="./img/logo.png" alt="Logo" style="height: 40px" />
+          </div>
+          <div>
+            <h1
+              style="
+                margin: 0;
+                font-size: 24px;
+                position: relative;
+                left: -65px;
+              "
+            >
+              Price Quotation
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="content pb-0">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th style="border: 0; padding: 0; width: 65%; font-weight: 500">
+                Henry Lester
+              </th>
+              <th style="border: 0; padding: 0; font-weight: 500">
+                PQ#: NG-BD/Genexis/RV/231021
+              </th>
+            </tr>
+            <tr>
+              <th
+                style="
+                  border: 0;
+                  padding: 0;
+                  padding-top: 5px;
+                  font-weight: normal;
+                "
+              >
+                Henry Lester
+              </th>
+              <th
+                style="
+                  border: 0;
+                  padding: 0;
+                  font-weight: normal;
+                  padding-top: 5px;
+                "
+              >
+                Date: 16 / 08 / 24
+              </th>
+            </tr>
+            <tr>
+              <th
+                style="
+                  border: 0;
+                  padding: 0;
+                  font-weight: normal;
+                  padding-top: 5px;
+                "
+              >
+                henry.lester28@gmail.com
+              </th>
+              <th
+                style="
+                  border: 0;
+                  padding: 0;
+                  font-weight: normal;
+                  padding-top: 5px;
+                "
+              >
+                PQR#: MEO-P021(T10)-W(L1)
+              </th>
+            </tr>
+            <tr>
+              <th
+                style="
+                  border: 0;
+                  padding: 0;
+                  font-weight: normal;
+                  padding-top: 5px;
+                "
+              >
+                515912415
+              </th>
+              <th
+                style="
+                  border: 0;
+                  padding: 0;
+                  font-weight: normal;
+                  padding-top: 5px;
+                "
+              >
+                Customer Type: Anonymous
+              </th>
+            </tr>
+          </thead>
+        </table>
+        <!-- Additional Content Table -->
+        <table
+          class="content-table table-two"
+          style="margin-top: 40px; border: 1px solid #eee"
+        >
+          <thead style="background-color: #f0f0f0">
+            <tr>
+              <th class="table-two-th">Sl</th>
+              <th class="table-two-th">PRODUCT DESCRIPTION</th>
+              <th class="table-two-th" style="text-align: center">QTY</th>
+              <th class="table-two-th" style="text-align: end">UNIT PRICE</th>
+              <th class="table-two-th" style="text-align: end">TOTAL (TK)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Henry Lester</td>
+              <td style="text-align: center">12</td>
+              <td style="text-align: end">3,672,00 Tk.</td>
+              <td style="text-align: end">7,344,00 Tk.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>MS 365 Business Basic - 1 Year Subsc</td>
+              <td style="text-align: center">3</td>
+              <td style="text-align: end">3,672,00</td>
+              <td style="text-align: end">7,344,00 Tk.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Microsoft 365 Basic is a subscription for one person</td>
+              <td style="text-align: center">7</td>
+              <td style="text-align: end">3,672,00</td>
+              <td style="text-align: end">7,344,00 Tk.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Basic is a subscription for one person Microsoft 365</td>
+              <td style="text-align: center">5</td>
+              <td style="text-align: end">3,672,00</td>
+              <td style="text-align: end">7,344,00 Tk.</td>
+            </tr>
+            <tr style="background-color: #eeeeee3d">
+              <td colspan="4" style="text-align: end; font-weight: 500">
+                SUBTOTAL
+              </td>
+              <td style="text-align: end; font-weight: 500">7,344,00 Tk.</td>
+            </tr>
+            <tr style="">
+              <td
+                colspan="4"
+                style="text-align: end; font-weight: 400; font-size: 12px"
+              >
+                VAT / TAX
+              </td>
+              <td style="text-align: end; font-weight: 400; font-size: 12px">
+                7,344,00 Tk.
+              </td>
+            </tr>
+            <tr style="">
+              <td
+                colspan="4"
+                style="text-align: end; font-weight: 400; font-size: 12px"
+              >
+                SPECIAL DISCOUNT
+              </td>
+              <td style="text-align: end; font-weight: 400; font-size: 12px">
+                7,344,00 Tk.
+              </td>
+            </tr>
+            <tr style="background-color: #eee">
+              <td colspan="4" style="text-align: end; font-weight: 500">
+                GRANDTOTAL
+              </td>
+              <td style="text-align: end; font-weight: 500">7,344,00 Tk.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div
+          class="content"
+          style="
+            border: 0;
+            padding-top: 10px;
+            padding-bottom: 0px !important;
+            padding-left: 0;
+            padding-right: 0;
+          "
+        >
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    text-align: center;
+                    font-weight: 500;
+                    padding-bottom: 10px;
+                  "
+                >
+                  GST - 8% Not included. It may apply.
+                </th>
+              </tr>
+              <tr>
+                <th
+                  style="
+                  background-color: #f0f0f0;
+                    border: 0;
+                    padding: 0;
+                    text-align: start;
+                    font-weight: 500;
+                    padding: 5px;
+                  "
+                >
+                  Terms & Conditions
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <table
+          class="content-table table-two"
+          style="margin-top: 5px; border: 0px solid #eee"
+        >
+          <tbody>
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                Validity
+              </td>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                :
+              </td>
+              <td style="font-size: 12px; padding: 5px; border: 0">
+                Valid till 7 days from PQ. Offer may change on the bank forex
+                rate or stock availability
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                Payment
+              </td>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                :
+              </td>
+              <td style="font-size: 12px; padding: 5px; border: 0">
+                100% payment through EFTN/WT & hit in the NGen IT Limited
+                account within 30 days of Delivery
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                Product Mode
+              </td>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                :
+              </td>
+              <td style="font-size: 12px; padding: 5px; border: 0">
+                Product may take a certain time for payment, Shipment, Delivery.
+                In exception it may differ.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                Delivery
+              </td>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                :
+              </td>
+              <td style="font-size: 12px; padding: 5px; border: 0">
+                Business weeks upon receiving of WO. Extended time may require
+                in any disaster issues
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                Delivery Location
+              </td>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                :
+              </td>
+              <td style="font-size: 12px; padding: 5px; border: 0">
+                Via Email / Console Panel
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                Warranty
+              </td>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                :
+              </td>
+              <td style="font-size: 12px; padding: 5px; border: 0">
+                Principal Standard Warranty for respective product
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                Installation
+              </td>
+              <td
+                style="
+                  font-size: 12px;
+                  padding: 5px;
+                  border: 0;
+                  font-weight: 500;
+                "
+              >
+                :
+              </td>
+              <td style="font-size: 12px; padding: 5px; border: 0">
+                No Installation or Maintenance is applicable with this price
+                quote
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Additional Content Table -->
+        <table class="content-table table-two" style="margin-top: 15px">
+          <tbody>
+            <tr>
+              <td
+                colspan="6"
+                style="
+                  padding: 0;
+                  border: 0;
+                  text-align: end;
+                  font-weight: 500;
+                  padding-bottom: 8px;
+                "
+              >
+                Authorized Brands
+              </td>
+            </tr>
+          </tbody>
+          <tbody style="background-color: #f0f0f0">
+            <tr style="padding: 10px">
+              <td class="table-two-th" style="padding: 0">
+                <img src="./img/logo1.png" alt="" style="padding-left: 15px" />
+              </td>
+              <td class="table-two-th" style="padding: 0">
+                <img src="./img/logo2.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: center; padding: 0">
+                <img src="./img/logo3.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo4.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo2.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo3.png" alt="" style="padding-right: 15px" />
+              </td>
+            </tr>
+            <tr style="padding: 10px">
+              <td class="table-two-th" style="padding: 0">
+                <img src="./img/logo1.png" alt="" style="padding-left: 15px" />
+              </td>
+              <td class="table-two-th" style="padding: 0">
+                <img src="./img/logo2.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: center; padding: 0">
+                <img src="./img/logo3.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo4.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo2.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo3.png" alt="" style="padding-right: 15px" />
+              </td>
+            </tr>
+            <tr style="padding: 10px">
+              <td class="table-two-th" style="padding: 0">
+                <img src="./img/logo1.png" alt="" style="padding-left: 15px" />
+              </td>
+              <td class="table-two-th" style="padding: 0">
+                <img src="./img/logo2.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: center; padding: 0">
+                <img src="./img/logo3.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo4.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo2.png" alt="" />
+              </td>
+              <td class="table-two-th" style="text-align: end; padding: 0">
+                <img src="./img/logo3.png" alt="" style="padding-right: 15px" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Additional Content Table -->
+        <div style="display: flex; align-items: center">
+          <table class="content-table" style="margin-top: 20px; width: 75%">
+            <thead>
+              <tr>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    font-weight: 600;
+                    padding-top: 5px;
+                  "
+                >
+                  Adan Mahmud
+                </th>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    font-weight: normal;
+                    padding-top: 5px;
+                  "
+                >
+                  sales@ngenitltd.com
+                </th>
+              </tr>
+              <tr>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    font-weight: normal;
+                    padding-top: 5px;
+                  "
+                >
+                  Sr. Manager
+                </th>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    font-weight: normal;
+                    padding-top: 5px;
+                  "
+                >
+                  +880 1714 243446 (What’s App)
+                </th>
+              </tr>
+              <tr>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    font-weight: normal;
+                    padding-top: 5px;
+                  "
+                >
+                  Partner & Business Development
+                </th>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    font-weight: normal;
+                    padding-top: 5px;
+                  "
+                >
+                  +10917-720-3065 (Skype)
+                </th>
+              </tr>
+            </thead>
+          </table>
+          <table class="content-table" style="margin-top: 15px; width: 25%">
+            <thead>
+              <tr>
+                <th
+                  style="
+                    border: 0;
+                    padding: 0;
+                    font-weight: 500;
+                    padding-top: 5px;
+                  "
+                >
+                  <div style="text-align: center">
+                    <h3
+                      style="
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        color: #ae0a46;
+                      "
+                    >
+                      NGEN PTE. LTd.
+                    </h3>
+                    <p style="margin: 0; padding-bottom: 0">
+                      Reg-no: 20434861K
+                    </p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p style="padding: 0; margin: 10px">
+          <a class="footer-link" href="https://www.ngenitltd.com"
+            >www.ngenitltd.com</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- Second Page -->
+    <div class="pdf-container" style="margin-top: 15px; border: 1px solid #eee">
+      <!-- Content -->
+      <div
+        class="content"
+        style="padding-left: 0; padding-right: 0; padding-top: 0"
+      >
+        <!-- Main Content Here -->
+        <div style="background-color: #eee">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              padding: 30px;
+              padding-top: 0;
+              padding-bottom: 0;
+            "
+          >
+            <table class="content-table" style="margin-top: 0px; width: 70%">
+              <thead>
+                <tr>
+                  <th
+                    style="
+                      border: 0;
+                      padding: 0;
+                      font-weight: 500;
+                      padding-top: 5px;
+                    "
+                  >
+                    <h2
+                      style="
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        color: #ae0a46;
+                      "
+                    >
+                      Shop Products and Hardware
+                    </h2>
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    style="
+                      border: 0;
+                      padding: 0;
+                      font-weight: normal;
+                      padding-top: 10px;
+                      text-align: justify;
+                    "
+                  >
+                    <div>
+                      <p style="width: 75%">
+                        Among more than 2248 products and 394 brands at your
+                        service, we can provide you with the tools you need to
+                        succeed. Additionally, you may easily ask your exact
+                        requirements or contact us at anytime.
+                      </p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+            <table class="content-table" style="width: 30%">
+              <thead>
+                <tr>
+                  <th style="border: 0; padding: 0; font-weight: 500">
+                    <div style="text-align: center; margin: 20px">
+                      <a
+                        href=""
+                        style="
+                          background-color: #fff;
+                          padding: 10px;
+                          color: #000000;
+                          width: 100%;
+                          display: block;
+                          text-decoration: none;
+                          margin-bottom: 4px;
+                        "
+                        >Brands</a
+                      >
+                      <a
+                        href=""
+                        style="
+                          background-color: #fff;
+                          padding: 10px;
+                          color: #000000;
+                          width: 100%;
+                          display: block;
+                          text-decoration: none;
+                          margin-bottom: 4px;
+                        "
+                        >Product Categories</a
+                      >
+                      <a
+                        href=""
+                        style="
+                          background-color: #fff;
+                          padding: 10px;
+                          color: #000000;
+                          width: 100%;
+                          display: block;
+                          text-decoration: none;
+                          margin-bottom: 4px;
+                        "
+                        >Software</a
+                      >
+                      <a
+                        href=""
+                        style="
+                          background-color: #fff;
+                          padding: 10px;
+                          color: #000000;
+                          width: 100%;
+                          display: block;
+                          text-decoration: none;
+                          margin-bottom: 4px;
+                        "
+                        >Hardware</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Info Content Table (Bottom Section) -->
+      <div class="bottom-section">
+        <div style="display: flex; align-items: center; text-align: left">
+          <table style="width: 70%">
+            <thead>
+              <tr>
+                <th style="font-weight: 600">Adan Mahmud</th>
+                <th style="font-weight: normal; padding: 0">
+                  sales@ngenitltd.com
+                </th>
+              </tr>
+              <tr>
+                <th style="font-weight: normal; padding: 0">Sr. Manager</th>
+                <th style="font-weight: normal; padding: 0">
+                  +880 1714 243446 (What’s App)
+                </th>
+              </tr>
+              <tr>
+                <th style="font-weight: normal; padding: 0">
+                  Partner & Business Development
+                </th>
+                <th style="font-weight: normal; padding: 0">
+                  +10917-720-3065 (Skype)
+                </th>
+              </tr>
+            </thead>
+          </table>
+          <table style="width: 30%; text-align: center">
+            <thead>
+              <tr>
+                <th>
+                  <h3 style="margin: 0; color: #ae0a46">NGEN PTE. LTd.</h3>
+                  <p style="margin: 0; font-weight: 500">Reg-no: 20434861K</p>
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <p style="margin-top: 15px">
+          <a class="footer-link" href="https://www.ngenitltd.com"
+            >www.ngenitltd.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
