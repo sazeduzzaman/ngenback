@@ -6591,8 +6591,9 @@ background-color: transparent !important;
   /* box-shadow: 0 0.1rem 1rem 0.25rem rgba(0, 0, 0, 0.05) !important; */
   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important; */
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px !important; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px !important;
 }
 .shadow-lg {
   box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.1) !important;
@@ -48119,4 +48120,9 @@ td {
     height: 30px;
     text-align: center;
     line-height: 2.6;
+}
+.sub_title{
+  position: relative;
+  bottom: -5px;
+  background-color: #000;
 }
