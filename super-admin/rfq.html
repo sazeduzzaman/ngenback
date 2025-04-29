@@ -85,7 +85,7 @@
       --kt-toolbar-height: 55px;
       --kt-toolbar-height-tablet-and-mobile: 55px;
     "
-  >
+   data-kt-aside-minimize="on">
     <div class="d-flex flex-column flex-root">
       <div class="page d-flex flex-row flex-column-fluid">
         <div
@@ -100,10 +100,10 @@
           data-kt-drawer-toggle="#kt_aside_mobile_toggle"
         >
           <div class="aside-logo flex-column-auto" id="kt_aside_logo">
-            <a href="../../demo1/dist/index.html">
+            <a href="/index.html">
               <img
                 alt="Logo"
-                src="https://i.ibb.co/yddR5JX/minimal-letters-professional-ngen-logo-260nw-2016934238-removebg-preview.png"
+                src="./assets/logo.png"
                 class=""
                 style="width: 200px; height: 80px"
               />
@@ -111,7 +111,7 @@
 
             <div
               id="kt_aside_toggle"
-              class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle"
+              class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle active"
               data-kt-toggle="true"
               data-kt-toggle-state="active"
               data-kt-toggle-target="body"
@@ -279,7 +279,7 @@
                         </svg>
                       </span>
                     </span>
-                    <span class="menu-title">Super Admin</span>
+                    <span class="menu-title">Admin</span>
                   </a>
                 </div>
                 <div
@@ -5347,7 +5347,7 @@
                             <div
                               class="d-flex flex-column align-items-center pe-4"
                             >
-                              <span class="main_text_color fw-bold fs-1 pe-4">
+                              <span class="text-white bg-primary fw-bold fs-1 p-3 px-4 rounded-circle">
                                 10
                               </span>
                             </div>
@@ -5715,7 +5715,7 @@
                                 class="d-flex flex-column flex-md-row rounded"
                               >
                                 <ul
-                                  class="nav nav-tabs nav-pills flex-row border-0 flex-md-column me-5 mb-3 mb-md-0 fs-6 min-w-lg-250px"
+                                  class="nav nav-tabs nav-pills flex-row border-0 flex-md-column me-5 mb-3 mb-md-0 fs-6 min-w-lg-400px"
                                 >
                                   <li class="nav-item w-100 me-0 mb-md-2">
                                     <a
@@ -5724,23 +5724,25 @@
                                       href="#kt_vtab_pane_4"
                                     >
                                       <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                      <div class="row w-100">
+                                      <div class="row w-100 align-items-center">
                                         <div class="col-sm-12">
                                           <div
-                                            class="d-flex justify-content-between"
+                                            class="d-flex justify-content-between align-items-center"
                                           >
                                             <span class="fs-7 fw-bold"
                                               >Brothers IT</span
                                             >
-                                            <span class="fs-7">#14568RFQ</span>
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
                                           </div>
                                           <div
-                                            class="d-flex justify-content-between"
+                                            class="d-flex justify-content-between align-items-center"
                                           >
                                             <span class="fs-7 fw-bold"
                                               >25 Aug 24</span
                                             >
-                                            <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7">05:00pm</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
                                           </div>
                                         </div>
                                       </div>
@@ -5753,26 +5755,28 @@
                                       href="#kt_vtab_pane_5"
                                     >
                                     <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                    <div class="row w-100">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >Brothers IT</span
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">#14568RFQ</span>
-                                        </div>
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >25 Aug 24</span
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <span class="fs-7">05:00pm</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
                                     </a>
                                   </li>
                                   <li class="nav-item w-100 mb-md-2">
@@ -5782,26 +5786,30 @@
                                       href="#kt_vtab_pane_6"
                                     >
                                     <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                    <div class="row w-100">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >Brothers IT</span
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">#14568RFQ</span>
-                                        </div>
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >25 Aug 24</span
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <div class="border rounded-3">
+                                              <span class="fs-7 text-black">05:00pm</span><span class="bg-warning px-2 fs-7 rounded-3">3D Pending</span>
+                                            </div> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
                                     </a>
                                   </li>
                                   <li class="nav-item w-100 mb-md-2">
@@ -5811,26 +5819,28 @@
                                       href="#kt_vtab_pane_6"
                                     >
                                     <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                    <div class="row w-100">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >Brothers IT</span
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">#14568RFQ</span>
-                                        </div>
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >25 Aug 24</span
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <span class="fs-7">05:00pm</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
                                     </a>
                                   </li>
                                   <li class="nav-item w-100 mb-md-2">
@@ -5840,26 +5850,28 @@
                                       href="#kt_vtab_pane_6"
                                     >
                                     <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                    <div class="row w-100">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >Brothers IT</span
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">#14568RFQ</span>
-                                        </div>
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >25 Aug 24</span
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <span class="fs-7">05:00pm</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
                                     </a>
                                   </li>
                                   <li class="nav-item w-100 mb-md-2">
@@ -5869,26 +5881,28 @@
                                       href="#kt_vtab_pane_6"
                                     >
                                     <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                    <div class="row w-100">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >Brothers IT</span
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">#14568RFQ</span>
-                                        </div>
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >25 Aug 24</span
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <span class="fs-7">05:00pm</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
                                     </a>
                                   </li>
                                   <li class="nav-item w-100 mb-md-2">
@@ -5898,26 +5912,28 @@
                                       href="#kt_vtab_pane_6"
                                     >
                                     <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                    <div class="row w-100">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >Brothers IT</span
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">#14568RFQ</span>
-                                        </div>
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >25 Aug 24</span
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <span class="fs-7">05:00pm</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
                                     </a>
                                   </li>
                                   <li class="nav-item w-100 mb-md-2">
@@ -5927,26 +5943,28 @@
                                       href="#kt_vtab_pane_6"
                                     >
                                     <i class="fa-regular fa-file fs-2 text-primary pe-3"></i>
-                                    <div class="row w-100">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >Brothers IT</span
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">#14568RFQ</span>
-                                        </div>
-                                        <div
-                                          class="d-flex justify-content-between"
-                                        >
-                                          <span class="fs-7 fw-bold"
-                                            >25 Aug 24</span
+                                            <span class="fs-7 fw-bold"
+                                              >Brothers IT</span
+                                            >
+                                            <span class="fs-7">#14568RFQ</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
+                                          </div>
+                                          <div
+                                            class="d-flex justify-content-between align-items-center"
                                           >
-                                          <span class="fs-7">05:00pm</span>
+                                            <span class="fs-7 fw-bold"
+                                              >25 Aug 24</span
+                                            >
+                                            <span class="fs-7">05:00pm</span> <br>
+                                            <button class="btn-sm btn btn-primary py-0 mt-2 px-7"><i class="fa-regular fa-handshake pe-2"></i>Deal</button>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
                                     </a>
                                   </li>
                                 </ul>
@@ -5965,8 +5983,7 @@
                                       <div>
                                         <button class="btn btn-primary me-2"><i class="fa-solid fa-signs-post pe-2"></i>Bypass</button>
                                       <button class="btn btn-primary"><i class="fa-regular fa-handshake pe-2"></i> Deal</button>
-                                      <button class="btn btn-primary"><i class="fa-regular fa-pen-to-square pe-2"></i>Edit</button>
-                                      <button class="btn btn-primary"><i class="fa-solid fa-expand pe-2"></i>View</button>
+                                      
                                       </div>
                                     </div>
                                   </div>

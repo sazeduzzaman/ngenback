@@ -27410,9 +27410,10 @@ a:hover {
   align-items: center;
   padding: 0;
   flex: 0 0 100%;
-  padding: 0.65rem 1rem;
+  padding: 4px 18px;
   transition: none;
   outline: 0 !important;
+  margin-bottom: 10px;
 }
 .menu-item .menu-link .menu-icon {
   flex-shrink: 0;
@@ -31648,7 +31649,7 @@ a:hover {
   color: var(--site-primary);
 }
 .menu-state-title-primary .menu-item .menu-link.active .menu-title {
-  color: var(--site-primary);
+  color: #fff !important;
 }
 .menu-hover-icon-primary
   .menu-item.hover:not(.here)
@@ -44839,7 +44840,7 @@ body {
 }
 .aside-menu .menu .menu-item .menu-content,
 .aside-menu .menu .menu-item .menu-link {
-  padding-left: 25px;
+  padding-left: 20px;
   padding-right: 25px;
 }
 .aside-menu
@@ -46465,7 +46466,7 @@ body {
   border-radius: 5px;
 }
 .aside-dark .menu .menu-item .menu-link.active .menu-title {
-  color: #fff;
+  color: #000;
 }
 .aside-dark .menu .menu-item .menu-link.active .menu-icon,
 .aside-dark .menu .menu-item .menu-link.active .menu-icon .svg-icon,
@@ -48093,7 +48094,7 @@ td {
   color: #0b6476;
 }
 [data-kt-aside-minimize="on"] .aside-logo img {
-  width: 110px !important;
+  width: 50px !important;
   position: relative;
   left: 10px;
   height: auto !important;
