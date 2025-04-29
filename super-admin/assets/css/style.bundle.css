@@ -48121,3 +48121,8 @@ td {
     text-align: center;
     line-height: 2.6;
 }
+
+.rfq-boxes{
+  height: 500px;
+  overflow-y: auto;
+}
