@@ -5655,203 +5655,150 @@
                   >
                   <div class="col-lg-12">
                     <div class="card card-flush border-0 shadow-sm">
-                      <div class="card-body pt-0 pb-0 pe-3">
-                        <div class="row">
-                          <div class="col-2">
-                            <div class="pt-10">
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  value="single"
-                                  id="flexCheckDefault1"
-                                  name="radio2"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckDefault1"
-                                >
-                                  Single Email
-                                </label>
-                              </div>
-                              <div class="pt-2">
-                                <div class="form-check">
+                      <div class="card-body pt-0 pb-0">
+                        <div class="row py-10">
+                          <!-- Email Option Column -->
+                          <div class="col-lg-3">
+                            <div class="card card-flush border-0 shadow-sm">
+                              <div class="card-body pt-0">
+                                <h3 class="text-gray-800 fw-bold pt-10">
+                                  Choose Email Option
+                                </h3>
+                                <div class="form-check py-2">
                                   <input
-                                    class="form-check-input"
+                                    class="form-check-input email-option-radio"
                                     type="radio"
-                                    value="bulk"
-                                    id="flexCheckChecked1"
-                                    name="radio2"
+                                    value="Email"
+                                    id="inbox-radio-120"
+                                    name="inbox"
                                   />
                                   <label
-                                    class="form-check-label"
-                                    for="flexCheckChecked1"
+                                    class="form-check-label d-block"
+                                    for="inbox-radio-120"
                                   >
-                                    Bulk Email
+                                    <span class="fw-semibold">Email</span>
+                                  </label>
+                                </div>
+                                <div class="form-check py-2">
+                                  <input
+                                    class="form-check-input email-option-radio"
+                                    type="radio"
+                                    value="Bulk"
+                                    id="inbox-radio-122"
+                                    name="inbox"
+                                  />
+                                  <label
+                                    class="form-check-label d-block"
+                                    for="inbox-radio-122"
+                                  >
+                                    <span class="fw-semibold">Bulk Email</span>
                                   </label>
                                 </div>
                               </div>
                             </div>
-                            <div
-                              class="mt-8"
-                              id="singleSection"
-                              style="display: none"
-                            >
-                              <div>
-                                <span>Customer Type</span>
-                                <select
-                                  class="form-select form-select-sm"
-                                  id="singleCustomerSelect"
-                                >
-                                  <option>Choose Customer Type</option>
-                                  <option value="client_all" selected>
-                                    All Client
-                                  </option>
-                                  <option value="client_one">Client One</option>
-                                  <option value="client_two">Client Two</option>
-                                  <option value="client_three">
-                                    Client Three
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                            <div
-                              class="mt-8"
-                              id="bulkSection"
-                              style="display: none"
-                            >
-                              <span>Customer Type</span>
-                              <select
-                                class="form-select form-select-sm"
-                                id="bulkCustomerSelect"
-                              >
-                                <option>Choose Type</option>
-                                <option value="all_technical">All</option>
-                                <option value="technical">Technical</option>
-                                <option value="proqurement">Proqurement</option>
-                              </select>
-                            </div>
-                            <!-- Submit Button -->
-                            <div
-                              style="
-                                display: flex;
-                                flex-direction: column;
-                                height: 180px;
-                              "
-                            >
-                              <!-- Adjust height as needed -->
-                              <!-- Other content here -->
+                          </div>
 
-                              <div style="margin-top: auto">
-                                <button
-                                  class="btn btn-sm fw-bold btn-primary w-100 fa-bounce"
-                                >
-                                  Go To Draft
-                                  <i
-                                    class="fas fa-arrow-right-long text-white"
-                                  ></i>
-                                </button>
+                          <!-- Client Select Column -->
+                          <div class="col-lg-3">
+                            <div class="">
+                              <div
+                                class="card card-flush border-0 shadow-sm client-default-text"
+                              >
+                                <div class="card-header pt-5">
+                                  <h3 class="card-title text-gray-800 fw-bold">
+                                    Chose First Email Options
+                                  </h3>
+                                </div>
+                                <div class="card-body pt-5">
+                                  Please select either Single Email or Bulk
+                                  Email before proceeding.
+                                </div>
+                              </div>
+
+                              <!-- if chose single email -->
+                              <div
+                                class="single-email-div"
+                                style="display: none"
+                              >
+                                <div class="card card-flush border-0 shadow-sm">
+                                  <div class="card-header pt-5">
+                                    <h3
+                                      class="card-title text-gray-800 fw-bold"
+                                    >
+                                      Choose Client
+                                    </h3>
+                                  </div>
+                                  <div class="card-body pt-5">
+                                    <select
+                                      class="form-select"
+                                      data-control="select2"
+                                      data-placeholder="Which Client You Need"
+                                    >
+                                    <option value="client1">John Doe <span class="email">john.doe@example.com</span></option>
+                                    <option value="client2">Jane Smith <span class="email">jane.smith@example.com</span></option>
+                                    <option value="client3">Alex Johnson <span class="email">alex.johnson@example.com</span></option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- if chose bulk -->
+                              <div class="bulk-email-div" style="display: none">
+                                <div class="card card-flush border-0 shadow-sm">
+                                  <div class="card-header pt-5">
+                                    <h3
+                                      class="card-title text-gray-800 fw-bold"
+                                    >
+                                      Multi Client
+                                    </h3>
+                                  </div>
+                                  <div class="card-body pt-5">
+                                    <input
+                                      class="form-control d-flex align-items-center"
+                                      value=""
+                                      placeholder="Choose Multi Client"
+                                      id="kt_tagify_users"
+                                    />
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="col-10">
-                            <div id="customerDiv" style="display: none">
-                              <div
-                                class="table-responsive"
-                                style="height: 360px; overflow-y: scroll"
-                              >
-                                <table
-                                  class="clientInfo table table-striped table-row-bordered gy-5 gs-7 border rounded"
-                                >
-                                  <thead>
-                                    <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                      <th style="width: 10%">
-                                        <!-- <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                              <input class="form-check-input" type="checkbox" value="334" />
-                                          </div> -->
-                                      </th>
-                                      <th style="width: 10%">Sl</th>
-                                      <th style="width: 20%">
-                                        Client Information
-                                      </th>
-                                      <th style="width: 20%">Designation</th>
-                                      <th style="width: 10%">Company</th>
-                                      <th style="width: 10%">Service</th>
-                                      <th
-                                        style="width: 10%"
-                                        class="text-center"
-                                      >
-                                        Date
-                                      </th>
-                                      <th style="width: 10%" class="text-end">
-                                        Type
-                                      </th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <div
-                                          class="form-check form-check-sm form-check-custom form-check-solid"
-                                        >
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value="334"
-                                          />
-                                        </div>
-                                      </td>
-                                      <td>01</td>
-                                      <td>
-                                        <h6>Jhone Doe</h6>
-                                        <p>jhondoe@gmail.com</p>
-                                      </td>
-                                      <td>Marketing Cheif</td>
-                                      <td>NextWave</td>
-                                      <td>
-                                        <span class="badge bg-primary"
-                                          >Product</span
-                                        >
-                                      </td>
-                                      <td class="bg-warning text-center">
-                                        1 Week Ago
-                                      </td>
-                                      <td class="text-end">Technical</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div
-                                          class="form-check form-check-sm form-check-custom form-check-solid"
-                                        >
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value="334"
-                                          />
-                                        </div>
-                                      </td>
-                                      <td>01</td>
-                                      <td>
-                                        <h6>Jhone Doe</h6>
-                                        <p>jhondoe@gmail.com</p>
-                                      </td>
-                                      <td>Marketing Cheif</td>
-                                      <td>NextZen</td>
-                                      <td>
-                                        <span class="badge bg-primary"
-                                          >Solution</span
-                                        >
-                                      </td>
-                                      <td class="text-center">5 Week Ago</td>
-                                      <td class="text-end">Proqurement</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+
+                          <div class="col-lg-3">
+                            <div class="card card-flush border-0 shadow-sm">
+                              <div class="card-header pt-5">
+                                <h3 class="card-title text-gray-800 fw-bold">
+                                  Product And Solution
+                                </h3>
+                              </div>
+                              <div class="card-body pt-5">
+                                <input
+                                  class="form-control d-flex align-items-center"
+                                  value=""
+                                  id="kt_tagify_country"
+                                />
                               </div>
                             </div>
-                            <div id="technicalDiv" style="display: none">
-                              Technical
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="card card-flush border-0 shadow-sm">
+                              <div class="card-header pt-5">
+                                <h3 class="card-title text-gray-800 fw-bold">
+                                  Attachment
+                                </h3>
+                              </div>
+                              <div class="card-body pt-5">
+                                <select
+                                  class="form-select"
+                                  data-control="select2"
+                                  data-placeholder="Select an option"
+                                >
+                                  <option></option>
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -5861,9 +5808,9 @@
                 </div>
                 <div class="row mt-10">
                   <span
-                    class="sub_title badge badge-primary w-100px ms-10 py-2 px-5"
+                    class="sub_title badge badge-primary w-150px ms-10 py-2 px-5"
                     style="margin-bottom: -10px; z-index: 5"
-                    >Create Mail</span
+                    >Preview &Create Mail</span
                   >
                   <div class="card card-flush border-0 shadow-sm">
                     <div class="card-body pe-0 pb-2">
@@ -6584,71 +6531,258 @@
       });
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const radios = document.querySelectorAll('input[name="radio2"]');
-        const singleSection = document.getElementById("singleSection");
-        const bulkSection = document.getElementById("bulkSection");
+      var inputElm = document.querySelector("#kt_tagify_users");
 
-        radios.forEach((radio) => {
-          radio.addEventListener("change", function () {
-            if (this.value === "single") {
-              singleSection.style.display = "block";
-              bulkSection.style.display = "none";
-            } else if (this.value === "bulk") {
-              singleSection.style.display = "none";
-              bulkSection.style.display = "block";
+      const usersList = [
+        {
+          value: 1,
+          name: "Emma Smith",
+          avatar: "avatars/300-6.jpg",
+          email: "e.smith@kpmg.com.au",
+        },
+        {
+          value: 2,
+          name: "Max Smith",
+          avatar: "avatars/300-1.jpg",
+          email: "max@kt.com",
+        },
+        {
+          value: 3,
+          name: "Sean Bean",
+          avatar: "avatars/300-5.jpg",
+          email: "sean@dellito.com",
+        },
+        {
+          value: 4,
+          name: "Brian Cox",
+          avatar: "avatars/300-25.jpg",
+          email: "brian@exchange.com",
+        },
+        {
+          value: 5,
+          name: "Francis Mitcham",
+          avatar: "avatars/300-9.jpg",
+          email: "f.mitcham@kpmg.com.au",
+        },
+        {
+          value: 6,
+          name: "Dan Wilson",
+          avatar: "avatars/300-23.jpg",
+          email: "dam@consilting.com",
+        },
+        {
+          value: 7,
+          name: "Ana Crown",
+          avatar: "avatars/300-12.jpg",
+          email: "ana.cf@limtel.com",
+        },
+        {
+          value: 8,
+          name: "John Miller",
+          avatar: "avatars/300-13.jpg",
+          email: "miller@mapple.com",
+        },
+      ];
+
+      function tagTemplate(tagData) {
+        return `
+        <tag title="${tagData.title || tagData.email}"
+                contenteditable='false'
+                spellcheck='false'
+                tabIndex="-1"
+                class="${this.settings.classNames.tag} ${
+          tagData.class ? tagData.class : ""
+        }"
+                ${this.getAttributes(tagData)}>
+            <x title='' class='tagify__tag__removeBtn' role='button' aria-label='remove tag'></x>
+            <div class="d-flex align-items-center">
+                <div class='tagify__tag__avatar-wrap ps-0'>
+                    <img onerror="this.style.visibility='hidden'" class="rounded-circle w-25px me-2" src="assets/media/${
+                      tagData.avatar
+                    }">
+                </div>
+                <span class='tagify__tag-text'>${tagData.name}</span>
+            </div>
+        </tag>
+    `;
+      }
+
+      function suggestionItemTemplate(tagData) {
+        return `
+        <div ${this.getAttributes(tagData)}
+            class='tagify__dropdown__item d-flex align-items-center ${
+              tagData.class ? tagData.class : ""
+            }'
+            tabindex="0"
+            role="option">
+
+            ${
+              tagData.avatar
+                ? `
+                    <div class='tagify__dropdown__item__avatar-wrap me-2'>
+                        <img onerror="this.style.visibility='hidden'"  class="rounded-circle w-50px me-2" src="assets/media/${tagData.avatar}">
+                    </div>`
+                : ""
             }
-          });
-        });
 
-        // Trigger change event on the default selected radio
-        const defaultChecked = document.querySelector(
-          'input[name="radio2"]:checked'
-        );
-        if (defaultChecked) {
-          defaultChecked.dispatchEvent(new Event("change"));
+            <div class="d-flex flex-column">
+                <strong>${tagData.name}</strong>
+                <span>${tagData.email}</span>
+            </div>
+        </div>
+    `;
+      }
+
+      // initialize Tagify on the above input node reference
+      var tagify = new Tagify(inputElm, {
+        tagTextProp: "name", // very important since a custom template is used with this property as text. allows typing a "value" or a "name" to match input with whitelist
+        enforceWhitelist: true,
+        skipInvalid: true, // do not remporarily add invalid tags
+        dropdown: {
+          closeOnSelect: false,
+          enabled: 0,
+          classname: "users-list",
+          searchKeys: ["name", "email"], // very important to set by which keys to search for suggesttions when typing
+        },
+        templates: {
+          tag: tagTemplate,
+          dropdownItem: suggestionItemTemplate,
+        },
+        whitelist: usersList,
+      });
+
+      tagify.on("dropdown:show dropdown:updated", onDropdownShow);
+      tagify.on("dropdown:select", onSelectSuggestion);
+
+      var addAllSuggestionsElm;
+
+      function onDropdownShow(e) {
+        var dropdownContentElm = e.detail.tagify.DOM.dropdown.content;
+
+        if (tagify.suggestedListItems.length > 1) {
+          addAllSuggestionsElm = getAddAllSuggestionsElm();
+
+          // insert "addAllSuggestionsElm" as the first element in the suggestions list
+          dropdownContentElm.insertBefore(
+            addAllSuggestionsElm,
+            dropdownContentElm.firstChild
+          );
         }
+      }
+
+      function onSelectSuggestion(e) {
+        if (e.detail.elm == addAllSuggestionsElm)
+          tagify.dropdown.selectAll.call(tagify);
+      }
+
+      // create a "add all" custom suggestion element every time the dropdown changes
+      function getAddAllSuggestionsElm() {
+        // suggestions items should be based on "dropdownItem" template
+        return tagify.parseTemplate("dropdownItem", [
+          {
+            class: "addAll",
+            name: "Add all",
+            email:
+              tagify.settings.whitelist.reduce(function (
+                remainingSuggestions,
+                item
+              ) {
+                return tagify.isTagDuplicate(item.value)
+                  ? remainingSuggestions
+                  : remainingSuggestions + 1;
+              },
+              0) + " Members",
+          },
+        ]);
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        const $defaultText = $(".client-default-text");
+        const $singleDiv = $(".single-email-div");
+        const $bulkDiv = $(".bulk-email-div");
+
+        // Initially show only default text
+        $singleDiv.hide();
+        $bulkDiv.hide();
+        $defaultText.show();
+
+        $(".email-option-radio").on("change", function () {
+          const selectedValue = $(this).val();
+
+          if (selectedValue === "Email") {
+            $singleDiv.show();
+            $bulkDiv.hide();
+            $defaultText.hide();
+          } else if (selectedValue === "Bulk") {
+            $bulkDiv.show();
+            $singleDiv.hide();
+            $defaultText.hide();
+          }
+        });
       });
     </script>
-
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const bulkSelect = document.getElementById("bulkCustomerSelect");
-        const singleSelect = document.getElementById("singleCustomerSelect");
-        const customerDiv = document.getElementById("customerDiv");
-        const technicalDiv = document.getElementById("technicalDiv");
-
-        function handleSelectChange(value) {
-          if (
-            value === "technical" ||
-            value === "all_technical" ||
-            value === "proqurement"
-          ) {
-            customerDiv.style.display = "none";
-            technicalDiv.style.display = "block";
-          } else if (
-            value === "client_all" ||
-            value === "client_one" ||
-            value === "client_two" ||
-            value === "client_three"
-          ) {
-            customerDiv.style.display = "block";
-            technicalDiv.style.display = "none";
-          } else {
-            customerDiv.style.display = "none";
-            technicalDiv.style.display = "none";
-          }
-        }
-
-        bulkSelect.addEventListener("change", (e) =>
-          handleSelectChange(e.target.value)
-        );
-        singleSelect.addEventListener("change", (e) =>
-          handleSelectChange(e.target.value)
-        );
-
-        // ✅ Set initial state on page load (default to customer)
-        handleSelectChange(singleSelect.value || bulkSelect.value);
+      var tagify = new Tagify(document.querySelector("#kt_tagify_country"), {
+        delimiters: null,
+        templates: {
+          tag: function (tagData) {
+            const productPath =
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgAKaKjsVpg_jxfEpcUtOzgJQqBybTOadfw&s" +
+              tagData.value.toLowerCase().replace(/\s+/g, "-") +
+              ".svg";
+            try {
+              return `<tag title='${
+                tagData.value
+              }' contenteditable='false' spellcheck="false"
+                      class='tagify__tag ${
+                        tagData.class || ""
+                      }' ${this.getAttributes(tagData)}>
+                      <x title='remove tag' class='tagify__tag__removeBtn'></x>
+                      <div class="d-flex align-items-center">
+                          <img onerror="this.style.visibility = 'hidden'" class="w-25px rounded-circle me-2" src='${productPath}' />
+                          <span class='tagify__tag-text'>${tagData.value}</span>
+                      </div>
+                    </tag>`;
+            } catch (err) {}
+          },
+          dropdownItem: function (tagData) {
+            const productPath =
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgAKaKjsVpg_jxfEpcUtOzgJQqBybTOadfw&s" +
+              tagData.value.toLowerCase().replace(/\s+/g, "-") +
+              ".svg";
+            try {
+              return `<div ${this.getAttributes(
+                tagData
+              )} class='tagify__dropdown__item ${tagData.class || ""}'>
+                      <img onerror="this.style.visibility = 'hidden'" class="w-25px rounded-circle me-2" src='${productPath}' />
+                      <span>${tagData.value}</span>
+                    </div>`;
+            } catch (err) {}
+          },
+        },
+        enforceWhitelist: true,
+        whitelist: [
+          { value: "iPhone 15" },
+          { value: "MacBook Air" },
+          { value: "Galaxy S24" },
+          { value: "iPad Pro" },
+          { value: "Pixel 8 Pro" },
+          { value: "Apple Watch Ultra" },
+          { value: "PlayStation 5" },
+          { value: "Xbox Series X" },
+          { value: "Dell XPS 13" },
+          { value: "Lenovo ThinkPad X1" },
+          { value: "Surface Pro 9" },
+          { value: "OnePlus 12" },
+          { value: "Galaxy Z Fold5" },
+          { value: "AirPods Pro" },
+          { value: "Razer Blade 16" },
+        ],
+        dropdown: {
+          enabled: 1,
+          classname: "extra-properties",
+        },
       });
     </script>
   </body>

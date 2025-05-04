@@ -24955,7 +24955,7 @@ background-color: transparent !important;
   background-color: #ffd6e3 !important;
 }
 .bg-danger {
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
   --bg-color: 241, 65, 108 !important;
 }
 .bg-danger.hoverable:hover {
@@ -24979,11 +24979,11 @@ background-color: transparent !important;
 }
 .bg-hover-danger:hover {
   --bg-color: 241, 65, 108;
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
 }
 .bg-active-danger.active {
   --bg-color: 241, 65, 108;
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
 }
 .bg-state-danger {
   cursor: pointer;
@@ -24991,7 +24991,7 @@ background-color: transparent !important;
 .bg-state-danger.active,
 .bg-state-danger:hover {
   --bg-color: 241, 65, 108;
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
 }
 .bg-light-dark {
   background-color: #eff2f5 !important;
@@ -27357,7 +27357,7 @@ a:hover {
   background-color: #ffc700 !important;
 }
 .carousel.carousel-custom .carousel-indicators-active-danger li.active:after {
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
 }
 .carousel.carousel-custom .carousel-indicators-active-dark li.active:after {
   background-color: #181c32 !important;
@@ -32692,7 +32692,7 @@ a:hover {
 .show > .btn.btn-primary {
   color: var(--site-primary) !important;
   border-color: 1px solid #0095e8 !important;
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
 }
 .btn-check:active + .btn.btn-primary .svg-icon,
 .btn-check:active + .btn.btn-primary i,
@@ -33604,7 +33604,7 @@ a:hover {
 .show > .btn.btn-light-danger {
   color: #fff;
   border-color: #f1416c;
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
 }
 .btn-check:active + .btn.btn-light-danger .svg-icon,
 .btn-check:active + .btn.btn-light-danger i,
@@ -33648,7 +33648,7 @@ a:hover {
 .show > .btn.btn-active-danger {
   color: #fff;
   border-color: #f1416c;
-  background-color: #f1416c !important;
+  background-color: #FFF !important;
 }
 .btn-check:active + .btn.btn-active-danger .svg-icon,
 .btn-check:active + .btn.btn-active-danger i,
