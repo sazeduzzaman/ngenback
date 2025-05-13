@@ -32787,7 +32787,7 @@ a:hover {
 .show > .btn.btn-active-primary {
   color: var(--site-primary);
   border-color: var(--site-primary);
-  background-color: transparent !important;
+  background-color: #f1faff !important;
 }
 .btn-check:active + .btn.btn-active-primary .svg-icon,
 .btn-check:active + .btn.btn-active-primary i,
