@@ -48137,7 +48137,9 @@ td {
   align-items: center;
   height: 200px;
   display: flex;
-  width: 95%;
+  width: 80%;
+  margin: auto;
+
 }
 .trackNavbar ul {
   position: relative;
@@ -48145,7 +48147,7 @@ td {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #7239ea;
+  background-color: #0b6476;
   height: 5px;
 }
 
@@ -48177,7 +48179,7 @@ td {
 
 .trackNavbar ul li.active a i,
 .trackNavbar ul li.active a span {
-  color: #6a0070;
+  color: #0b6476;
 }
 
 .trackNavbar ul li.active .ripple {
@@ -48254,13 +48256,13 @@ td {
   height: 5px;
   border-radius: 50%;
   margin: auto;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 4px #6a0070;
-  background: #6a0070;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 4px #0b6476;
+  background: #0b6476;
   transition: box-shadow 0.3s cubic-bezier(0.75, 0, 0.24, 1);
 }
 
 .trackNavbar ul li a.active:before {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 10px #6a0070;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 10px #0b6476;
 }
 
 @keyframes ripple {
@@ -48275,3 +48277,15 @@ td {
       0 0 0 2em rgba(74, 130, 181, 0);
   }
 }
+
+ .tab-visible {
+      display: block;
+    }
+    .tab-hidden {
+      display: none;
+    }
+    .btn-outlines{
+      color: #0b6476 !important;
+      border : 1px solid #0b6476 !important;
+      background-color: transparent !important;
+    }
