@@ -5826,7 +5826,7 @@
                                       </div>
                                     </div>
                                     <div class="col-md-4 text-end">
-                                      <div
+                                      <!-- <div
                                         class="d-flex gap-2 justify-content-end mb-1"
                                       >
                                         <button
@@ -5835,7 +5835,7 @@
                                         >
                                           Deal
                                         </button>
-                                      </div>
+                                      </div> -->
                                       <div
                                         class="fs-7 text-muted d-flex align-items-center justify-content-end"
                                       >
@@ -5879,7 +5879,7 @@
                                       </div>
                                     </div>
                                     <div class="col-md-4 text-end">
-                                      <div
+                                      <!-- <div
                                         class="d-flex gap-2 justify-content-end mb-1"
                                       >
                                         <button
@@ -5887,7 +5887,7 @@
                                         >
                                           Deal
                                         </button>
-                                      </div>
+                                      </div> -->
                                       <div
                                         class="fs-7 text-danger d-flex align-items-center justify-content-end"
                                       >
@@ -5929,6 +5929,7 @@
                                           class="form-select form-select-sm"
                                           id="tabSelector"
                                         >
+                                          <option value="deal_tab">Deal</option>
                                           <option value="track_tab">
                                             Track
                                           </option>
@@ -5944,6 +5945,584 @@
                                   </div>
                                   <!-- Tab Content -->
                                   <div>
+                                    <div id="deal_tab" class="tab-visible">
+                                      <div
+                                        class="row align-items-center h-100 mt-4"
+                                      >
+                                        <div class="col-lg-12">
+                                          <div class="card shadow-sm">
+                                            <div
+                                              class="card-header align-items-center"
+                                            >
+                                              <h1 class="card-title">
+                                                Request for Quotation
+                                              </h1>
+                                              <p
+                                                class="text-sm mb-0"
+                                                data-bs-toggle="tooltip"
+                                                data-bs-placement="bottom"
+                                                title="Coming Soon: Create RFQ Describing by Project Case."
+                                              >
+                                                RFQ by Case
+                                                <i
+                                                  class="fa-solid fa-question border px-3 py-2 rounded-circle"
+                                                ></i>
+                                              </p>
+                                            </div>
+                                            <div class="card-body p-0">
+                                              <div
+                                                class="stepper stepper-pills bg-light stepper-column row d-flex align-items-center flex-column flex-lg-row mx-auto"
+                                                id="kt_stepper_example_vertical"
+                                              >
+                                                <div class="col-4 bg-light">
+                                                  <div
+                                                    class="stepper-nav flex-cente"
+                                                  >
+                                                    <div
+                                                      class="stepper-item me-5 current"
+                                                      data-kt-stepper-element="nav"
+                                                    >
+                                                      <div
+                                                        class="stepper-wrapper d-flex align-items-center"
+                                                      >
+                                                        <div
+                                                          class="stepper-icon w-40px h-40px"
+                                                        >
+                                                          <i
+                                                            class="stepper-check fas fa-check"
+                                                          ></i>
+                                                          <span
+                                                            class="stepper-number"
+                                                            >1</span
+                                                          >
+                                                        </div>
+
+                                                        <div
+                                                          class="stepper-label"
+                                                        >
+                                                          <h3
+                                                            class="stepper-title"
+                                                          >
+                                                            Step 1
+                                                          </h3>
+
+                                                          <div
+                                                            class="stepper-desc"
+                                                          >
+                                                            Product Information
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div
+                                                        class="stepper-line h-40px"
+                                                      ></div>
+                                                    </div>
+
+                                                    <div
+                                                      class="stepper-item me-5"
+                                                      data-kt-stepper-element="nav"
+                                                    >
+                                                      <div
+                                                        class="stepper-wrapper d-flex align-items-center"
+                                                      >
+                                                        <div
+                                                          class="stepper-icon w-40px h-40px"
+                                                        >
+                                                          <i
+                                                            class="stepper-check fas fa-check"
+                                                          ></i>
+                                                          <span
+                                                            class="stepper-number"
+                                                            >2</span
+                                                          >
+                                                        </div>
+
+                                                        <div
+                                                          class="stepper-label"
+                                                        >
+                                                          <h3
+                                                            class="stepper-title"
+                                                          >
+                                                            Step 2
+                                                          </h3>
+
+                                                          <div
+                                                            class="stepper-desc"
+                                                          >
+                                                            Aditional
+                                                            Information
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div
+                                                        class="stepper-line h-40px"
+                                                      ></div>
+                                                    </div>
+
+                                                    <div
+                                                      class="stepper-item me-5"
+                                                      data-kt-stepper-element="nav"
+                                                    >
+                                                      <div
+                                                        class="stepper-wrapper d-flex align-items-center"
+                                                      >
+                                                        <div
+                                                          class="stepper-icon w-40px h-40px"
+                                                        >
+                                                          <i
+                                                            class="stepper-check fas fa-check"
+                                                          ></i>
+                                                          <span
+                                                            class="stepper-number"
+                                                            >3</span
+                                                          >
+                                                        </div>
+
+                                                        <div
+                                                          class="stepper-label"
+                                                        >
+                                                          <h3
+                                                            class="stepper-title"
+                                                          >
+                                                            Step 3
+                                                          </h3>
+
+                                                          <div
+                                                            class="stepper-desc"
+                                                          >
+                                                            Delivery Information
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div
+                                                        class="stepper-line h-40px"
+                                                      ></div>
+                                                    </div>
+
+                                                    <div
+                                                      class="stepper-item me-5"
+                                                      data-kt-stepper-element="nav"
+                                                    >
+                                                      <div
+                                                        class="stepper-wrapper d-flex align-items-center"
+                                                      >
+                                                        <div
+                                                          class="stepper-icon w-40px h-40px"
+                                                        >
+                                                          <i
+                                                            class="stepper-check fas fa-check"
+                                                          ></i>
+                                                          <span
+                                                            class="stepper-number"
+                                                            >4</span
+                                                          >
+                                                        </div>
+
+                                                        <div
+                                                          class="stepper-label"
+                                                        >
+                                                          <h3
+                                                            class="stepper-title"
+                                                          >
+                                                            Step 4
+                                                          </h3>
+
+                                                          <div
+                                                            class="stepper-desc"
+                                                          >
+                                                            Contact Information
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div
+                                                  class="flex-row-fluid col-8 bg-white"
+                                                >
+                                                  <form
+                                                    class="form"
+                                                    novalidate="novalidate"
+                                                    style="
+                                                      height: 400px;
+                                                      overflow-x: hidden;
+                                                      overflow-y: auto;
+                                                    "
+                                                  >
+                                                    <div class="mt-5">
+                                                      <div
+                                                        class="flex-column current"
+                                                        data-kt-stepper-element="content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            id="kt_docs_repeater_basic"
+                                                          >
+                                                            <div
+                                                              class="form-group"
+                                                            >
+                                                              <div
+                                                                data-repeater-list="kt_docs_repeater_basic"
+                                                              >
+                                                                <div
+                                                                  data-repeater-item
+                                                                  class="mb-2"
+                                                                >
+                                                                  <div
+                                                                    class="form-group row gx-2"
+                                                                  >
+                                                                    <div
+                                                                      class="col-md-2"
+                                                                    >
+                                                                      <div
+                                                                        class="d-flex"
+                                                                      >
+                                                                        <div
+                                                                          class="me-1"
+                                                                        >
+                                                                          <a
+                                                                            href="javascript:;"
+                                                                            data-repeater-delete
+                                                                            class="border p-3 btn"
+                                                                          >
+                                                                            <i
+                                                                              class="fas fa-trash text-danger"
+                                                                            ></i>
+                                                                          </a>
+                                                                        </div>
+                                                                        <div
+                                                                          class="me-2"
+                                                                        >
+                                                                          <span
+                                                                            class="border p-3 btn"
+                                                                          >
+                                                                            01
+                                                                          </span>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div
+                                                                      class="col-md-7"
+                                                                    >
+                                                                      <input
+                                                                        type="email"
+                                                                        class="form-control mb-2 mb-md-0 w-100"
+                                                                        placeholder="Product Title *"
+                                                                      />
+                                                                    </div>
+                                                                    <div
+                                                                      class="col-md-3"
+                                                                    >
+                                                                      <!-- <input
+                                                  type="number"
+                                                  class="form-control mb-2 mb-md-0 w-100"
+                                                  placeholder="QTY.. *"
+                                                /> -->
+                                                                      <div
+                                                                        class="position-relative"
+                                                                        data-kt-dialer="true"
+                                                                        data-kt-dialer-min="1"
+                                                                        data-kt-dialer-max="500"
+                                                                        data-kt-dialer-step=""
+                                                                        data-kt-dialer-prefix=""
+                                                                        data-kt-dialer-decimals="0"
+                                                                      >
+                                                                        <button
+                                                                          type="button"
+                                                                          class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 start-0"
+                                                                          data-kt-dialer-control="decrease"
+                                                                        >
+                                                                          <i
+                                                                            class="fas fa-minus-square fs-2"
+                                                                          ></i>
+                                                                        </button>
+                                                                        <input
+                                                                          type="text"
+                                                                          class="text-center form-control form-control-solid border-0"
+                                                                          data-kt-dialer-control="input"
+                                                                          placeholder="Amount"
+                                                                          name="manageBudget"
+                                                                          readonly
+                                                                          value="500"
+                                                                        />
+                                                                        <button
+                                                                          type="button"
+                                                                          class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 end-0"
+                                                                          data-kt-dialer-control="increase"
+                                                                        >
+                                                                          <i
+                                                                            class="fas fa-plus-square fs-2"
+                                                                          ></i>
+                                                                        </button>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div
+                                                              class="form-group mt-5"
+                                                            >
+                                                              <a
+                                                                href="javascript:;"
+                                                                data-repeater-create
+                                                                class="btn btn-outline bg-primary text-white border btn-sm"
+                                                              >
+                                                                <i
+                                                                  class="fas fa-plus fs-3"
+                                                                ></i>
+                                                                Add
+                                                              </a>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div
+                                                        class="flex-column"
+                                                        data-kt-stepper-element="content"
+                                                      >
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label"
+                                                            >Example Label
+                                                            1</label
+                                                          >
+
+                                                          <input
+                                                            type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="input1"
+                                                            placeholder=""
+                                                            value=""
+                                                          />
+                                                        </div>
+
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label"
+                                                            >Example Label
+                                                            2</label
+                                                          >
+
+                                                          <textarea
+                                                            class="form-control form-control-solid"
+                                                            rows="3"
+                                                            name="input2"
+                                                            placeholder=""
+                                                          ></textarea>
+                                                        </div>
+
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label"
+                                                            >Example Label
+                                                            3</label
+                                                          >
+
+                                                          <label
+                                                            class="form-check form-check-custom form-check-solid"
+                                                          >
+                                                            <input
+                                                              class="form-check-input"
+                                                              checked="checked"
+                                                              type="checkbox"
+                                                              value="1"
+                                                            />
+                                                            <span
+                                                              class="form-check-label"
+                                                            >
+                                                              Checkbox
+                                                            </span>
+                                                          </label>
+                                                        </div>
+                                                      </div>
+
+                                                      <div
+                                                        class="flex-column"
+                                                        data-kt-stepper-element="content"
+                                                      >
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label d-flex align-items-center"
+                                                          >
+                                                            <span
+                                                              class="required"
+                                                              >Input 1</span
+                                                            >
+                                                            <i
+                                                              class="fas fa-exclamation-circle ms-2 fs-7"
+                                                              data-bs-toggle="tooltip"
+                                                              title="Example tooltip"
+                                                            ></i>
+                                                          </label>
+
+                                                          <input
+                                                            type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="input1"
+                                                            placeholder=""
+                                                            value=""
+                                                          />
+                                                        </div>
+
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label"
+                                                          >
+                                                            Input 2
+                                                          </label>
+
+                                                          <input
+                                                            type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="input2"
+                                                            placeholder=""
+                                                            value=""
+                                                          />
+                                                        </div>
+                                                      </div>
+
+                                                      <div
+                                                        class="flex-column"
+                                                        data-kt-stepper-element="content"
+                                                      >
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label d-flex align-items-center"
+                                                          >
+                                                            <span
+                                                              class="required"
+                                                              >Input 1</span
+                                                            >
+                                                            <i
+                                                              class="fas fa-exclamation-circle ms-2 fs-7"
+                                                              data-bs-toggle="tooltip"
+                                                              title="Example tooltip"
+                                                            ></i>
+                                                          </label>
+
+                                                          <input
+                                                            type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="input1"
+                                                            placeholder=""
+                                                            value=""
+                                                          />
+                                                        </div>
+
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label"
+                                                          >
+                                                            Input 2
+                                                          </label>
+
+                                                          <input
+                                                            type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="input2"
+                                                            placeholder=""
+                                                            value=""
+                                                          />
+                                                        </div>
+
+                                                        <div
+                                                          class="fv-row mb-10"
+                                                        >
+                                                          <label
+                                                            class="form-label"
+                                                          >
+                                                            Input 3
+                                                          </label>
+
+                                                          <input
+                                                            type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="input3"
+                                                            placeholder=""
+                                                            value=""
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div
+                                                      class="d-flex flex-stack align-items-end overflow-auto"
+                                                    >
+                                                      <div class="me-2">
+                                                        <button
+                                                          type="button"
+                                                          class="btn btn-light btn-active-light-primary"
+                                                          data-kt-stepper-action="previous"
+                                                        >
+                                                          <i
+                                                            class="fas fa-arrow-left-long"
+                                                          ></i>
+                                                          Back
+                                                        </button>
+                                                      </div>
+
+                                                      <div>
+                                                        <button
+                                                          type="button"
+                                                          class="btn btn-primary"
+                                                          data-kt-stepper-action="submit"
+                                                        >
+                                                          <span
+                                                            class="indicator-label"
+                                                          >
+                                                            Submit
+                                                          </span>
+                                                          <span
+                                                            class="indicator-progress"
+                                                          >
+                                                            Please wait...
+                                                            <span
+                                                              class="spinner-border spinner-border-sm align-middle ms-2"
+                                                            ></span>
+                                                          </span>
+                                                        </button>
+
+                                                        <button
+                                                          type="button"
+                                                          class="btn btn-primary"
+                                                          data-kt-stepper-action="next"
+                                                        >
+                                                          Continue
+                                                          <i
+                                                            class="fas fa-arrow-right-long"
+                                                          ></i>
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                     <div id="track_tab" class="tab-visible">
                                       <div
                                         class="row justify-content-center align-items-center"
@@ -8247,11 +8826,54 @@
 
     <script src="assets/js/custom/apps/projects/project/project.js"></script>
     <script src="assets/js/custom/utilities/modals/new-target.js"></script>
+    <script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
 
     <script
       src="https://kit.fontawesome.com/69b7156a94.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Stepper lement
+      var element = document.querySelector("#kt_stepper_example_vertical");
+
+      // Initialize Stepper
+      var stepper = new KTStepper(element);
+
+      // Handle next step
+      stepper.on("kt.stepper.next", function (stepper) {
+        stepper.goNext(); // go next step
+      });
+
+      // Handle previous step
+      stepper.on("kt.stepper.previous", function (stepper) {
+        stepper.goPrevious(); // go previous step
+      });
+    </script>
+    <script>
+      $("#kt_docs_repeater_basic").repeater({
+        initEmpty: false,
+
+        defaultValues: {
+          "text-input": "foo",
+        },
+
+        show: function () {
+          $(this).slideDown();
+        },
+
+        hide: function (deleteElement) {
+          // Only delete if more than one item exists
+          const repeaterItems = $(this)
+            .closest("[data-repeater-list]")
+            .find("[data-repeater-item]");
+          if (repeaterItems.length > 1) {
+            $(this).slideUp(deleteElement);
+          } else {
+            alert("At least one item must remain.");
+          }
+        },
+      });
+    </script>
     <script>
       $(".data_table").DataTable({
         language: {
@@ -8285,7 +8907,9 @@
     </script>
     <script>
       const tabSelector = document.getElementById("tabSelector");
-      const tabs = document.querySelectorAll("#track_tab, #message_tab");
+      const tabs = document.querySelectorAll(
+        "#deal_tab,#track_tab, #message_tab"
+      );
 
       function switchTab(selectedId) {
         tabs.forEach((tab) => {
