@@ -4638,7 +4638,8 @@
                           <div class="mb-5">
                             <input
                               type="text"
-                              class="form-control form-control-sm form-control-solid"
+                              class="form-control form-control-sm"
+                              autocomplete="off"
                               placeholder="Contains the word"
                               name="query"
                             />
@@ -4705,7 +4706,8 @@
                             <input
                               type="text"
                               name="assignedto"
-                              class="form-control form-control-sm form-control-solid"
+                              class="form-control form-control-sm"
+                              autocomplete="off"
                               placeholder="Assigned to"
                               value=""
                             />
@@ -4715,7 +4717,8 @@
                             <input
                               type="text"
                               name="collaborators"
-                              class="form-control form-control-sm form-control-solid"
+                              class="form-control form-control-sm"
+                              autocomplete="off"
                               placeholder="Collaborators"
                               value=""
                             />
@@ -4772,7 +4775,8 @@
                               <input
                                 type="number"
                                 name="date_number"
-                                class="form-control form-control-sm form-control-solid"
+                                class="form-control form-control-sm"
+                                autocomplete="off"
                                 placeholder="Lenght"
                                 value=""
                               />
@@ -5300,11 +5304,23 @@
                 id="kt_content_container"
                 class="app-container container-fluid py-10 pt-5"
               >
-                <div
-                  class="d-flex align-items-center justify-content-center"
-                >
+                <div class="d-flex align-items-center justify-content-center">
                   <div class="container">
                     <div class="row justify-content-center">
+                      <div class="col-lg-12">
+                        <div class="text-center my-10 mt-5">
+                          <h1 class="rfq-title fw-bold mb-0 text-primary">
+                            Business Manager & Deal Information
+                          </h1>
+                          <div class="text-primary mt-2">
+                            <p class="mb-0">
+                              Fill out the form below to complete the deal.
+                              Review the details, confirm accuracy, submit, and
+                              update the status.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                       <div class="col-lg-10 mx-0">
                         <div class="card border-0 shadow-sm">
                           <div
@@ -5315,9 +5331,6 @@
                               <div>
                                 <h4 class="fw-bold text-white">
                                   Sales Manager Details
-                                  <i
-                                    class="fas fa-arrow-right-long text-white"
-                                  ></i>
                                 </h4>
                                 <ul
                                   class="ps-0 mb-0 text-white"
@@ -5325,7 +5338,7 @@
                                 >
                                   <li>
                                     <span class="fw-bold">Name:</span>
-                                    <span class="text-white"
+                                    <span class="text-muted"
                                       >Akramul Arefin</span
                                     >
                                   </li>
@@ -5333,7 +5346,7 @@
                                     <span class="fw-bold">Email:</span>
                                     <a
                                       href="mailto:akramul@gmail.com"
-                                      class="text-white text-decoration-underline"
+                                      class="text-muted text-decoration-underline"
                                       >akramul@gmail.com</a
                                     >
                                   </li>
@@ -5341,69 +5354,37 @@
                                     <span class="fw-bold">Contact:</span>
                                     <a
                                       href="tel:+8801856854846"
-                                      class="text-white text-decoration-underline"
+                                      class="text-muted text-decoration-underline"
                                       >0185-6854846</a
                                     >
                                   </li>
                                 </ul>
                               </div>
                             </div>
-
-                            <div class="col-lg-7 text-center text-white ps-0">
-                              <div style="margin-right: 80px">
-                                <h1 class="rfq-title fw-bold mb-0 text-white">
-                                  Business Manager & Deal Information
-                                </h1>
-                                <div class="text-white mt-2">
-                                  <p class="mb-0">
-                                    Fill out the form below to complete the
-                                    deal. Review the details, confirm accuracy,
-                                    submit, and update the status.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-
+                            <div
+                              class="col-lg-7 text-center text-white ps-0"
+                            ></div>
                             <div class="col-lg-2 text-white pe-0">
                               <div class="">
                                 <h4 class="fw-bold text-white">
                                   Deal Information
-                                  <i
-                                    class="fas fa-arrow-right-long text-white"
-                                  ></i>
                                 </h4>
                                 <p class="mb-0 pe-2 case-title">
                                   <span class="fw-bold">Date:</span>
-                                  <span class="text-white">6 June 2025</span>
+                                  <span class="text-muted">6 June 2025</span>
                                 </p>
                                 <p class="mb-0 pe-2 case-title">
                                   <span class="fw-bold">ID:</span>
-                                  <span class="text-white">RFQ-20250606</span>
+                                  <span class="text-muted">RFQ-20250606</span>
                                 </p>
                                 <p class="mb-0 pe-2 case-title">
                                   <span class="fw-bold">Status:</span>
-                                  <span class="text-white">Pending</span>
+                                  <span class="text-muted">Pending</span>
                                 </p>
                               </div>
                             </div>
                           </div>
-
-                          <!-- <div
-                            class="card-header border py-3 d-flex justify-content-between align-items-center"
-                            
-                          >
-                          </div> -->
                           <div class="card-body">
-                            <!-- <div class="pb-3">
-                              <h1 class="text-center text-primary">
-                                Complete RFQ Deal
-                              </h1>
-                              <p class="text-center text-muted">
-                                Fill out the form below to complete the Deal.
-                                Confirm details, submit the form, and update the
-                                status.
-                              </p>
-                            </div> -->
                             <!-- ✅ Repeater goes here as you said -->
                             <div class="mb-4 mt-5">
                               <div class="repeater">
@@ -5413,7 +5394,8 @@
                                       <input
                                         type="text"
                                         name="sl"
-                                        class="form-control form-control-solid text-center"
+                                        class="form-control text-center"
+                                        autocomplete="off"
                                         value="1"
                                       />
                                     </div>
@@ -5421,7 +5403,8 @@
                                       <input
                                         type="text"
                                         name="product_name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Product Name "
                                         required
                                       />
@@ -5432,7 +5415,8 @@
                                           type="text"
                                           id="qty"
                                           value="1"
-                                          class="form-control form-control-solid text-center"
+                                          class="form-control text-center"
+                                          autocomplete="off"
                                           min="1"
                                           readonly
                                           style="
@@ -5493,7 +5477,7 @@
                               </div>
                             </div>
                             <!-- ✅ End of repeater placement -->
-                            <hr class="mb-4" />
+                            <hr class="my-10" />
                             <!-- For Desktop Only -->
                             <!-- Progress Bar -->
                             <div class="progress-bar-steps pt-3 for-desktop">
@@ -5557,11 +5541,12 @@
                               <div class="step-content active" data-step="1">
                                 <div class="row">
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="company_name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Company Name (e.g: NGen It)"
                                         required
                                       />
@@ -5588,40 +5573,43 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Client Name (e.g: Jhone Doe)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="address"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Address (e.g: House No, Road, Block)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="designation"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Designation (e.g: Sales Manager)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select form-select-solid countrySelect"
                                         name="country"
@@ -5647,18 +5635,19 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="email"
                                         name="email"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Email Address (e.g: jhone@mail.com)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select form-select-solid countrySelect"
                                         name="city"
@@ -5680,29 +5669,31 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="number"
                                         name="phone"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Phone Number (e.g: 018687955852)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="company_zip_code"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="ZIP Code (e.g: 1207)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-12">
-                                    <div class="mt-4">
+                                    <div class="my-10">
                                       <!-- Delivery Address Checkbox -->
                                       <div class="form-check mt-2">
                                         <input
@@ -5766,7 +5757,7 @@
                                 <div>
                                   <!-- Delivery Address Checkbox -->
 
-                                  <div class="form-check mt-2 mb-4">
+                                  <div class="form-check my-15">
                                     <input
                                       class="form-check-input"
                                       type="checkbox"
@@ -5785,51 +5776,55 @@
                                 <!-- Step 2 Inputs Field -->
                                 <div class="row">
                                   <div class="col-lg-12">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="company_name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Company Name (e.g: NGen It)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Client Name (e.g: Jhone Doe)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="address"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Address (e.g: House No, Road, Block)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="designation"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Designation (e.g: Sales Manager)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select form-select-solid countrySelect"
                                         aria-label="Select Country"
@@ -5855,18 +5850,19 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="email"
                                         name="email"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Email Address (e.g: jhone@mail.com)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select form-select-solid countrySelect"
                                         aria-label="Select City"
@@ -5888,22 +5884,24 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="number"
                                         name="phone"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Phone Number (e.g: 018687955852)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="company_zip_code"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="ZIP Code (e.g: 1207)"
                                         required
                                       />
@@ -5912,7 +5910,7 @@
                                 </div>
                                 <!-- Step 2 Inputs Field End-->
                                 <div
-                                  class="d-flex justify-content-between align-items-center"
+                                  class="d-flex justify-content-between align-items-center mt-15"
                                 >
                                   <button
                                     type="button"
@@ -5933,7 +5931,7 @@
                               <div class="step-content" data-step="3">
                                 <!-- End User Checkbox -->
                                 <div>
-                                  <div class="form-check mt-2 mb-4">
+                                  <div class="form-check my-15">
                                     <input
                                       class="form-check-input"
                                       type="checkbox"
@@ -5952,51 +5950,55 @@
                                 <!-- Step 3 Inputs Field-->
                                 <div class="row">
                                   <div class="col-lg-12">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="company_name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Company Name (e.g: NGen It)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Client Name (e.g: Jhone Doe)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="address"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Address (e.g: House No, Road, Block)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="designation"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Designation (e.g: Sales Manager)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select form-select-solid countrySelect"
                                         aria-label="Select Country"
@@ -6022,18 +6024,19 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="email"
                                         name="email"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Email Address (e.g: jhone@mail.com)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select form-select-solid countrySelect"
                                         aria-label="Select City"
@@ -6055,22 +6058,24 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="number"
                                         name="phone"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Phone Number (e.g: 018687955852)"
                                         required
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="company_zip_code"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="ZIP Code (e.g: 1207)"
                                         required
                                       />
@@ -6079,7 +6084,7 @@
                                 </div>
                                 <!-- Step 3 Inputs Field End-->
                                 <div
-                                  class="d-flex justify-content-between align-items-center"
+                                  class="d-flex justify-content-between align-items-center mt-15"
                                 >
                                   <button
                                     type="button"
@@ -6100,27 +6105,29 @@
                               <div class="step-content" data-step="4">
                                 <div class="row">
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="project_name"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Project Name"
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <input
                                         type="text"
                                         name="budget"
-                                        class="form-control form-control-solid"
+                                        class="form-control"
+                                        autocomplete="off"
                                         placeholder="Tentative Budget.."
                                       />
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select form-select-solid countrySelect"
                                         aria-label="Select Country"
@@ -6142,7 +6149,7 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <div class="mb-3">
+                                    <div class="mb-5">
                                       <select
                                         class="form-select countrySelect"
                                         aria-label="Select Country"
@@ -6169,7 +6176,8 @@
                                   </div>
                                   <div class="col-lg-12 mb-3">
                                     <textarea
-                                      class="form-control form-control-solid"
+                                      class="form-control"
+                                      autocomplete="off"
                                       id="messageTextarea"
                                       name="project_brief"
                                       placeholder="Leave a comment or message here..."
@@ -6178,7 +6186,7 @@
                                     ></textarea>
                                   </div>
                                   <div class="col-lg-12">
-                                    <div class="form-check my-2 mb-5">
+                                    <div class="form-check my-15">
                                       <input
                                         class="form-check-input"
                                         type="checkbox"
@@ -6395,7 +6403,8 @@
 
                 <input
                   type="text"
-                  class="form-control form-control-lg form-control-solid px-15"
+                  class="form-control form-control-lg px-15"
+                  autocomplete="off"
                   name="search"
                   value=""
                   placeholder="Search by username, full name or email..."
