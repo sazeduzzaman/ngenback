@@ -48615,22 +48615,37 @@ fieldset:disabled .btn {
 
 }
 .nav-line-tabs .nav-item .bypass-nav.active, .nav-line-tabs .nav-item .bypass-nav:hover:not(.disabled), .nav-line-tabs .nav-item.show .bypass-nav{
-  background-color: var(--site-primary);
-  border: 0;
-  border-bottom: 4px solid var(--site-primary);
+  background-color: #a80b6e;
+  border: 1px solid transparent;
   transition: color 0.2s ease, background-color 0.2s ease;
-  padding: 10px 20px 5px;
+  padding: 10px 20px 10px;
   color: white;
   margin: 0;
 }
 .nav-line-tabs .nav-item .nav-link{
   background-color: transparent;
-  border: 0;
-  border-bottom: 0px solid var(--site-primary);
+ border: 1px solid #eee;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  padding: 10px 20px 10px;
+  color: white;
+  margin: 0;
+  color: var(--site-primary);
+}
+.nav-line-tabs .nav-item .nav-link:hover{
+  background-color: transparent;
+ border: 1px solid #eee;
+  border-bottom: 4px solid transparent;
   transition: color 0.2s ease, background-color 0.2s ease;
   padding: 10px 20px 5px;
-  color: var(--site-primary);
+  color: white;
   margin: 0;
+  color: var(--site-primary);
+}
+.border-b{
+     border-bottom: 1px solid #0b647614 !important;
+}
+.table-inp{
+ background-color: #f8fafb1c !important; 
 }
 @media only screen and (max-width: 600px) {
   .rfq-title {
@@ -48647,4 +48662,103 @@ fieldset:disabled .btn {
   }
 }
 
+.footer-qt-link-qt {
+        font-family: Sora;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22.68px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+      }
+      .pdf-container-qt {
+        width: 210mm; /* A4 width */
+        height: 297mm; /* A4 height */
+        margin: inherit;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+      .header-qt {
+        height: 61px;
+        background-color: #ae0a46;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .header-qt-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        padding: 0 30px;
+        color: white;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .content-qt {
+        padding: 30px;
+        padding-top: 30px;
+        flex: 1;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+      }
+      table {
+        border: 0;
+      }
+      th {
+        border-right: 0;
+      }
+      table.content-qt-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table.content-qt-table th,
+      table.content-qt-table td {
+        border-bottom: 1px solid #eee;
+        padding: 10px;
+        text-align: left;
+      }
+      .footer-qt {
+        height: 45px;
+        background-color: #ae0a46;
+        text-align: center;
+        color: white;
+      }
+      .table-two-th-qt {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.64px;
+        text-align: left;
+      }
+      .table-two-td-qt {
+        font-family: Sora;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.64px;
+        text-align: left;
+      }
+      .bottom-section-qt {
+        padding: 30px;
+        margin-top: auto;
+        border-top: 1px solid #eee;
+      }
+      th {
+        vertical-align: bottom;
+      }
+      @media print {
+        .pdf-container-qt {
+          background-color: white;
+          box-shadow: none;
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+        .header-qt,
+        .footer-qt,
+        .bottom-section-qt {
+          page-break-inside: avoid;
+        }
+      }
 /* For Deal Page css Only End */
