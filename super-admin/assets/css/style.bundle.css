@@ -2132,7 +2132,7 @@ progress {
   height: 1.5em;
 }
 .form-control::placeholder {
-  color: #a1a5b7;
+  color: #9f9f9f;
   opacity: 1;
 }
 .form-control:disabled,
@@ -48487,7 +48487,7 @@ fieldset:disabled .btn {
   border: 1px solid #0b64766c;
 }
 .form-control::placeholder {
-  color: #c0c0c0;
+  color: #9f9f9f;
   opacity: 3;
   font-size: 14px;
 }
