@@ -48622,6 +48622,12 @@ fieldset:disabled .btn {
   color: white;
   margin: 0;
 }
+.bypass-nav{
+  width: 172px;
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+}
 .nav-line-tabs .nav-item .nav-link{
   background-color: transparent;
  border: 1px solid #eee;
@@ -48645,7 +48651,8 @@ fieldset:disabled .btn {
      border-bottom: 1px solid #0b647614 !important;
 }
 .table-inp{
- background-color: #f8fafb1c !important; 
+ /* background-color: #f8fafb1c !important;  */
+ background-color: #ffff !important; 
 }
 @media only screen and (max-width: 600px) {
   .rfq-title {

@@ -5305,7 +5305,7 @@
                             <select
                               class="form-select form-select-sm bg-white"
                               data-control="select2"
-                              data-placeholder="Rigion"
+                              data-placeholder="Region"
                             >
                               <option></option>
                               <option value="1">Option 1</option>
@@ -5451,7 +5451,10 @@
                                           </th>
                                           <th
                                             width="3%"
-                                            style="background-color: #0b6476"
+                                            style="
+                                              background-color: #0b6476;
+                                              border-right: 1px solid #0b6476;
+                                            "
                                           >
                                             Sl
                                           </th>
@@ -5475,7 +5478,10 @@
                                           </th>
                                           <th
                                             width="7%"
-                                            style="background-color: #0b6476d7"
+                                            style="
+                                              background-color: #0b6476d7;
+                                              border-right: 1px solid #0b6476;
+                                            "
                                           >
                                             Total
                                           </th>
@@ -5493,7 +5499,10 @@
                                           </th>
                                           <th
                                             width="6%"
-                                            style="background-color: #0b6476d7"
+                                            style="
+                                              background-color: #0b6476d7;
+                                              border-right: 1px solid #0b6476;
+                                            "
                                           >
                                             Others
                                           </th>
@@ -5519,7 +5528,7 @@
                                             width="7%"
                                             style="
                                               background-color: #0b6476d7;
-                                              border-right: 1px solid #0b64763d;
+                                              border-right: 1px solid #0b6476;
                                             "
                                           >
                                             Tax
@@ -5527,7 +5536,10 @@
                                           <th
                                             width="7%"
                                             class="text-white"
-                                            style="background-color: #0b6476d7"
+                                            style="
+                                              background-color: #0b6476d7;
+                                              border-right: 1px solid #0b6476;
+                                            "
                                           >
                                             SubTotal
                                           </th>
@@ -5564,12 +5576,12 @@
                                               class="d-flex align-items-center justify-content-center"
                                             >
                                               <input
-                                                class="form-control form-control-sm text-center border-b office_cost_percentage percentage"
+                                                class="form-control form-control-sm p-1 text-center w-50 office_cost_percentage percentage"
                                                 name="office_cost_percentage"
                                                 type="text"
                                                 step="0.01"
                                                 value="10"
-                                                placeholder="0%"
+                                                placeholder="0"
                                               />
                                               <p class="m-0 ms-1">%</p>
                                             </div>
@@ -5579,12 +5591,12 @@
                                               class="d-flex align-items-center justify-content-center"
                                             >
                                               <input
-                                                class="form-control form-control-sm text-center border-b profit_percentage percentage"
+                                                class="form-control form-control-sm p-1 text-center w-50 profit_percentage percentage"
                                                 name="profit_percentage"
                                                 type="text"
                                                 step="0.01"
                                                 value="10"
-                                                placeholder="0%"
+                                                placeholder="0"
                                               />
                                               <p class="m-0 ms-1">%</p>
                                             </div>
@@ -5599,12 +5611,12 @@
                                               class="d-flex align-items-center justify-content-center"
                                             >
                                               <input
-                                                class="form-control form-control-sm text-center border-b others_cost_percentage percentage"
+                                                class="form-control form-control-sm p-1 text-center w-50 others_cost_percentage percentage"
                                                 name="others_cost_percentage"
                                                 type="text"
                                                 step="0.01"
                                                 value="10"
-                                                placeholder="0%"
+                                                placeholder="0"
                                               />
                                               <p class="m-0 ms-1">%</p>
                                             </div>
@@ -5614,12 +5626,12 @@
                                               class="d-flex align-items-center justify-content-center"
                                             >
                                               <input
-                                                class="form-control form-control-sm text-center border-b remittence_percentage percentage"
+                                                class="form-control form-control-sm p-1 text-center w-50 remittence_percentage percentage"
                                                 name="remittance_percentage"
                                                 type="text"
                                                 step="0.01"
                                                 value="1"
-                                                placeholder="0%"
+                                                placeholder="0"
                                               />
                                               <p class="m-0 ms-1">%</p>
                                             </div>
@@ -5629,11 +5641,11 @@
                                               class="d-flex align-items-center justify-content-center"
                                             >
                                               <input
-                                                class="form-control form-control-sm text-center border-b packing_percentage percentage"
+                                                class="form-control form-control-sm p-1 text-center w-50 packing_percentage percentage"
                                                 name="packing_percentage"
                                                 type="text"
                                                 step="0.01"
-                                                placeholder="0%"
+                                                placeholder="0"
                                               />
                                               <p class="m-0 ms-1">%</p>
                                             </div>
@@ -5643,11 +5655,11 @@
                                               class="d-flex align-items-center justify-content-center"
                                             >
                                               <input
-                                                class="form-control form-control-sm text-center border-b custom_percentage percentage"
+                                                class="form-control form-control-sm p-1 text-center w-50 custom_percentage percentage"
                                                 name="custom_percentage"
                                                 type="text"
                                                 step="0.01"
-                                                placeholder="0%"
+                                                placeholder="0"
                                               />
                                               <p class="m-0 ms-1">%</p>
                                             </div>
@@ -5662,12 +5674,12 @@
                                               class="d-flex align-items-center justify-content-center"
                                             >
                                               <input
-                                                class="form-control form-control-sm text-center border-b tax_vat_percentage percentage"
+                                                class="form-control form-control-sm p-1 text-center w-50 tax_vat_percentage percentage"
                                                 name="tax_vat_percentage"
                                                 type="text"
                                                 step="0.01"
                                                 value="8"
-                                                placeholder="0%"
+                                                placeholder="0"
                                               />
                                               <p class="m-0 ms-1">%</p>
                                             </div>
@@ -5724,24 +5736,27 @@
                                             <input
                                               type="text"
                                               name="product_name"
-                                              class="form-control form-control-sm text-start table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-start table-inp bg-white rfqcalculationinput"
                                               value="Honeywell ML8824"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="qty"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="principal_cost"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput principal_cost"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput principal_cost"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td
@@ -5753,24 +5768,27 @@
                                             <input
                                               type="text"
                                               name="principal_unit_total_amount"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput principal_unit_total_amount"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput principal_unit_total_amount"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="unit_office_cost"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="unit_profit"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                             placeholder="0"
                                             />
                                           </td>
                                           <td
@@ -5782,32 +5800,36 @@
                                             <input
                                               type="text"
                                               name="unit_others_cost"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="unit_remittance"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="unit_packing"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="unit_customs"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td
@@ -5819,8 +5841,9 @@
                                             <input
                                               type="text"
                                               name="unit_tax_vat"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td
@@ -5832,24 +5855,27 @@
                                             <input
                                               type="text"
                                               name="unit_subtotal"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="unit_final_price"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                           <td class="vm p-1 py-1">
                                             <input
                                               type="text"
                                               name="unit_final_total_price"
-                                              class="form-control form-control-sm text-center table-inp bg-white rfqcalculationinput"
+                                              class="form-control form-control-sm bg-white text-center table-inp bg-white rfqcalculationinput"
                                               value="0"
+                                              placeholder="0"
                                             />
                                           </td>
                                         </tr>
@@ -5870,7 +5896,7 @@
                                             <!-- Empty Table Col -->
                                           </th>
                                           <th
-                                            class="vm p-1 py-1 text-center"
+                                            class="vm p-1 py-1 text-start px-4"
                                             colspan="3"
                                           >
                                             Grand Total:
@@ -6941,9 +6967,10 @@
                                         <th class="text-start">Item</th>
                                         <th>Source One</th>
                                         <th>Source One Price</th>
+                                        <th>One Price Status</th>
                                         <th>Source Two</th>
                                         <th>Source Two Price</th>
-                                        <th>Status</th>
+                                        <th>Two Price Status</th>
                                         <!-- New Column -->
                                       </tr>
                                     </thead>
@@ -6956,20 +6983,17 @@
                                       >
                                         <td>1</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Honeywell ML8824 Linear Valve
                                             Actuator</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
                                         <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
                                         <td>$315</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-up text-success"
-                                          ></i>
-                                        </td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                         <!-- Difference -->
                                       </tr>
                                       <tr
@@ -6980,20 +7004,17 @@
                                       >
                                         <td>2</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Siemens GND121.1A Damper
                                             Actuator</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$250</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$245</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7003,19 +7024,16 @@
                                       >
                                         <td>3</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7025,19 +7043,16 @@
                                       >
                                         <td>4</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7047,19 +7062,16 @@
                                       >
                                         <td>5</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7069,19 +7081,16 @@
                                       >
                                         <td>6</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7091,19 +7100,16 @@
                                       >
                                         <td>7</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7113,19 +7119,16 @@
                                       >
                                         <td>8</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7135,19 +7138,16 @@
                                       >
                                         <td>9</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                       <tr
                                         class="text-center"
@@ -7157,19 +7157,16 @@
                                       >
                                         <td>10</td>
                                         <td class="text-start">
-                                          <a href="#"
+                                          <a href="#" title="Belimo R2025-3P Ball Valve"
                                             >Belimo R2025-3P Ball Valve</a
                                           >
                                         </td>
                                         <td>Supplier A</td>
-                                        <td>$180</td>
+                                        <td>$320</td>
+                                        <td>$320 <i class="text-danger fas fa-arrow-down-short-wide"></i></td>
                                         <td>Supplier B</td>
-                                        <td>$175</td>
-                                        <td>
-                                          <i
-                                            class="fas fa-arrow-trend-down text-danger"
-                                          ></i>
-                                        </td>
+                                        <td>$315</td>
+                                        <td>$320 <i class="text-success fas fa-arrow-up-short-wide"></i></td>
                                       </tr>
                                     </tbody>
                                   </table>
