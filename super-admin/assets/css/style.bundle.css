@@ -26887,7 +26887,6 @@ a:hover {
 .nav-line-tabs .nav-item .nav-link:hover:not(.disabled),
 .nav-line-tabs .nav-item.show .nav-link {
   background-color: transparent;
-  border: 0;
   border-bottom: 4px solid var(--site-primary);
   transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -26956,7 +26955,7 @@ a:hover {
 }
 .nav.nav-pills.nav-pills-custom .nav-link,
 .nav.nav-pills.nav-pills-custom .show > .nav-link {
-  border: 1px dashed #e4e6ef;
+  border: 1px dashed #0b6476;
   border-radius: 12px;
 }
 .nav.nav-pills.nav-pills-custom .nav-link .nav-icon img,
@@ -32790,7 +32789,7 @@ a:hover {
 .show > .btn.btn-active-primary {
   color: var(--site-primary);
   border-color: var(--site-primary);
-  background-color: #f1faff !important;
+  background-color: var(--site-primary) !important;
 }
 .btn-check:active + .btn.btn-active-primary .svg-icon,
 .btn-check:active + .btn.btn-active-primary i,
@@ -48604,6 +48603,17 @@ fieldset:disabled .btn {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 .nav-line-tabs .nav-item .bypass-nav.active, .nav-line-tabs .nav-item .bypass-nav:hover:not(.disabled), .nav-line-tabs .nav-item.show .bypass-nav {
   background-color: var(--site-primary);
   border: 0;
@@ -48616,7 +48626,8 @@ fieldset:disabled .btn {
 }
 .nav-line-tabs .nav-item .bypass-nav.active, .nav-line-tabs .nav-item .bypass-nav:hover:not(.disabled), .nav-line-tabs .nav-item.show .bypass-nav{
   background-color: #a80b6e;
-  border: 1px solid transparent;
+  border: 1px solid #eee;
+  border-bottom: 4px solid red;
   transition: color 0.2s ease, background-color 0.2s ease;
   padding: 10px 20px 10px;
   color: white;
@@ -48630,7 +48641,8 @@ fieldset:disabled .btn {
 }
 .nav-line-tabs .nav-item .nav-link{
   background-color: transparent;
- border: 1px solid #eee;
+  border: 1px solid #eee;
+  border-bottom: 4px solid transparent;
   transition: color 0.2s ease, background-color 0.2s ease;
   padding: 10px 20px 10px;
   color: white;
@@ -48639,11 +48651,11 @@ fieldset:disabled .btn {
 }
 .nav-line-tabs .nav-item .nav-link:hover{
   background-color: transparent;
- border: 1px solid #eee;
+  border: 1px solid #eee;
   border-bottom: 4px solid transparent;
   transition: color 0.2s ease, background-color 0.2s ease;
-  padding: 10px 20px 5px;
   color: white;
+  padding: 10px 20px 10px;
   margin: 0;
   color: var(--site-primary);
 }
